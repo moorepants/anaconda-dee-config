@@ -1,0 +1,6 @@
+### exclude files from git
+### PyCharm
+.idea
+### output
+*.log
+*.LOG
