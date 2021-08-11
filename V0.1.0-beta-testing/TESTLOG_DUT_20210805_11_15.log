@@ -1,0 +1,547 @@
+2021-08-05 11:35:06,629 test_package_loading.py: <module>   test runner C:\Temp\tests\test_package_loading.py starting ...
+2021-08-05 11:35:06,630 test_package_loading.py: <module>   ... site packages: C:\Programs\Anaconda3\Lib\site-packages
+2021-08-05 11:35:06,630 test_package_loading.py: <module>   ... logfile: TESTLOG.log
+2021-08-05 11:35:06,630 test_package_loading.py: <module>   ... logging level: 20
+2021-08-05 11:35:06,630 test_package_loading.py: <module>   ========================================================================================================================
+2021-08-05 11:35:06,630 test_package_loading.py: get_expected_pkgs expected packs to be tested: alabaster alabaster
+2021-08-05 11:35:06,630 test_package_loading.py: get_expected_pkgs expected packs to be tested: alembic alembic
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: anyio anyio
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: appdirs appdirs
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: argh argh
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: argon2-cffi argon2
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: asn1crypto asn1crypto
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: astroid astroid
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: async_generator async_generator
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: atomicwrites atomicwrites
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: attrs attr
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: autopep8 autopep8
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: babel babel
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: backcall backcall
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: backports backports
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: backports.functools_lru_cache backports.functools_lru_cache
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: backports.shutil_get_terminal_size backports.shutil_get_terminal_size
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: backports.tempfile backports.tempfile
+2021-08-05 11:35:06,631 test_package_loading.py: get_expected_pkgs expected packs to be tested: backports.weakref backports.weakref
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: bcrypt bcrypt
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: beautifulsoup4 bs4
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: bitarray bitarray
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: black black
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: bleach bleach
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: boto boto
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: bottleneck bottleneck
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: brotli brotli
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: bzip2 bz2
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: cairo cairo
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: certifi certifi
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: cffi cffi
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: chardet chardet
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: click click
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: cloudpickle cloudpickle
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: clyent clyent
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: colorama colorama
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: comtypes comtypes
+2021-08-05 11:35:06,632 test_package_loading.py: get_expected_pkgs expected packs to be tested: contextlib2 contextlib2
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: cryptography cryptography
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: curl curl
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: cycler cycler
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: cython cython
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: cytoolz cytoolz
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: dask dask
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: decorator decorator
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: defusedxml defusedxml
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: diff-match-patch diff_match_patch
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: distributed distributed
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: docutils docutils
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: entrypoints entrypoints
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: et_xmlfile et_xmlfile
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: fastcache fastcache
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: filelock filelock
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: flake8 flake8
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: flask flask
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: fsspec fsspec
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: future future
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: fuzzywuzzy fuzzywuzzy
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: gevent gevent
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: glob2 glob2
+2021-08-05 11:35:06,633 test_package_loading.py: get_expected_pkgs expected packs to be tested: greenlet greenlet
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: h5py h5py
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: hdf5 h5py
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: heapdict heapdict
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: html5lib html5lib
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: idna idna
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: igraph igraph
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: imagecodecs imagecodecs
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: imageio imageio
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: imagesize imagesize
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: importlib-metadata importlib_metadata
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: iniconfig iniconfig
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: intervaltree intervaltree
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: ipykernel ipykernel
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: ipython_genutils ipython_genutils
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: ipywidgets ipywidgets
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: isort isort
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: itsdangerous itsdangerous
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: jdcal jdcal
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: jedi jedi
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: jinja2 jinja2
+2021-08-05 11:35:06,634 test_package_loading.py: get_expected_pkgs expected packs to be tested: joblib joblib
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: json5 json5
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jsonschema jsonschema
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyter jupyter
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyter-packaging jupyter_packaging
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyter_client jupyter_client
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyter_console jupyter_console
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyter_contrib_core jupyter_contrib_core
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyter_contrib_nbextensions jupyter_contrib_nbextensions
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyter_core jupyter_core
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyter_highlight_selected_word jupyter_highlight_selected_word
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyter_nbextensions_configurator jupyter_nbextensions_configurator
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyter_server jupyter_server
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyterlab jupyterlab
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyterlab_pygments jupyterlab_pygments
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyterlab_server jupyterlab_server
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: jupyterlab_widgets jupyterlab_widgets
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: keyring keyring
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: kiwisolver kiwisolver
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: mako mako
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: markupsafe markupsafe
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: matplotlib matplotlib
+2021-08-05 11:35:06,635 test_package_loading.py: get_expected_pkgs expected packs to be tested: mccabe mccabe
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: menuinst menuinst
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: mistune mistune
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: mkl mkl
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: mkl_fft mkl_fft
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: mkl_random mkl_random
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: mock mock
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: more-itertools more_itertools
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: mpmath mpmath
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: msgpack-python msgpack
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: multipledispatch multipledispatch
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: mypy_extensions mypy_extensions
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: nbclassic nbclassic
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: nbclient nbclient
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: nbconvert nbconvert
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: nbformat nbformat
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: nbgrader nbgrader
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: nest-asyncio nest_asyncio
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: networkx networkx
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: nltk nltk
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: nose nose
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: notebook notebook
+2021-08-05 11:35:06,636 test_package_loading.py: get_expected_pkgs expected packs to be tested: numba numba
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: numexpr numexpr
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: numpy numpy
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: numpydoc numpydoc
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: olefile olefile
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: openpyxl openpyxl
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: openssl ssl
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: orderedset orderedset
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: packaging packaging
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: pandas pandas
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: pandocfilters pandocfilters
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: paramiko paramiko
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: parso parso
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: partd partd
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: path path
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: pathlib2 pathlib2
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: pathspec pathspec
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: patsy patsy
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: pep8 pep8
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: pexpect pexpect
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: pickleshare pickleshare
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: pillow PIL
+2021-08-05 11:35:06,637 test_package_loading.py: get_expected_pkgs expected packs to be tested: pip pip
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pkginfo pkginfo
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pluggy pluggy
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: ply ply
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: prometheus_client prometheus_client
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: prompt-toolkit prompt_toolkit
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: psutil psutil
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: py-lief lief
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pycairo cairo
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pycodestyle pycodestyle
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pycosat pycosat
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pycparser pycparser
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pycurl pycurl
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pydocstyle pydocstyle
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyflakes pyflakes
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pygments pygments
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pylint pylint
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyls-black pyls_black
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyls-spyder pyls_spyder
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pynacl nacl
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyodbc odbc
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyopenssl ssl
+2021-08-05 11:35:06,638 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyparsing pyparsing
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyqt PyQt5
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyreadline pyreadline
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyrsistent pyrsistent
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pysocks socks
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pytables tables
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pytest pytest
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: python-dateutil dateutil
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: python-editor editor
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: python-igraph igraph
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pytz pytz
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pywavelets pywt
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pywin32 win32
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pywinpty winpty
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyyaml yaml
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: pyzmq zmq
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: qdarkstyle qdarkstyle
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: qtawesome qtawesome
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: qtconsole qtconsole
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: qtpy qtpy
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: regex regex
+2021-08-05 11:35:06,639 test_package_loading.py: get_expected_pkgs expected packs to be tested: requests requests
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: rope rope
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: rtree rtree
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: ruamel_yaml ruamel_yaml
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: scikit-image skimage
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: scikit-learn sklearn
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: scipy scipy
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: seaborn seaborn
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: send2trash send2trash
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: setuptools setuptools
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: simplegeneric simplegeneric
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: singledispatch singledispatch
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: sip sip
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: six six
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: sniffio sniffio
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: snowballstemmer snowballstemmer
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: sortedcollections sortedcollections
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: sortedcontainers sortedcontainers
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: soupsieve soupsieve
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: sphinx sphinx
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: sphinxcontrib sphinxcontrib
+2021-08-05 11:35:06,640 test_package_loading.py: get_expected_pkgs expected packs to be tested: spyder spyder
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: spyder-kernels spyder_kernels
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: sqlalchemy sqlalchemy
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: sqlite sqlite3
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: statsmodels statsmodels
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: sympy sympy
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: tblib tblib
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: terminado terminado
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: testpath testpath
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: textdistance textdistance
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: texttable texttable
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: threadpoolctl threadpoolctl
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: three-merge three_merge
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: tifffile tifffile
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: tk tkinter
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: toml toml
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: toolz toolz
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: tornado tornado
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: tqdm tqdm
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: traitlets traitlets
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: typed-ast typed_ast
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: typing_extensions typing_extensions
+2021-08-05 11:35:06,641 test_package_loading.py: get_expected_pkgs expected packs to be tested: ujson ujson
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: unicodecsv unicodecsv
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: urllib3 urllib3
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: watchdog watchdog
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: wcwidth wcwidth
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: webencodings webencodings
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: werkzeug werkzeug
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: wheel wheel
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: widgetsnbextension widgetsnbextension
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: win_inet_pton win_inet_pton
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: win_unicode_console win_unicode_console
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: wincertstore wincertstore
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: winpty winpty
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: wrapt wrapt
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: xlrd xlrd
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: xlsxwriter xlsxwriter
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: xlwings xlwings
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: xlwt xlwt
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: xmltodict xmltodict
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: xz lzma
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: yaml yaml
+2021-08-05 11:35:06,642 test_package_loading.py: get_expected_pkgs expected packs to be tested: yapf yapf
+2021-08-05 11:35:06,643 test_package_loading.py: get_expected_pkgs expected packs to be tested: zeromq zmq
+2021-08-05 11:35:06,643 test_package_loading.py: get_expected_pkgs expected packs to be tested: zict zict
+2021-08-05 11:35:06,643 test_package_loading.py: get_expected_pkgs expected packs to be tested: zipp zipp
+2021-08-05 11:35:06,643 test_package_loading.py: get_expected_pkgs expected packs to be tested: zlib zlib
+2021-08-05 11:35:06,643 test_package_loading.py: get_specified_pkgs specified package to be tested: control control
+2021-08-05 11:35:06,643 test_package_loading.py: get_specified_pkgs specified package to be tested: nidaqmx-python nidaqmx
+2021-08-05 11:35:06,643 test_package_loading.py: get_specified_pkgs specified package to be tested: pulp pulp
+2021-08-05 11:35:06,643 test_package_loading.py: get_specified_pkgs specified package to be tested: salabim salabim
+2021-08-05 11:35:06,643 test_package_loading.py: get_specified_pkgs specified package to be tested: coolprop coolprop
+2021-08-05 11:35:06,643 test_package_loading.py: get_specified_pkgs specified package to be tested: opencv-python cv2
+2021-08-05 11:35:06,643 test_package_loading.py: get_specified_pkgs specified package to be tested: qutip qutip
+2021-08-05 11:35:06,643 test_package_loading.py: get_specified_pkgs specified package to be tested: slycot slycot
+2021-08-05 11:35:06,643 test_package_loading.py: <module>   ========================================================================================================================
+2021-08-05 11:35:06,643 test_package_loading.py: <module>   ... expected  packages loaded: 259
+2021-08-05 11:35:06,643 test_package_loading.py: <module>   ... specified packages loaded: 8
+2021-08-05 11:35:06,643 test_package_loading.py: <module>   ... total nr  packages loaded: 267
+2021-08-05 11:35:06,643 test_package_loading.py: <module>   ========================================================================================================================
+2021-08-05 11:35:06,647 test_package_loading.py: load_packages 'alabaster' can be imported. Added.
+2021-08-05 11:35:06,647 test_package_loading.py: load_packages cannot import the 'alembic' module. ERROR.
+2021-08-05 11:35:06,896 test_package_loading.py: load_packages 'anyio' can be imported. Added.
+2021-08-05 11:35:06,897 test_package_loading.py: load_packages 'appdirs' can be imported. Added.
+2021-08-05 11:35:06,918 test_package_loading.py: load_packages 'argh' can be imported. Added.
+2021-08-05 11:35:06,958 test_package_loading.py: load_packages 'argon2' can be imported. Added.
+2021-08-05 11:35:06,961 test_package_loading.py: load_packages 'asn1crypto' can be imported. Added.
+2021-08-05 11:35:07,236 test_package_loading.py: load_packages 'astroid' can be imported. Added.
+2021-08-05 11:35:07,240 test_package_loading.py: load_packages 'async_generator' can be imported. Added.
+2021-08-05 11:35:07,245 test_package_loading.py: load_packages 'atomicwrites' can be imported. Added.
+2021-08-05 11:35:07,264 test_package_loading.py: load_packages 'attr' can be imported. Added.
+2021-08-05 11:35:07,280 test_package_loading.py: load_packages 'autopep8' can be imported. Added.
+2021-08-05 11:35:07,310 test_package_loading.py: load_packages 'babel' can be imported. Added.
+2021-08-05 11:35:07,313 test_package_loading.py: load_packages 'backcall' can be imported. Added.
+2021-08-05 11:35:07,314 test_package_loading.py: load_packages 'backports' can be imported. Added.
+2021-08-05 11:35:07,315 test_package_loading.py: load_packages 'backports.functools_lru_cache' can be imported. Added.
+2021-08-05 11:35:07,317 test_package_loading.py: load_packages 'backports.shutil_get_terminal_size' can be imported. Added.
+2021-08-05 11:35:07,319 test_package_loading.py: load_packages 'backports.tempfile' can be imported. Added.
+2021-08-05 11:35:07,319 test_package_loading.py: load_packages 'backports.weakref' identified in sys.modules. Skipped.
+2021-08-05 11:35:07,334 test_package_loading.py: load_packages 'bcrypt' can be imported. Added.
+2021-08-05 11:35:07,850 test_package_loading.py: load_packages 'bs4' can be imported. Added.
+2021-08-05 11:35:07,872 test_package_loading.py: load_packages 'bitarray' can be imported. Added.
+2021-08-05 11:35:08,046 driver.py           : load_grammar Generating grammar tables from C:\Programs\Anaconda3\lib\site-packages\blib2to3\Grammar.txt
+2021-08-05 11:35:08,076 driver.py           : load_grammar Writing grammar tables to C:\Users\kgeboers\AppData\Local\black\black\Cache\19.10b0\Grammar3.8.8.final.0.pickle
+2021-08-05 11:35:08,077 driver.py           : load_grammar Writing failed: [Errno 2] No such file or directory: 'C:\\Users\\kgeboers\\AppData\\Local\\black\\black\\Cache\\19.10b0\\tmpde0chifa'
+2021-08-05 11:35:08,077 driver.py           : load_grammar Generating grammar tables from C:\Programs\Anaconda3\lib\site-packages\blib2to3\PatternGrammar.txt
+2021-08-05 11:35:08,079 driver.py           : load_grammar Writing grammar tables to C:\Users\kgeboers\AppData\Local\black\black\Cache\19.10b0\PatternGrammar3.8.8.final.0.pickle
+2021-08-05 11:35:08,080 driver.py           : load_grammar Writing failed: [Errno 2] No such file or directory: 'C:\\Users\\kgeboers\\AppData\\Local\\black\\black\\Cache\\19.10b0\\tmps3dwuf2_'
+2021-08-05 11:35:08,086 test_package_loading.py: load_packages 'black' can be imported. Added.
+2021-08-05 11:35:08,135 test_package_loading.py: load_packages 'bleach' can be imported. Added.
+2021-08-05 11:35:08,169 test_package_loading.py: load_packages 'boto' can be imported. Added.
+2021-08-05 11:35:11,796 test_package_loading.py: load_packages 'bottleneck' can be imported. Added.
+2021-08-05 11:35:11,816 test_package_loading.py: load_packages 'brotli' can be imported. Added.
+2021-08-05 11:35:11,816 test_package_loading.py: load_packages 'bz2' identified in sys.modules. Skipped.
+2021-08-05 11:35:11,817 test_package_loading.py: load_packages cannot import the 'cairo' module. ERROR.
+2021-08-05 11:35:11,821 test_package_loading.py: load_packages 'certifi' can be imported. Added.
+2021-08-05 11:35:11,827 test_package_loading.py: load_packages 'cffi' can be imported. Added.
+2021-08-05 11:35:11,827 test_package_loading.py: load_packages 'chardet' identified in sys.modules. Skipped.
+2021-08-05 11:35:11,827 test_package_loading.py: load_packages 'click' identified in sys.modules. Skipped.
+2021-08-05 11:35:11,837 test_package_loading.py: load_packages 'cloudpickle' can be imported. Added.
+2021-08-05 11:35:11,859 test_package_loading.py: load_packages 'clyent' can be imported. Added.
+2021-08-05 11:35:11,859 test_package_loading.py: load_packages 'colorama' identified in sys.modules. Skipped.
+2021-08-05 11:35:11,885 test_package_loading.py: load_packages 'comtypes' can be imported. Added.
+2021-08-05 11:35:11,887 test_package_loading.py: load_packages 'contextlib2' can be imported. Added.
+2021-08-05 11:35:11,890 test_package_loading.py: load_packages 'cryptography' can be imported. Added.
+2021-08-05 11:35:11,961 test_package_loading.py: load_packages 'curl' can be imported. Added.
+2021-08-05 11:35:11,963 test_package_loading.py: load_packages 'cycler' can be imported. Added.
+2021-08-05 11:35:11,970 test_package_loading.py: load_packages 'cython' can be imported. Added.
+2021-08-05 11:35:12,034 test_package_loading.py: load_packages 'cytoolz' can be imported. Added.
+2021-08-05 11:35:12,161 test_package_loading.py: load_packages 'dask' can be imported. Added.
+2021-08-05 11:35:12,162 test_package_loading.py: load_packages 'decorator' can be imported. Added.
+2021-08-05 11:35:12,167 test_package_loading.py: load_packages 'defusedxml' can be imported. Added.
+2021-08-05 11:35:12,170 test_package_loading.py: load_packages 'diff_match_patch' can be imported. Added.
+2021-08-05 11:35:12,477 test_package_loading.py: load_packages 'distributed' can be imported. Added.
+2021-08-05 11:35:12,480 test_package_loading.py: load_packages 'docutils' can be imported. Added.
+2021-08-05 11:35:12,483 test_package_loading.py: load_packages 'entrypoints' can be imported. Added.
+2021-08-05 11:35:12,486 test_package_loading.py: load_packages 'et_xmlfile' can be imported. Added.
+2021-08-05 11:35:12,505 test_package_loading.py: load_packages 'fastcache' can be imported. Added.
+2021-08-05 11:35:12,508 test_package_loading.py: load_packages 'filelock' can be imported. Added.
+2021-08-05 11:35:12,511 test_package_loading.py: load_packages 'flake8' can be imported. Added.
+2021-08-05 11:35:13,184 test_package_loading.py: load_packages 'flask' can be imported. Added.
+2021-08-05 11:35:13,307 test_package_loading.py: load_packages 'fsspec' can be imported. Added.
+2021-08-05 11:35:13,309 test_package_loading.py: load_packages 'future' can be imported. Added.
+2021-08-05 11:35:13,310 test_package_loading.py: load_packages cannot import the 'fuzzywuzzy' module. ERROR.
+2021-08-05 11:35:13,491 test_package_loading.py: load_packages 'gevent' can be imported. Added.
+2021-08-05 11:35:13,495 test_package_loading.py: load_packages 'glob2' can be imported. Added.
+2021-08-05 11:35:13,495 test_package_loading.py: load_packages 'greenlet' identified in sys.modules. Skipped.
+2021-08-05 11:35:14,155 test_package_loading.py: load_packages 'h5py' can be imported. Added.
+2021-08-05 11:35:14,155 test_package_loading.py: load_packages 'h5py' identified in sys.modules. Skipped.
+2021-08-05 11:35:14,156 test_package_loading.py: load_packages 'heapdict' can be imported. Added.
+2021-08-05 11:35:14,156 test_package_loading.py: load_packages 'html5lib' identified in sys.modules. Skipped.
+2021-08-05 11:35:14,160 test_package_loading.py: load_packages 'idna' can be imported. Added.
+2021-08-05 11:35:14,161 test_package_loading.py: load_packages cannot import the 'igraph' module. ERROR.
+2021-08-05 11:35:14,165 test_package_loading.py: load_packages 'imagecodecs' can be imported. Added.
+2021-08-05 11:35:14,205 test_package_loading.py: load_packages 'imageio' can be imported. Added.
+2021-08-05 11:35:14,207 test_package_loading.py: load_packages 'imagesize' can be imported. Added.
+2021-08-05 11:35:14,215 test_package_loading.py: load_packages 'importlib_metadata' can be imported. Added.
+2021-08-05 11:35:14,216 test_package_loading.py: load_packages 'iniconfig' can be imported. Added.
+2021-08-05 11:35:14,222 test_package_loading.py: load_packages 'intervaltree' can be imported. Added.
+2021-08-05 11:35:14,995 test_package_loading.py: load_packages 'ipykernel' can be imported. Added.
+2021-08-05 11:35:14,995 test_package_loading.py: load_packages 'ipython_genutils' identified in sys.modules. Skipped.
+2021-08-05 11:35:15,081 test_package_loading.py: load_packages 'ipywidgets' can be imported. Added.
+2021-08-05 11:35:15,199 test_package_loading.py: load_packages 'isort' can be imported. Added.
+2021-08-05 11:35:15,199 test_package_loading.py: load_packages 'itsdangerous' identified in sys.modules. Skipped.
+2021-08-05 11:35:15,200 test_package_loading.py: load_packages 'jdcal' can be imported. Added.
+2021-08-05 11:35:15,200 test_package_loading.py: load_packages 'jedi' identified in sys.modules. Skipped.
+2021-08-05 11:35:15,200 test_package_loading.py: load_packages 'jinja2' identified in sys.modules. Skipped.
+2021-08-05 11:35:15,246 test_package_loading.py: load_packages 'joblib' can be imported. Added.
+2021-08-05 11:35:15,252 test_package_loading.py: load_packages 'json5' can be imported. Added.
+2021-08-05 11:35:15,327 test_package_loading.py: load_packages 'jsonschema' can be imported. Added.
+2021-08-05 11:35:15,328 test_package_loading.py: load_packages 'jupyter' can be imported. Added.
+2021-08-05 11:35:15,451 test_package_loading.py: load_packages 'jupyter_packaging' can be imported. Added.
+2021-08-05 11:35:15,451 test_package_loading.py: load_packages 'jupyter_client' identified in sys.modules. Skipped.
+2021-08-05 11:35:15,454 test_package_loading.py: load_packages 'jupyter_console' can be imported. Added.
+2021-08-05 11:35:15,455 test_package_loading.py: load_packages cannot import the 'jupyter_contrib_core' module. ERROR.
+2021-08-05 11:35:15,456 test_package_loading.py: load_packages cannot import the 'jupyter_contrib_nbextensions' module. ERROR.
+2021-08-05 11:35:15,456 test_package_loading.py: load_packages 'jupyter_core' identified in sys.modules. Skipped.
+2021-08-05 11:35:15,456 test_package_loading.py: load_packages cannot import the 'jupyter_highlight_selected_word' module. ERROR.
+2021-08-05 11:35:15,457 test_package_loading.py: load_packages cannot import the 'jupyter_nbextensions_configurator' module. ERROR.
+2021-08-05 11:35:15,459 test_package_loading.py: load_packages 'jupyter_server' can be imported. Added.
+2021-08-05 11:35:15,761 test_package_loading.py: load_packages 'jupyterlab' can be imported. Added.
+2021-08-05 11:35:15,767 test_package_loading.py: load_packages 'jupyterlab_pygments' can be imported. Added.
+2021-08-05 11:35:15,767 test_package_loading.py: load_packages 'jupyterlab_server' identified in sys.modules. Skipped.
+2021-08-05 11:35:15,772 test_package_loading.py: load_packages 'jupyterlab_widgets' can be imported. Added.
+2021-08-05 11:35:15,784 test_package_loading.py: load_packages 'keyring' can be imported. Added.
+2021-08-05 11:35:15,799 test_package_loading.py: load_packages 'kiwisolver' can be imported. Added.
+2021-08-05 11:35:15,800 test_package_loading.py: load_packages cannot import the 'mako' module. ERROR.
+2021-08-05 11:35:15,800 test_package_loading.py: load_packages 'markupsafe' identified in sys.modules. Skipped.
+2021-08-05 11:35:15,917 test_package_loading.py: load_packages 'matplotlib' can be imported. Added.
+2021-08-05 11:35:15,918 test_package_loading.py: load_packages 'mccabe' can be imported. Added.
+2021-08-05 11:35:16,137 test_package_loading.py: load_packages 'menuinst' can be imported. Added.
+2021-08-05 11:35:16,167 test_package_loading.py: load_packages 'mistune' can be imported. Added.
+2021-08-05 11:35:16,167 test_package_loading.py: load_packages 'mkl' identified in sys.modules. Skipped.
+2021-08-05 11:35:16,187 test_package_loading.py: load_packages 'mkl_fft' can be imported. Added.
+2021-08-05 11:35:16,250 test_package_loading.py: load_packages 'mkl_random' can be imported. Added.
+2021-08-05 11:35:16,257 test_package_loading.py: load_packages 'mock' can be imported. Added.
+2021-08-05 11:35:16,262 test_package_loading.py: load_packages 'more_itertools' can be imported. Added.
+2021-08-05 11:35:16,353 test_package_loading.py: load_packages 'mpmath' can be imported. Added.
+2021-08-05 11:35:16,353 test_package_loading.py: load_packages 'msgpack' identified in sys.modules. Skipped.
+2021-08-05 11:35:16,359 test_package_loading.py: load_packages 'multipledispatch' can be imported. Added.
+2021-08-05 11:35:16,360 test_package_loading.py: load_packages 'mypy_extensions' can be imported. Added.
+2021-08-05 11:35:16,360 test_package_loading.py: load_packages 'nbclassic' identified in sys.modules. Skipped.
+2021-08-05 11:35:16,370 test_package_loading.py: load_packages 'nbclient' can be imported. Added.
+2021-08-05 11:35:16,459 test_package_loading.py: load_packages 'nbconvert' can be imported. Added.
+2021-08-05 11:35:16,459 test_package_loading.py: load_packages 'nbformat' identified in sys.modules. Skipped.
+2021-08-05 11:35:16,459 test_package_loading.py: load_packages cannot import the 'nbgrader' module. ERROR.
+2021-08-05 11:35:16,461 test_package_loading.py: load_packages 'nest_asyncio' can be imported. Added.
+2021-08-05 11:35:17,786 test_package_loading.py: load_packages 'networkx' can be imported. Added.
+2021-08-05 11:35:20,251 test_package_loading.py: load_packages 'nltk' can be imported. Added.
+2021-08-05 11:35:20,278 test_package_loading.py: load_packages 'nose' can be imported. Added.
+2021-08-05 11:35:20,278 test_package_loading.py: load_packages 'notebook' identified in sys.modules. Skipped.
+2021-08-05 11:35:21,341 test_package_loading.py: load_packages 'numba' can be imported. Added.
+2021-08-05 11:35:21,372 utils.py            : _init_num_threads NumExpr defaulting to 4 threads.
+2021-08-05 11:35:21,374 test_package_loading.py: load_packages 'numexpr' can be imported. Added.
+2021-08-05 11:35:21,374 test_package_loading.py: load_packages 'numpy' identified in sys.modules. Skipped.
+2021-08-05 11:35:21,378 test_package_loading.py: load_packages 'numpydoc' can be imported. Added.
+2021-08-05 11:35:21,382 test_package_loading.py: load_packages 'olefile' can be imported. Added.
+2021-08-05 11:35:21,833 test_package_loading.py: load_packages 'openpyxl' can be imported. Added.
+2021-08-05 11:35:21,833 test_package_loading.py: load_packages 'ssl' identified in sys.modules. Skipped.
+2021-08-05 11:35:21,834 test_package_loading.py: load_packages cannot import the 'orderedset' module. ERROR.
+2021-08-05 11:35:21,834 test_package_loading.py: load_packages 'packaging' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,037 test_package_loading.py: load_packages 'pandas' can be imported. Added.
+2021-08-05 11:35:23,037 test_package_loading.py: load_packages 'pandocfilters' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,299 test_package_loading.py: load_packages 'paramiko' can be imported. Added.
+2021-08-05 11:35:23,299 test_package_loading.py: load_packages 'parso' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,320 test_package_loading.py: load_packages 'partd' can be imported. Added.
+2021-08-05 11:35:23,326 test_package_loading.py: load_packages 'path' can be imported. Added.
+2021-08-05 11:35:23,329 test_package_loading.py: load_packages 'pathlib2' can be imported. Added.
+2021-08-05 11:35:23,329 test_package_loading.py: load_packages 'pathspec' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,352 test_package_loading.py: load_packages 'patsy' can be imported. Added.
+2021-08-05 11:35:23,361 test_package_loading.py: load_packages 'pep8' can be imported. Added.
+2021-08-05 11:35:23,368 test_package_loading.py: load_packages 'pexpect' can be imported. Added.
+2021-08-05 11:35:23,368 test_package_loading.py: load_packages 'pickleshare' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,368 test_package_loading.py: load_packages 'PIL' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,368 test_package_loading.py: load_packages 'pip' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,377 test_package_loading.py: load_packages 'pkginfo' can be imported. Added.
+2021-08-05 11:35:23,384 test_package_loading.py: load_packages 'pluggy' can be imported. Added.
+2021-08-05 11:35:23,386 test_package_loading.py: load_packages 'ply' can be imported. Added.
+2021-08-05 11:35:23,386 test_package_loading.py: load_packages 'prometheus_client' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,386 test_package_loading.py: load_packages 'prompt_toolkit' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,386 test_package_loading.py: load_packages 'psutil' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,762 test_package_loading.py: load_packages 'lief' can be imported. Added.
+2021-08-05 11:35:23,763 test_package_loading.py: load_packages cannot import the 'cairo' module. ERROR.
+2021-08-05 11:35:23,763 test_package_loading.py: load_packages 'pycodestyle' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,779 test_package_loading.py: load_packages 'pycosat' can be imported. Added.
+2021-08-05 11:35:23,798 test_package_loading.py: load_packages 'pycparser' can be imported. Added.
+2021-08-05 11:35:23,798 test_package_loading.py: load_packages 'pycurl' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,900 test_package_loading.py: load_packages 'pydocstyle' can be imported. Added.
+2021-08-05 11:35:23,902 test_package_loading.py: load_packages 'pyflakes' can be imported. Added.
+2021-08-05 11:35:23,902 test_package_loading.py: load_packages 'pygments' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,905 test_package_loading.py: load_packages 'pylint' can be imported. Added.
+2021-08-05 11:35:23,906 test_package_loading.py: load_packages 'pyls_black' can be imported. Added.
+2021-08-05 11:35:23,908 test_package_loading.py: load_packages 'pyls_spyder' can be imported. Added.
+2021-08-05 11:35:23,908 test_package_loading.py: load_packages 'nacl' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,926 test_package_loading.py: load_packages 'odbc' can be imported. Added.
+2021-08-05 11:35:23,926 test_package_loading.py: load_packages 'ssl' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,926 test_package_loading.py: load_packages 'pyparsing' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,928 test_package_loading.py: load_packages 'PyQt5' can be imported. Added.
+2021-08-05 11:35:23,957 test_package_loading.py: load_packages 'pyreadline' can be imported. Added.
+2021-08-05 11:35:23,957 test_package_loading.py: load_packages 'pyrsistent' identified in sys.modules. Skipped.
+2021-08-05 11:35:23,957 test_package_loading.py: load_packages 'socks' identified in sys.modules. Skipped.
+2021-08-05 11:35:24,202 test_package_loading.py: load_packages 'tables' can be imported. Added.
+2021-08-05 11:35:24,323 test_package_loading.py: load_packages 'pytest' can be imported. Added.
+2021-08-05 11:35:24,323 test_package_loading.py: load_packages 'dateutil' identified in sys.modules. Skipped.
+2021-08-05 11:35:24,324 test_package_loading.py: load_packages cannot import the 'editor' module. ERROR.
+2021-08-05 11:35:24,325 test_package_loading.py: load_packages cannot import the 'igraph' module. ERROR.
+2021-08-05 11:35:24,325 test_package_loading.py: load_packages 'pytz' identified in sys.modules. Skipped.
+2021-08-05 11:35:24,477 test_package_loading.py: load_packages 'pywt' can be imported. Added.
+2021-08-05 11:35:24,478 test_package_loading.py: load_packages 'win32' can be imported. Added.
+2021-08-05 11:35:24,497 test_package_loading.py: load_packages 'winpty' can be imported. Added.
+2021-08-05 11:35:24,497 test_package_loading.py: load_packages 'yaml' identified in sys.modules. Skipped.
+2021-08-05 11:35:24,497 test_package_loading.py: load_packages 'zmq' identified in sys.modules. Skipped.
+2021-08-05 11:35:24,502 test_package_loading.py: load_packages 'qdarkstyle' can be imported. Added.
+2021-08-05 11:35:24,964 test_package_loading.py: load_packages 'qtawesome' can be imported. Added.
+2021-08-05 11:35:24,967 test_package_loading.py: load_packages 'qtconsole' can be imported. Added.
+2021-08-05 11:35:24,967 test_package_loading.py: load_packages 'qtpy' identified in sys.modules. Skipped.
+2021-08-05 11:35:24,967 test_package_loading.py: load_packages 'regex' identified in sys.modules. Skipped.
+2021-08-05 11:35:24,967 test_package_loading.py: load_packages 'requests' identified in sys.modules. Skipped.
+2021-08-05 11:35:24,969 test_package_loading.py: load_packages 'rope' can be imported. Added.
+2021-08-05 11:35:25,039 test_package_loading.py: load_packages 'rtree' can be imported. Added.
+2021-08-05 11:35:25,171 test_package_loading.py: load_packages 'ruamel_yaml' can be imported. Added.
+2021-08-05 11:35:25,268 test_package_loading.py: load_packages 'skimage' can be imported. Added.
+2021-08-05 11:35:25,268 test_package_loading.py: load_packages 'sklearn' identified in sys.modules. Skipped.
+2021-08-05 11:35:25,268 test_package_loading.py: load_packages 'scipy' identified in sys.modules. Skipped.
+2021-08-05 11:35:25,350 font_manager.py     : _rebuild   Generating new fontManager, this may take some time...
+2021-08-05 11:35:27,350 test_package_loading.py: load_packages 'seaborn' can be imported. Added.
+2021-08-05 11:35:27,350 test_package_loading.py: load_packages 'send2trash' identified in sys.modules. Skipped.
+2021-08-05 11:35:27,350 test_package_loading.py: load_packages 'setuptools' identified in sys.modules. Skipped.
+2021-08-05 11:35:27,352 test_package_loading.py: load_packages 'simplegeneric' can be imported. Added.
+2021-08-05 11:35:27,356 test_package_loading.py: load_packages 'singledispatch' can be imported. Added.
+2021-08-05 11:35:27,356 test_package_loading.py: load_packages 'sip' identified in sys.modules. Skipped.
+2021-08-05 11:35:27,356 test_package_loading.py: load_packages 'six' identified in sys.modules. Skipped.
+2021-08-05 11:35:27,356 test_package_loading.py: load_packages 'sniffio' identified in sys.modules. Skipped.
+2021-08-05 11:35:27,356 test_package_loading.py: load_packages 'snowballstemmer' identified in sys.modules. Skipped.
+2021-08-05 11:35:27,364 test_package_loading.py: load_packages 'sortedcollections' can be imported. Added.
+2021-08-05 11:35:27,364 test_package_loading.py: load_packages 'sortedcontainers' identified in sys.modules. Skipped.
+2021-08-05 11:35:27,364 test_package_loading.py: load_packages 'soupsieve' identified in sys.modules. Skipped.
+2021-08-05 11:35:27,371 test_package_loading.py: load_packages 'sphinx' can be imported. Added.
+2021-08-05 11:35:27,372 test_package_loading.py: load_packages 'sphinxcontrib' identified in sys.modules. Skipped.
+2021-08-05 11:35:27,377 test_package_loading.py: load_packages 'spyder' can be imported. Added.
+2021-08-05 11:35:27,383 test_package_loading.py: load_packages 'spyder_kernels' can be imported. Added.
+2021-08-05 11:35:27,583 test_package_loading.py: load_packages 'sqlalchemy' can be imported. Added.
+2021-08-05 11:35:27,583 test_package_loading.py: load_packages 'sqlite3' identified in sys.modules. Skipped.
+2021-08-05 11:35:27,583 test_package_loading.py: load_packages 'statsmodels' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,288 test_package_loading.py: load_packages 'sympy' can be imported. Added.
+2021-08-05 11:35:28,288 test_package_loading.py: load_packages 'tblib' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,296 test_package_loading.py: load_packages 'terminado' can be imported. Added.
+2021-08-05 11:35:28,296 test_package_loading.py: load_packages 'testpath' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,308 test_package_loading.py: load_packages 'textdistance' can be imported. Added.
+2021-08-05 11:35:28,308 test_package_loading.py: load_packages cannot import the 'texttable' module. ERROR.
+2021-08-05 11:35:28,310 test_package_loading.py: load_packages 'threadpoolctl' can be imported. Added.
+2021-08-05 11:35:28,312 test_package_loading.py: load_packages 'three_merge' can be imported. Added.
+2021-08-05 11:35:28,366 test_package_loading.py: load_packages 'tifffile' can be imported. Added.
+2021-08-05 11:35:28,366 test_package_loading.py: load_packages 'tkinter' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,366 test_package_loading.py: load_packages 'toml' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,366 test_package_loading.py: load_packages 'toolz' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,366 test_package_loading.py: load_packages 'tornado' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,376 test_package_loading.py: load_packages 'tqdm' can be imported. Added.
+2021-08-05 11:35:28,376 test_package_loading.py: load_packages 'traitlets' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,376 test_package_loading.py: load_packages 'typed_ast' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,376 test_package_loading.py: load_packages 'typing_extensions' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,391 test_package_loading.py: load_packages 'ujson' can be imported. Added.
+2021-08-05 11:35:28,395 test_package_loading.py: load_packages 'unicodecsv' can be imported. Added.
+2021-08-05 11:35:28,395 test_package_loading.py: load_packages 'urllib3' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,397 test_package_loading.py: load_packages 'watchdog' can be imported. Added.
+2021-08-05 11:35:28,397 test_package_loading.py: load_packages 'wcwidth' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,397 test_package_loading.py: load_packages 'webencodings' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,398 test_package_loading.py: load_packages 'werkzeug' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,398 test_package_loading.py: load_packages 'wheel' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,399 test_package_loading.py: load_packages 'widgetsnbextension' can be imported. Added.
+2021-08-05 11:35:28,401 test_package_loading.py: load_packages 'win_inet_pton' can be imported. Added.
+2021-08-05 11:35:28,411 test_package_loading.py: load_packages 'win_unicode_console' can be imported. Added.
+2021-08-05 11:35:28,413 test_package_loading.py: load_packages 'wincertstore' can be imported. Added.
+2021-08-05 11:35:28,413 test_package_loading.py: load_packages 'winpty' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,413 test_package_loading.py: load_packages 'wrapt' identified in sys.modules. Skipped.
+2021-08-05 11:35:28,430 test_package_loading.py: load_packages 'xlrd' can be imported. Added.
+2021-08-05 11:35:28,467 test_package_loading.py: load_packages 'xlsxwriter' can be imported. Added.
+2021-08-05 11:35:30,534 test_package_loading.py: load_packages 'xlwings' can be imported. Added.
+2021-08-05 11:35:30,566 test_package_loading.py: load_packages 'xlwt' can be imported. Added.
+2021-08-05 11:35:30,570 test_package_loading.py: load_packages 'xmltodict' can be imported. Added.
+2021-08-05 11:35:30,570 test_package_loading.py: load_packages 'lzma' identified in sys.modules. Skipped.
+2021-08-05 11:35:30,570 test_package_loading.py: load_packages 'yaml' identified in sys.modules. Skipped.
+2021-08-05 11:35:30,603 test_package_loading.py: load_packages 'yapf' can be imported. Added.
+2021-08-05 11:35:30,603 test_package_loading.py: load_packages 'zmq' identified in sys.modules. Skipped.
+2021-08-05 11:35:30,618 test_package_loading.py: load_packages 'zict' can be imported. Added.
+2021-08-05 11:35:30,618 test_package_loading.py: load_packages 'zipp' identified in sys.modules. Skipped.
+2021-08-05 11:35:30,618 test_package_loading.py: load_packages 'zlib' identified in sys.modules. Skipped.
+2021-08-05 11:35:30,926 test_package_loading.py: load_packages 'control' can be imported. Added.
+2021-08-05 11:35:31,252 test_package_loading.py: load_packages 'nidaqmx' can be imported. Added.
+2021-08-05 11:35:31,306 test_package_loading.py: load_packages 'pulp' can be imported. Added.
