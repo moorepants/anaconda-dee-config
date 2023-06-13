@@ -1,6 +1,6 @@
 # README Testing Loading of Modules installed
 
-Bart Gerritse, EWI
+Bart Gerritsen, EWI
 
 Summer 2021
 
