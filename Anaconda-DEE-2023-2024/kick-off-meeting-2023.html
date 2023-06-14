@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>kick-off-meeting-2023</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="kick-off-meeting-2023_files/libs/clipboard/clipboard.min.js"></script>
+<script src="kick-off-meeting-2023_files/libs/quarto-html/quarto.js"></script>
+<script src="kick-off-meeting-2023_files/libs/quarto-html/popper.min.js"></script>
+<script src="kick-off-meeting-2023_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="kick-off-meeting-2023_files/libs/quarto-html/anchor.min.js"></script>
+<link href="kick-off-meeting-2023_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="kick-off-meeting-2023_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="kick-off-meeting-2023_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="kick-off-meeting-2023_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="kick-off-meeting-2023_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="anaconda-dee-config-2023-2024" class="level1">
+<h1>Anaconda DEE Config 2023-2024</h1>
+<blockquote class="blockquote">
+<p>Kick-off meeting June 13, 2023</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Jason K. Moore (JM, 3Me)<br>
+Kevin Geboers (KG, ICT-WPS)<br>
+Ciprian Ionescu (CI, EWI)<br>
+Bart Gerritsen (BG, EWI)</p>
+</blockquote>
+<hr>
+<blockquote class="blockquote">
+<p>DEE = Digital Exam Environment</p>
+</blockquote>
+<hr>
+<section id="goal" class="level2">
+<h2 class="anchored" data-anchor-id="goal">Goal</h2>
+<ol type="1">
+<li>discussing the <strong>2023-2024 DEE configuration</strong> update process</li>
+<li>finding a successor for BG, who will be away after this update cycle.</li>
+</ol>
+</section>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p>Open discussion on the future of:</p>
+<ol type="1">
+<li><p>the DEE and the way we set it up now</p></li>
+<li><p>the present use of <strong>Vocareum</strong> and the impediments experienced</p></li>
+<li><p>alternatives, most profoundly:</p>
+<ul>
+<li>using a <strong>JupyterHub</strong> instead of Vocareum, and;</li>
+<li>using other tools than the <strong>NotebookApp</strong></li>
+</ul></li>
+</ol>
+<section id="dee-setup" class="level3">
+<h3 class="anchored" data-anchor-id="dee-setup">1. DEE setup</h3>
+<p>Vocareum contains a proprietary implementation of a JupyterHub, the use of which is now contracted on a limited commercial contract. Vocareum is used for lab assignments campus-wide, but does not comply with the Digital Exam Environment standards and can therefor not be used for exams. Exams are held in the DEE, using the NotebookApp running Python and friends as offered in the Anaconda installation.</p>
+<p>The choice with respect to organizing the DEE, is:</p>
+<ul>
+<li><p>maintaining an single, expanded DEE in which the needs/desires of every faculty user for every course is covered</p></li>
+<li><p>splitting into multiple environments, easier to tweak, but coming with a need for <em>environment management</em> by ICT-WPS</p></li>
+</ul>
+<p>As or now, we continue opting for implementing a single, expanded <code>base</code> environment for everyone in the DEE, following the procedure we developed over recent years.</p>
+</section>
+<section id="vocareum" class="level3">
+<h3 class="anchored" data-anchor-id="vocareum">2. Vocareum</h3>
+<p>Vocareum is still in a restricted, try-out setup, running largely limited and obsolete tools and versions. Request for upgrades and expansions have been unfruitful so far. This leads to serious problems in the Exam preparations across courses using it.</p>
+<p>Main problem:</p>
+<ul>
+<li><p>It is unclear if this can be repaired before the next academic year</p></li>
+<li><p>We need some final decision making here, in view of our planning</p></li>
+</ul>
+</section>
+<section id="jupyterhub-and-other-tools" class="level3">
+<h3 class="anchored" data-anchor-id="jupyterhub-and-other-tools">3. JupyterHub and other tools</h3>
+<p>Without dwelling on technical details:</p>
+<ul>
+<li><p>the use of TU Delft JupyterHub was discussed as a viable alternative for Vocareum’s proprietary JupyterHub implementation</p></li>
+<li><p>along with this, we discussed the use of JupyterLab, VSCode and other IDE’s for students and staff during courses <em>and</em> during exams</p></li>
+</ul>
+<p>Main considerations;</p>
+<ul>
+<li><p>using a JupyterHub is the only feasible-and-affordable way to streamline (the increasing demand for) auto-graded digital exams on a massive scale, obeying the Delft University Digital Exam Environment standards, without confusing students due to differences in their working environments within and across their courses</p></li>
+<li><p>using a JupyterHub enables a seamless and affordable way to cooperate in (the increasing demand for) cross-university labs, assignments and possibly also exams, without compromising standards such as the Digital Exam Environment Standards</p></li>
+<li><p>using a JupyterHub opens up a natural migration path for scaling up and/or outsourcing trustworthy exam tools to SURF. SURF could operate the tools, while account end exam management remains at the university</p></li>
+<li><p>a business case could be worked out as a further underpinning of the above</p></li>
+</ul>
+</section>
+</section>
+<section id="further-steps" class="level2">
+<h2 class="anchored" data-anchor-id="further-steps">Further steps</h2>
+<ol type="1">
+<li><p>booting up and taking usual further steps to draft the DEE’s <code>base</code> environment like we did in the past years (BG + KG)</p></li>
+<li><p>setting up a side track to further investigate (possibly: prototype) a campus-wide JupyterHub for assignments <em>and</em> exams (KG+JM+BG+CI). A business case may be part of the activities. The base case will compare a possible Vocareum update with the migration towards a JupyterHub solution</p></li>
+<li><p>ICT-WPS (KG) to investigate the possibilities for a project to guide the prototyping of a JupyterHub solution, 3mE (JM) to bring in the (halted) proposal for a JupyterHub plus related materials, as a kick off for this effort, EWI (BG+CI) to investigate the possibilities for EWI-students to serve as a TA in this</p></li>
+</ol>
+</section>
+<section id="future" class="level2">
+<h2 class="anchored" data-anchor-id="future">Future</h2>
+<p>At the start of the meeting, JM was found willing to take over the efforts of BG, who will be leaving the DUT within a couple of months. As a first step, BG and JK will discuss the handing over of the existing <code>Anaconda-DEE-config</code> repo on <code>Gitlab</code>.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
