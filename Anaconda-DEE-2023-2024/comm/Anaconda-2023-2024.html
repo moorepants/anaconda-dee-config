@@ -1,0 +1,2834 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>anaconda-2023-2024</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="Anaconda-2023-2024_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Anaconda-2023-2024_files/libs/quarto-html/quarto.js"></script>
+<script src="Anaconda-2023-2024_files/libs/quarto-html/popper.min.js"></script>
+<script src="Anaconda-2023-2024_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Anaconda-2023-2024_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Anaconda-2023-2024_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Anaconda-2023-2024_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Anaconda-2023-2024_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Anaconda-2023-2024_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Anaconda-2023-2024_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="anaconda-installation-2023-2024" class="level1">
+<h1>Anaconda-Installation 2023-2024</h1>
+<section id="configuration-and-implementation-proposal" class="level3">
+<h3 class="anchored" data-anchor-id="configuration-and-implementation-proposal">Configuration and Implementation Proposal</h3>
+<p>Bart Gerritsen, TU Delft - EEMCS</p>
+<p>version: June 15, 2023</p>
+<hr>
+</section>
+</section>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p><a href="http://python.org">Python</a> is a programming language enjoying an ever growing application in our Bachelor, Master and PhD curriculums across all faculties. In order to prevent campus-wide cluttering due to a mismatch of versions and configurations, <a href="https://intranet.tudelft.nl/en/-/software-for-education-1?p_l_back_url=%2Fen%2Fsearch%3FtudDepartmentCategoryIds%3D122160">ICT-WPS</a> creates a centrally agreed Python installation, which will be used, among others, in the DigitalExam Exam environment during on-campus exams. Once agreed, prepared and tested, this Anaconda installation will be kept frozen throughout the entire academic year. Of course, local installations can be changed and extended, but these changes will not be mirrored in the DigitalExam environment during the year.</p>
+<p>The basis for this installation is <a href="http://anaconda.org">Anaconda</a>, which apart from Python(3) itself, also includes (amongst others) IPython, Jupyter, R, Spyder, and Visual Studio Code. We customary base the installation for the next academic year on the latest version of Anaconda, currently the 2023.03 version of March 2023, running Python 3.10.</p>
+<figure class="figure">
+<img src="nav-2023.03-1.png" alt="Anaconda Navigator" style="width:85%" class="figure-img">
+<figcaption class="figure-caption">
+Fig.1: Anaconda Navigator Version 2023.03-1.
+</figcaption>
+</figure>
+</section>
+<section id="proposal" class="level1">
+<h1>Proposal</h1>
+<p>What we propose is this:</p>
+<ol type="1">
+<li>we replace the current Anaconda-installation by the <a href="https://www.anaconda.com/products/individual">Anaconda Individual Edition version 2023.03</a>, running Python 3.10</li>
+<li>to configure this installation such that it can be used with Spyder, JupyterLab and Jupyter Notebook, and Visual Studio Code and PyCharm</li>
+<li>to complement this configuration with packages needed by you for educational purposes, as specified by you</li>
+</ol>
+</section>
+<section id="you-are-asked" class="level1">
+<h1>You are asked:</h1>
+<ol type="1">
+<li>to send us asap <strong>a reply email</strong> saying you AGREE/DISAGREE with this Proposal;</li>
+<li>to tick packages below in the <strong>ANNEX A</strong> you want to be included in the <code>base</code> environment (the standard installation, say), and supplement the <strong>ANNEX A</strong> by adding packages (<em>packages</em>, <em>modules</em>) currently missing from the list but needed by you. You may want to consult <strong>ANNEX B</strong> to learn what your extra packages requests where <strong>last year</strong>.</li>
+</ol>
+<p>We will then process your response. If needed, we contact you directly. If you want to be involved in testing of the final installation, please let us know, in your reply.</p>
+</section>
+<section id="during-the-2023-2024-curriculum" class="level1">
+<h1>During the 2023-2024 Curriculum</h1>
+<p>As stated, once accepted and released, the version of Anaconda 2023-2024 <strong>will be frozen throughout the academic year</strong>. This is a critical demand holding for the Digital Exam Environment.</p>
+<p><strong><em>Please respond asap.</em></strong></p>
+<p><strong><em>Feel free to provide us with your needs for additional packages.</em></strong></p>
+<p><strong><em>We may have missed colleagues who should also have received this email, but are not on the mailing list. Please feel free to forward this email, as you see fit.</em></strong></p>
+<div style="page-break-after: always; visibility: hidden">
+<p>|pagebreak</p>
+</div>
+</section>
+<section id="annex-a-list-of-packages-electable-for-the-base-environment" class="level1">
+<h1>ANNEX A: list of packages ‘electable’ for the <code>base</code>-environment</h1>
+<table class="table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 29%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">PACKAGE NAME</th>
+<th style="text-align: center;">VERSION</th>
+<th style="text-align: left;">BUILD</th>
+<th style="text-align: left;">CHANNEL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">alabaster</td>
+<td style="text-align: center;">0.7.12</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">anaconda-client</td>
+<td style="text-align: center;">1.11.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">anaconda-navigator</td>
+<td style="text-align: center;">2.4.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">anaconda-project</td>
+<td style="text-align: center;">0.11.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">anyio</td>
+<td style="text-align: center;">3.5.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">appdirs</td>
+<td style="text-align: center;">1.4.4</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">argon2-cffi</td>
+<td style="text-align: center;">21.3.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">argon2-cffi-bindings</td>
+<td style="text-align: center;">21.2.0</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">arrow</td>
+<td style="text-align: center;">1.2.3</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">astroid</td>
+<td style="text-align: center;">2.14.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">astropy</td>
+<td style="text-align: center;">5.1</td>
+<td style="text-align: left;">py310h9128911_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">asttokens</td>
+<td style="text-align: center;">2.0.5</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">atomicwrites</td>
+<td style="text-align: center;">1.4.0</td>
+<td style="text-align: left;">py_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">attrs</td>
+<td style="text-align: center;">22.1.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">automat</td>
+<td style="text-align: center;">20.2.0</td>
+<td style="text-align: left;">py_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">autopep8</td>
+<td style="text-align: center;">1.6.0</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">babel</td>
+<td style="text-align: center;">2.11.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">backcall</td>
+<td style="text-align: center;">0.2.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">backports</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">backports.functools_lru_cache</td>
+<td style="text-align: center;">1.6.4</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">backports.tempfile</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">backports.weakref</td>
+<td style="text-align: center;">1.0.post1</td>
+<td style="text-align: left;">py_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">bcrypt</td>
+<td style="text-align: center;">3.2.0</td>
+<td style="text-align: left;">py310h2bbff1b_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">beautifulsoup4</td>
+<td style="text-align: center;">4.11.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">binaryornot</td>
+<td style="text-align: center;">0.4.4</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">black</td>
+<td style="text-align: center;">22.6.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">blas</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: left;">mkl</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bleach</td>
+<td style="text-align: center;">4.1.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">blosc</td>
+<td style="text-align: center;">1.21.3</td>
+<td style="text-align: left;">h6c2663c_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bokeh</td>
+<td style="text-align: center;">2.4.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">boltons</td>
+<td style="text-align: center;">23.0.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bottleneck</td>
+<td style="text-align: center;">1.3.5</td>
+<td style="text-align: left;">py310h9128911_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">brotli</td>
+<td style="text-align: center;">1.0.9</td>
+<td style="text-align: left;">h2bbff1b_7</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">brotli-bin</td>
+<td style="text-align: center;">1.0.9</td>
+<td style="text-align: left;">h2bbff1b_7</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">brotlipy</td>
+<td style="text-align: center;">0.7.0</td>
+<td style="text-align: left;">py310h2bbff1b_1002</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bzip2</td>
+<td style="text-align: center;">1.0.8</td>
+<td style="text-align: left;">he774522_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ca-certificates</td>
+<td style="text-align: center;">2023.01.10</td>
+<td style="text-align: left;">haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">certifi</td>
+<td style="text-align: center;">2022.12.7</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">cffi</td>
+<td style="text-align: center;">1.15.1</td>
+<td style="text-align: left;">py310h2bbff1b_3</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cfitsio</td>
+<td style="text-align: center;">3.470</td>
+<td style="text-align: left;">h2bbff1b_7</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">chardet</td>
+<td style="text-align: center;">4.0.0</td>
+<td style="text-align: left;">py310haa95532_1003</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">charls</td>
+<td style="text-align: center;">2.2.0</td>
+<td style="text-align: left;">h6c2663c_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">charset-normalizer</td>
+<td style="text-align: center;">2.0.4</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">click</td>
+<td style="text-align: center;">8.0.4</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">cloudpickle</td>
+<td style="text-align: center;">2.0.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">clyent</td>
+<td style="text-align: center;">1.2.2</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">colorama</td>
+<td style="text-align: center;">0.4.6</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">colorcet</td>
+<td style="text-align: center;">3.0.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">comm</td>
+<td style="text-align: center;">0.1.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">conda</td>
+<td style="text-align: center;">23.3.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">conda-build</td>
+<td style="text-align: center;">3.24.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">conda-content-trust</td>
+<td style="text-align: center;">0.1.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">conda-pack</td>
+<td style="text-align: center;">0.6.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">conda-package-handling</td>
+<td style="text-align: center;">2.0.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">conda-package-streaming</td>
+<td style="text-align: center;">0.7.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">conda-repo-cli</td>
+<td style="text-align: center;">1.0.41</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">conda-token</td>
+<td style="text-align: center;">0.4.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">conda-verify</td>
+<td style="text-align: center;">3.4.2</td>
+<td style="text-align: left;">py_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">console_shortcut</td>
+<td style="text-align: center;">0.1.1</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">constantly</td>
+<td style="text-align: center;">15.1.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">contourpy</td>
+<td style="text-align: center;">1.0.5</td>
+<td style="text-align: left;">py310h59b6b97_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cookiecutter</td>
+<td style="text-align: center;">1.7.3</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">cryptography</td>
+<td style="text-align: center;">39.0.1</td>
+<td style="text-align: left;">py310h21b164f_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cssselect</td>
+<td style="text-align: center;">1.1.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">curl</td>
+<td style="text-align: center;">7.87.0</td>
+<td style="text-align: left;">h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cycler</td>
+<td style="text-align: center;">0.11.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">cytoolz</td>
+<td style="text-align: center;">0.12.0</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">daal4py</td>
+<td style="text-align: center;">2023.0.2</td>
+<td style="text-align: left;">py310hf497b98_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">dal</td>
+<td style="text-align: center;">2023.0.1</td>
+<td style="text-align: left;">h59b6b97_26646</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">dask</td>
+<td style="text-align: center;">2022.7.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">dask-core</td>
+<td style="text-align: center;">2022.7.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">datashader</td>
+<td style="text-align: center;">0.14.4</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">datashape</td>
+<td style="text-align: center;">0.5.4</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">debugpy</td>
+<td style="text-align: center;">1.5.1</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">decorator</td>
+<td style="text-align: center;">5.1.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">defusedxml</td>
+<td style="text-align: center;">0.7.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">diff-match-patch</td>
+<td style="text-align: center;">20200713</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">dill</td>
+<td style="text-align: center;">0.3.6</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">distributed</td>
+<td style="text-align: center;">2022.7.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">docstring-to-markdown</td>
+<td style="text-align: center;">0.11</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">docutils</td>
+<td style="text-align: center;">0.18.1</td>
+<td style="text-align: left;">py310haa95532_3</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">entrypoints</td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">et_xmlfile</td>
+<td style="text-align: center;">1.1.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">executing</td>
+<td style="text-align: center;">0.8.3</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">filelock</td>
+<td style="text-align: center;">3.9.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">flake8</td>
+<td style="text-align: center;">6.0.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">flask</td>
+<td style="text-align: center;">2.2.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">flit-core</td>
+<td style="text-align: center;">3.6.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fonttools</td>
+<td style="text-align: center;">4.25.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">freetype</td>
+<td style="text-align: center;">2.12.1</td>
+<td style="text-align: left;">ha860e81_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fsspec</td>
+<td style="text-align: center;">2022.11.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">future</td>
+<td style="text-align: center;">0.18.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">gensim</td>
+<td style="text-align: center;">4.3.0</td>
+<td style="text-align: left;">py310h4ed8f06_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">giflib</td>
+<td style="text-align: center;">5.2.1</td>
+<td style="text-align: left;">h8cc25b3_3</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">glib</td>
+<td style="text-align: center;">2.69.1</td>
+<td style="text-align: left;">h5dc1a3c_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">glob2</td>
+<td style="text-align: center;">0.7</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">greenlet</td>
+<td style="text-align: center;">2.0.1</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">gst-plugins-base</td>
+<td style="text-align: center;">1.18.5</td>
+<td style="text-align: left;">h9e645db_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">gstreamer</td>
+<td style="text-align: center;">1.18.5</td>
+<td style="text-align: left;">hd78058f_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">h5py</td>
+<td style="text-align: center;">3.7.0</td>
+<td style="text-align: left;">py310hfc34f40_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">hdf5</td>
+<td style="text-align: center;">1.10.6</td>
+<td style="text-align: left;">h1756f20_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">heapdict</td>
+<td style="text-align: center;">1.0.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">holoviews</td>
+<td style="text-align: center;">1.15.4</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">huggingface_hub</td>
+<td style="text-align: center;">0.10.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">hvplot</td>
+<td style="text-align: center;">0.8.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">hyperlink</td>
+<td style="text-align: center;">21.0.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">icc_rt</td>
+<td style="text-align: center;">2022.1.0</td>
+<td style="text-align: left;">h6049295_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">icu</td>
+<td style="text-align: center;">58.2</td>
+<td style="text-align: left;">ha925a31_3</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">idna</td>
+<td style="text-align: center;">3.4</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">imagecodecs</td>
+<td style="text-align: center;">2021.8.26</td>
+<td style="text-align: left;">py310h4c966c4_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">imageio</td>
+<td style="text-align: center;">2.26.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">imagesize</td>
+<td style="text-align: center;">1.4.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">imbalanced-learn</td>
+<td style="text-align: center;">0.10.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">importlib-metadata</td>
+<td style="text-align: center;">4.11.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">importlib_metadata</td>
+<td style="text-align: center;">4.11.3</td>
+<td style="text-align: left;">hd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">incremental</td>
+<td style="text-align: center;">21.3.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">inflection</td>
+<td style="text-align: center;">0.5.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">iniconfig</td>
+<td style="text-align: center;">1.1.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">intake</td>
+<td style="text-align: center;">0.6.7</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">intel-openmp</td>
+<td style="text-align: center;">2021.4.0</td>
+<td style="text-align: left;">haa95532_3556</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">intervaltree</td>
+<td style="text-align: center;">3.1.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ipykernel</td>
+<td style="text-align: center;">6.19.2</td>
+<td style="text-align: left;">py310h9909e9c_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ipython</td>
+<td style="text-align: center;">8.10.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ipython_genutils</td>
+<td style="text-align: center;">0.2.0</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ipywidgets</td>
+<td style="text-align: center;">7.6.5</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">isort</td>
+<td style="text-align: center;">5.9.3</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">itemadapter</td>
+<td style="text-align: center;">0.3.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">itemloaders</td>
+<td style="text-align: center;">1.0.4</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">itsdangerous</td>
+<td style="text-align: center;">2.0.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jedi</td>
+<td style="text-align: center;">0.18.1</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jellyfish</td>
+<td style="text-align: center;">0.9.0</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jinja2</td>
+<td style="text-align: center;">3.1.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jinja2-time</td>
+<td style="text-align: center;">0.2.0</td>
+<td style="text-align: left;">pyhd3eb1b0_3</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jmespath</td>
+<td style="text-align: center;">0.10.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">joblib</td>
+<td style="text-align: center;">1.1.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jpeg</td>
+<td style="text-align: center;">9e</td>
+<td style="text-align: left;">h2bbff1b_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jq</td>
+<td style="text-align: center;">1.6</td>
+<td style="text-align: left;">haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">json5</td>
+<td style="text-align: center;">0.9.6</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jsonpatch</td>
+<td style="text-align: center;">1.32</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jsonpointer</td>
+<td style="text-align: center;">2.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jsonschema</td>
+<td style="text-align: center;">4.17.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jupyter</td>
+<td style="text-align: center;">1.0.0</td>
+<td style="text-align: left;">py310haa95532_8</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jupyter_client</td>
+<td style="text-align: center;">7.3.4</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jupyter_console</td>
+<td style="text-align: center;">6.6.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jupyter_core</td>
+<td style="text-align: center;">5.2.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jupyter_server</td>
+<td style="text-align: center;">1.23.4</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jupyterlab</td>
+<td style="text-align: center;">3.5.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jupyterlab_pygments</td>
+<td style="text-align: center;">0.1.2</td>
+<td style="text-align: left;">py_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jupyterlab_server</td>
+<td style="text-align: center;">2.19.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jupyterlab_widgets</td>
+<td style="text-align: center;">1.0.0</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jxrlib</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: left;">he774522_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">keyring</td>
+<td style="text-align: center;">23.4.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">kiwisolver</td>
+<td style="text-align: center;">1.4.4</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">lazy-object-proxy</td>
+<td style="text-align: center;">1.6.0</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">lcms2</td>
+<td style="text-align: center;">2.12</td>
+<td style="text-align: left;">h83e58a3_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">lerc</td>
+<td style="text-align: center;">3.0</td>
+<td style="text-align: left;">hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libaec</td>
+<td style="text-align: center;">1.0.4</td>
+<td style="text-align: left;">h33f27b4_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libarchive</td>
+<td style="text-align: center;">3.6.2</td>
+<td style="text-align: left;">hebabd0d_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libbrotlicommon</td>
+<td style="text-align: center;">1.0.9</td>
+<td style="text-align: left;">h2bbff1b_7</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libbrotlidec</td>
+<td style="text-align: center;">1.0.9</td>
+<td style="text-align: left;">h2bbff1b_7</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libbrotlienc</td>
+<td style="text-align: center;">1.0.9</td>
+<td style="text-align: left;">h2bbff1b_7</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libclang</td>
+<td style="text-align: center;">12.0.0</td>
+<td style="text-align: left;">default_h627e005_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libcurl</td>
+<td style="text-align: center;">7.87.0</td>
+<td style="text-align: left;">h86230a5_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libdeflate</td>
+<td style="text-align: center;">1.17</td>
+<td style="text-align: left;">h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libffi</td>
+<td style="text-align: center;">3.4.2</td>
+<td style="text-align: left;">hd77b12b_6</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libiconv</td>
+<td style="text-align: center;">1.16</td>
+<td style="text-align: left;">h2bbff1b_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">liblief</td>
+<td style="text-align: center;">0.12.3</td>
+<td style="text-align: left;">hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libogg</td>
+<td style="text-align: center;">1.3.5</td>
+<td style="text-align: left;">h2bbff1b_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libpng</td>
+<td style="text-align: center;">1.6.39</td>
+<td style="text-align: left;">h8cc25b3_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libsodium</td>
+<td style="text-align: center;">1.0.18</td>
+<td style="text-align: left;">h62dcd97_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libspatialindex</td>
+<td style="text-align: center;">1.9.3</td>
+<td style="text-align: left;">h6c2663c_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libssh2</td>
+<td style="text-align: center;">1.10.0</td>
+<td style="text-align: left;">hcd4344a_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libtiff</td>
+<td style="text-align: center;">4.5.0</td>
+<td style="text-align: left;">h6c2663c_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libuv</td>
+<td style="text-align: center;">1.44.2</td>
+<td style="text-align: left;">h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libvorbis</td>
+<td style="text-align: center;">1.3.7</td>
+<td style="text-align: left;">he774522_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libwebp</td>
+<td style="text-align: center;">1.2.4</td>
+<td style="text-align: left;">hbc33d0d_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libwebp-base</td>
+<td style="text-align: center;">1.2.4</td>
+<td style="text-align: left;">h2bbff1b_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libxml2</td>
+<td style="text-align: center;">2.9.14</td>
+<td style="text-align: left;">h0ad7f3c_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">libxslt</td>
+<td style="text-align: center;">1.1.35</td>
+<td style="text-align: left;">h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">libzopfli</td>
+<td style="text-align: center;">1.0.3</td>
+<td style="text-align: left;">ha925a31_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">llvmlite</td>
+<td style="text-align: center;">0.39.1</td>
+<td style="text-align: left;">py310h23ce68f_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">locket</td>
+<td style="text-align: center;">1.0.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">lxml</td>
+<td style="text-align: center;">4.9.1</td>
+<td style="text-align: left;">py310h1985fb9_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">lz4</td>
+<td style="text-align: center;">3.1.3</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">lz4-c</td>
+<td style="text-align: center;">1.9.4</td>
+<td style="text-align: left;">h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">lzo</td>
+<td style="text-align: center;">2.10</td>
+<td style="text-align: left;">he774522_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">m2-msys2-runtime</td>
+<td style="text-align: center;">2.5.0.17080.65c939c</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">m2-patch</td>
+<td style="text-align: center;">2.7.5</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">m2w64-libwinpthread-git</td>
+<td style="text-align: center;">5.0.0.4634.697f757</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">markdown</td>
+<td style="text-align: center;">3.4.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">markupsafe</td>
+<td style="text-align: center;">2.1.1</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">matplotlib</td>
+<td style="text-align: center;">3.7.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">matplotlib-base</td>
+<td style="text-align: center;">3.7.0</td>
+<td style="text-align: left;">py310h4ed8f06_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">matplotlib-inline</td>
+<td style="text-align: center;">0.1.6</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mccabe</td>
+<td style="text-align: center;">0.7.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">menuinst</td>
+<td style="text-align: center;">1.4.19</td>
+<td style="text-align: left;">py310h59b6b97_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mistune</td>
+<td style="text-align: center;">0.8.4</td>
+<td style="text-align: left;">py310h2bbff1b_1000</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mkl</td>
+<td style="text-align: center;">2021.4.0</td>
+<td style="text-align: left;">haa95532_640</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mkl-service</td>
+<td style="text-align: center;">2.4.0</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mkl_fft</td>
+<td style="text-align: center;">1.3.1</td>
+<td style="text-align: left;">py310ha0764ea_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mkl_random</td>
+<td style="text-align: center;">1.2.2</td>
+<td style="text-align: left;">py310h4ed8f06_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mock</td>
+<td style="text-align: center;">4.0.3</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mpmath</td>
+<td style="text-align: center;">1.2.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">msgpack-python</td>
+<td style="text-align: center;">1.0.3</td>
+<td style="text-align: left;">py310h59b6b97_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">msys2-conda-epoch</td>
+<td style="text-align: center;">20160418</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">multipledispatch</td>
+<td style="text-align: center;">0.6.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">munkres</td>
+<td style="text-align: center;">1.1.4</td>
+<td style="text-align: left;">py_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mypy_extensions</td>
+<td style="text-align: center;">0.4.3</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">navigator-updater</td>
+<td style="text-align: center;">0.3.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nbclassic</td>
+<td style="text-align: center;">0.5.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">nbclient</td>
+<td style="text-align: center;">0.5.13</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nbconvert</td>
+<td style="text-align: center;">6.5.4</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">nbformat</td>
+<td style="text-align: center;">5.7.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nest-asyncio</td>
+<td style="text-align: center;">1.5.6</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">networkx</td>
+<td style="text-align: center;">2.8.4</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ninja</td>
+<td style="text-align: center;">1.10.2</td>
+<td style="text-align: left;">haa95532_5</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ninja-base</td>
+<td style="text-align: center;">1.10.2</td>
+<td style="text-align: left;">h6d14046_5</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nltk</td>
+<td style="text-align: center;">3.7</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">notebook</td>
+<td style="text-align: center;">6.5.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">notebook-shim</td>
+<td style="text-align: center;">0.2.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">numba</td>
+<td style="text-align: center;">0.56.4</td>
+<td style="text-align: left;">py310h4ed8f06_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">numexpr</td>
+<td style="text-align: center;">2.8.4</td>
+<td style="text-align: left;">py310hd213c9f_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">numpy</td>
+<td style="text-align: center;">1.23.5</td>
+<td style="text-align: left;">py310h60c9a35_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">numpy-base</td>
+<td style="text-align: center;">1.23.5</td>
+<td style="text-align: left;">py310h04254f7_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">numpydoc</td>
+<td style="text-align: center;">1.5.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">openjpeg</td>
+<td style="text-align: center;">2.4.0</td>
+<td style="text-align: left;">h4fc8c34_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">openpyxl</td>
+<td style="text-align: center;">3.0.10</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">openssl</td>
+<td style="text-align: center;">1.1.1t</td>
+<td style="text-align: left;">h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">packaging</td>
+<td style="text-align: center;">22.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pandas</td>
+<td style="text-align: center;">1.5.3</td>
+<td style="text-align: left;">py310h4ed8f06_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pandocfilters</td>
+<td style="text-align: center;">1.5.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">panel</td>
+<td style="text-align: center;">0.14.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">param</td>
+<td style="text-align: center;">1.12.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">paramiko</td>
+<td style="text-align: center;">2.8.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">parsel</td>
+<td style="text-align: center;">1.6.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">parso</td>
+<td style="text-align: center;">0.8.3</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">partd</td>
+<td style="text-align: center;">1.2.0</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pathlib</td>
+<td style="text-align: center;">1.0.1</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pathspec</td>
+<td style="text-align: center;">0.10.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">patsy</td>
+<td style="text-align: center;">0.5.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pcre</td>
+<td style="text-align: center;">8.45</td>
+<td style="text-align: left;">hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pep8</td>
+<td style="text-align: center;">1.7.1</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pexpect</td>
+<td style="text-align: center;">4.8.0</td>
+<td style="text-align: left;">pyhd3eb1b0_3</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pickleshare</td>
+<td style="text-align: center;">0.7.5</td>
+<td style="text-align: left;">pyhd3eb1b0_1003</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pillow</td>
+<td style="text-align: center;">9.4.0</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pip</td>
+<td style="text-align: center;">22.3.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pkginfo</td>
+<td style="text-align: center;">1.9.6</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">platformdirs</td>
+<td style="text-align: center;">2.5.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">plotly</td>
+<td style="text-align: center;">5.9.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pluggy</td>
+<td style="text-align: center;">1.0.0</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ply</td>
+<td style="text-align: center;">3.11</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pooch</td>
+<td style="text-align: center;">1.4.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">powershell_shortcut</td>
+<td style="text-align: center;">0.0.1</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">poyo</td>
+<td style="text-align: center;">0.5.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">prometheus_client</td>
+<td style="text-align: center;">0.14.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">prompt-toolkit</td>
+<td style="text-align: center;">3.0.36</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">prompt_toolkit</td>
+<td style="text-align: center;">3.0.36</td>
+<td style="text-align: left;">hd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">protego</td>
+<td style="text-align: center;">0.1.16</td>
+<td style="text-align: left;">py_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">psutil</td>
+<td style="text-align: center;">5.9.0</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ptyprocess</td>
+<td style="text-align: center;">0.7.0</td>
+<td style="text-align: left;">pyhd3eb1b0_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pure_eval</td>
+<td style="text-align: center;">0.2.2</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">py</td>
+<td style="text-align: center;">1.11.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">py-lief</td>
+<td style="text-align: center;">0.12.3</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyasn1</td>
+<td style="text-align: center;">0.4.8</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pyasn1-modules</td>
+<td style="text-align: center;">0.2.8</td>
+<td style="text-align: left;">py_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pycodestyle</td>
+<td style="text-align: center;">2.10.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pycosat</td>
+<td style="text-align: center;">0.6.4</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pycparser</td>
+<td style="text-align: center;">2.21</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pyct</td>
+<td style="text-align: center;">0.5.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pycurl</td>
+<td style="text-align: center;">7.45.1</td>
+<td style="text-align: left;">py310hcd4344a_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pydispatcher</td>
+<td style="text-align: center;">2.0.5</td>
+<td style="text-align: left;">py310haa95532_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pydocstyle</td>
+<td style="text-align: center;">6.3.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pyerfa</td>
+<td style="text-align: center;">2.0.0</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyflakes</td>
+<td style="text-align: center;">3.0.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pygments</td>
+<td style="text-align: center;">2.11.2</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyhamcrest</td>
+<td style="text-align: center;">2.0.2</td>
+<td style="text-align: left;">pyhd3eb1b0_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pyjwt</td>
+<td style="text-align: center;">2.4.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pylint</td>
+<td style="text-align: center;">2.16.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pylint-venv</td>
+<td style="text-align: center;">2.3.0</td>
+<td style="text-align: left;">pypi_0</td>
+<td style="text-align: left;">pypi</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyls-spyder</td>
+<td style="text-align: center;">0.4.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pynacl</td>
+<td style="text-align: center;">1.5.0</td>
+<td style="text-align: left;">py310h8cc25b3_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyodbc</td>
+<td style="text-align: center;">4.0.34</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pyopenssl</td>
+<td style="text-align: center;">23.0.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyparsing</td>
+<td style="text-align: center;">3.0.9</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pyqt</td>
+<td style="text-align: center;">5.15.7</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyqt5-sip</td>
+<td style="text-align: center;">12.11.0</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pyqtwebengine</td>
+<td style="text-align: center;">5.15.7</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyrsistent</td>
+<td style="text-align: center;">0.18.0</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pysocks</td>
+<td style="text-align: center;">1.7.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pytables</td>
+<td style="text-align: center;">3.7.0</td>
+<td style="text-align: left;">py310h388bc9b_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pytest</td>
+<td style="text-align: center;">7.1.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">python</td>
+<td style="text-align: center;">3.10.9</td>
+<td style="text-align: left;">h966fe2a_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">python-dateutil</td>
+<td style="text-align: center;">2.8.2</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">python-fastjsonschema</td>
+<td style="text-align: center;">2.16.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">python-libarchive-c</td>
+<td style="text-align: center;">2.9</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">python-lsp-black</td>
+<td style="text-align: center;">1.2.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">python-lsp-jsonrpc</td>
+<td style="text-align: center;">1.0.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">python-lsp-server</td>
+<td style="text-align: center;">1.7.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">python-slugify</td>
+<td style="text-align: center;">5.0.2</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">python-snappy</td>
+<td style="text-align: center;">0.6.1</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pytoolconfig</td>
+<td style="text-align: center;">1.2.5</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pytorch</td>
+<td style="text-align: center;">1.12.1</td>
+<td style="text-align: left;">cpu_py310h5e1f01c_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pytz</td>
+<td style="text-align: center;">2022.7</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyviz_comms</td>
+<td style="text-align: center;">2.0.2</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pywavelets</td>
+<td style="text-align: center;">1.4.1</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pywin32</td>
+<td style="text-align: center;">305</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pywin32-ctypes</td>
+<td style="text-align: center;">0.2.0</td>
+<td style="text-align: left;">py310haa95532_1000</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pywinpty</td>
+<td style="text-align: center;">2.0.10</td>
+<td style="text-align: left;">py310h5da7b33_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pyyaml</td>
+<td style="text-align: center;">6.0</td>
+<td style="text-align: left;">py310h2bbff1b_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyzmq</td>
+<td style="text-align: center;">23.2.0</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">qdarkstyle</td>
+<td style="text-align: center;">3.0.2</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">qstylizer</td>
+<td style="text-align: center;">0.2.2</td>
+<td style="text-align: left;">pypi_0</td>
+<td style="text-align: left;">pypi</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">qt-main</td>
+<td style="text-align: center;">5.15.2</td>
+<td style="text-align: left;">he8e5bd7_7</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">qt-webengine</td>
+<td style="text-align: center;">5.15.9</td>
+<td style="text-align: left;">hb9a9bb5_5</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">qtawesome</td>
+<td style="text-align: center;">1.2.2</td>
+<td style="text-align: left;">pypi_0</td>
+<td style="text-align: left;">pypi</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">qtconsole</td>
+<td style="text-align: center;">5.4.0</td>
+<td style="text-align: left;">pypi_0</td>
+<td style="text-align: left;">pypi</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">qtpy</td>
+<td style="text-align: center;">2.2.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">qtwebkit</td>
+<td style="text-align: center;">5.212</td>
+<td style="text-align: left;">h3ad3cdb_4</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">queuelib</td>
+<td style="text-align: center;">1.5.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">regex</td>
+<td style="text-align: center;">2022.7.9</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">requests</td>
+<td style="text-align: center;">2.28.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">requests-file</td>
+<td style="text-align: center;">1.5.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">requests-toolbelt</td>
+<td style="text-align: center;">0.9.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">rope</td>
+<td style="text-align: center;">1.7.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">rtree</td>
+<td style="text-align: center;">1.0.1</td>
+<td style="text-align: left;">py310h2eaa2aa_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ruamel.yaml</td>
+<td style="text-align: center;">0.17.21</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ruamel.yaml.clib</td>
+<td style="text-align: center;">0.2.6</td>
+<td style="text-align: left;">py310h2bbff1b_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ruamel_yaml</td>
+<td style="text-align: center;">0.17.21</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">scikit-image</td>
+<td style="text-align: center;">0.19.3</td>
+<td style="text-align: left;">py310hd77b12b_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">scikit-learn</td>
+<td style="text-align: center;">1.2.1</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">scikit-learn-intelex</td>
+<td style="text-align: center;">2023.0.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">scipy</td>
+<td style="text-align: center;">1.10.0</td>
+<td style="text-align: left;">py310hb9afe5d_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">scrapy</td>
+<td style="text-align: center;">2.8.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">seaborn</td>
+<td style="text-align: center;">0.12.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">send2trash</td>
+<td style="text-align: center;">1.8.0</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">service_identity</td>
+<td style="text-align: center;">18.1.0</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">setuptools</td>
+<td style="text-align: center;">65.6.3</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sip</td>
+<td style="text-align: center;">6.6.2</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">six</td>
+<td style="text-align: center;">1.16.0</td>
+<td style="text-align: left;">pyhd3eb1b0_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">smart_open</td>
+<td style="text-align: center;">5.2.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">snappy</td>
+<td style="text-align: center;">1.1.9</td>
+<td style="text-align: left;">h6c2663c_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sniffio</td>
+<td style="text-align: center;">1.2.0</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">snowballstemmer</td>
+<td style="text-align: center;">2.2.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sortedcontainers</td>
+<td style="text-align: center;">2.4.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">soupsieve</td>
+<td style="text-align: center;">2.3.2.post1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sphinx</td>
+<td style="text-align: center;">5.0.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sphinxcontrib-applehelp</td>
+<td style="text-align: center;">1.0.2</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sphinxcontrib-devhelp</td>
+<td style="text-align: center;">1.0.2</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sphinxcontrib-htmlhelp</td>
+<td style="text-align: center;">2.0.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sphinxcontrib-jsmath</td>
+<td style="text-align: center;">1.0.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sphinxcontrib-qthelp</td>
+<td style="text-align: center;">1.0.3</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sphinxcontrib-serializinghtml</td>
+<td style="text-align: center;">1.1.5</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">spyder</td>
+<td style="text-align: center;">5.4.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">spyder-kernels</td>
+<td style="text-align: center;">2.4.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sqlalchemy</td>
+<td style="text-align: center;">1.4.39</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sqlite</td>
+<td style="text-align: center;">3.40.1</td>
+<td style="text-align: left;">h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">stack_data</td>
+<td style="text-align: center;">0.2.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">statsmodels</td>
+<td style="text-align: center;">0.13.5</td>
+<td style="text-align: left;">py310h9128911_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sympy</td>
+<td style="text-align: center;">1.11.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tabulate</td>
+<td style="text-align: center;">0.8.10</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tbb</td>
+<td style="text-align: center;">2021.7.0</td>
+<td style="text-align: left;">h59b6b97_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tbb4py</td>
+<td style="text-align: center;">2021.7.0</td>
+<td style="text-align: left;">py310h59b6b97_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tblib</td>
+<td style="text-align: center;">1.7.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tenacity</td>
+<td style="text-align: center;">8.0.1</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">terminado</td>
+<td style="text-align: center;">0.17.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">text-unidecode</td>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">textdistance</td>
+<td style="text-align: center;">4.2.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">threadpoolctl</td>
+<td style="text-align: center;">2.2.0</td>
+<td style="text-align: left;">pyh0d69192_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">three-merge</td>
+<td style="text-align: center;">0.1.1</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tifffile</td>
+<td style="text-align: center;">2021.7.2</td>
+<td style="text-align: left;">pyhd3eb1b0_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tinycss2</td>
+<td style="text-align: center;">1.2.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tk</td>
+<td style="text-align: center;">8.6.12</td>
+<td style="text-align: left;">h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tldextract</td>
+<td style="text-align: center;">3.2.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tokenizers</td>
+<td style="text-align: center;">0.11.4</td>
+<td style="text-align: left;">py310he5181cf_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">toml</td>
+<td style="text-align: center;">0.10.2</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tomli</td>
+<td style="text-align: center;">2.0.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tomlkit</td>
+<td style="text-align: center;">0.11.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">toolz</td>
+<td style="text-align: center;">0.12.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tornado</td>
+<td style="text-align: center;">6.1</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tqdm</td>
+<td style="text-align: center;">4.64.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">traitlets</td>
+<td style="text-align: center;">5.7.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">transformers</td>
+<td style="text-align: center;">4.24.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">twisted</td>
+<td style="text-align: center;">22.2.0</td>
+<td style="text-align: left;">py310h2bbff1b_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">twisted-iocpsupport</td>
+<td style="text-align: center;">1.0.2</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">typing-extensions</td>
+<td style="text-align: center;">4.4.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">typing_extensions</td>
+<td style="text-align: center;">4.4.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tzdata</td>
+<td style="text-align: center;">2022g</td>
+<td style="text-align: left;">h04d1e81_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ujson</td>
+<td style="text-align: center;">5.4.0</td>
+<td style="text-align: left;">py310hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">unidecode</td>
+<td style="text-align: center;">1.2.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">urllib3</td>
+<td style="text-align: center;">1.26.14</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">vc</td>
+<td style="text-align: center;">14.2</td>
+<td style="text-align: left;">h21ff451_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">vs2015_runtime</td>
+<td style="text-align: center;">14.27.29016</td>
+<td style="text-align: left;">h5e58377_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">w3lib</td>
+<td style="text-align: center;">1.21.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">watchdog</td>
+<td style="text-align: center;">2.1.6</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">wcwidth</td>
+<td style="text-align: center;">0.2.5</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">webencodings</td>
+<td style="text-align: center;">0.5.1</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">websocket-client</td>
+<td style="text-align: center;">0.58.0</td>
+<td style="text-align: left;">py310haa95532_4</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">werkzeug</td>
+<td style="text-align: center;">2.2.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">whatthepatch</td>
+<td style="text-align: center;">1.0.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">wheel</td>
+<td style="text-align: center;">0.38.4</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">widgetsnbextension</td>
+<td style="text-align: center;">3.5.2</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">win_inet_pton</td>
+<td style="text-align: center;">1.1.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">wincertstore</td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: left;">py310haa95532_2</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">winpty</td>
+<td style="text-align: center;">0.4.3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">wrapt</td>
+<td style="text-align: center;">1.14.1</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">xarray</td>
+<td style="text-align: center;">2022.11.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">xlwings</td>
+<td style="text-align: center;">0.29.1</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">xz</td>
+<td style="text-align: center;">5.2.10</td>
+<td style="text-align: left;">h8cc25b3_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">yaml</td>
+<td style="text-align: center;">0.2.5</td>
+<td style="text-align: left;">he774522_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">yapf</td>
+<td style="text-align: center;">0.31.0</td>
+<td style="text-align: left;">pyhd3eb1b0_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zeromq</td>
+<td style="text-align: center;">4.3.4</td>
+<td style="text-align: left;">hd77b12b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zfp</td>
+<td style="text-align: center;">0.5.5</td>
+<td style="text-align: left;">hd77b12b_6</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zict</td>
+<td style="text-align: center;">2.1.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zipp</td>
+<td style="text-align: center;">3.11.0</td>
+<td style="text-align: left;">py310haa95532_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zlib</td>
+<td style="text-align: center;">1.2.13</td>
+<td style="text-align: left;">h8cc25b3_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zope</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: left;">py310haa95532_1</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zope.interface</td>
+<td style="text-align: center;">5.4.0</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zstandard</td>
+<td style="text-align: center;">0.19.0</td>
+<td style="text-align: left;">py310h2bbff1b_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zstd</td>
+<td style="text-align: center;">1.5.2</td>
+<td style="text-align: left;">h19a0ad4_0</td>
+<td style="text-align: left;">defaults</td>
+</tr>
+</tbody>
+</table>
+<p>Is your package not in the above table? Simply add it in your reply email. We will try to find and integrate it.</p>
+<div style="page-break-after: always; visibility: hidden">
+<p>|pagebreak</p>
+</div>
+</section>
+<section id="annex-b-requests-for-additional-packages-in-2022-2023" class="level1">
+<h1>ANNEX B: requests for additional packages in 2022-2023</h1>
+<p>The following amendments/ extensions to the base package have been issued <strong>last year</strong>.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">package</th>
+<th style="text-align: left;">version</th>
+<th style="text-align: left;">requester</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">asciitree</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Bart Gerritsen</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">colorful</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Bart Gerritsen</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">configparser</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Bart Gerritsen</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">control</td>
+<td style="text-align: left;">0.9.2</td>
+<td style="text-align: left;">Rene van Paassen (LR), Ferdinand Postema (LR)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">coolprop</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Erik Ulijn (3mE)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">dwf</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Ferdinand Postema (LR)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">intervals</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Bart Gerritsen</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">more_itertools</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Petra Heijnen (TBM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">nidaqmx-python</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Ferdinand Postema (LR), Margreet Docter (TNW)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pulp</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Bart Gerritsen</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pydstool</td>
+<td style="text-align: left;">0.91.0</td>
+<td style="text-align: left;">Rene van Paassen (LR)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pyvisa</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Margreet Docter (TNW)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pyvisgraph</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Petra Heijnen (TBM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">salabim</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Erik Ulijn (3mE)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">shapely</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Petra Heijnen (TBM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">slycot</td>
+<td style="text-align: left;">0.4.0.0</td>
+<td style="text-align: left;">Rene van Paassen (LR), Ferdinand Postema (LR)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">stopit</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Bart Gerritsen</td>
+</tr>
+</tbody>
+</table>
+<p>All requests by Peter Somhorst (3mE) were already contained in base.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
