@@ -15,7 +15,13 @@ This is the Anaconda Digital Exam Environment configuration description. For mor
 | 2022.01 | 2022 | 2022-2023 update |
 | 2023.01 | 2023 | 2023-2024 update |
 
-*) each year, the version is update to contain the May-release of Anaconda (labelled as version: `year.05`). For details, refer to [anaconda.org](http://anaconda.org). In the academic cycle 2022-2023, there is not May-version of Anaconda; we took the `2023.03`-version, released in March. 
+### 2020-2022
+
+*) each year, the version is update to contain the May-release of Anaconda (labelled as version: `year.05`). For details, refer to [anaconda.org](http://anaconda.org). 
+
+### 2023
+
+In the academic cycle 2022-2023, there is not May-version of Anaconda; we took the `2023.03`-version, released in March. In this year, for the first time, we will also make use of multiple __conda virutal environment__, which through the use of package `nb_conda_kernels` installed in the `base` environment, can be selected in all Notebooks and in Spyder. This relaxes the need to install all desired packages __collectively__ in a single `base` environment
 
 ## Organization of this repo
 This repo is organized on a per-year (year-cyclic) basis.
