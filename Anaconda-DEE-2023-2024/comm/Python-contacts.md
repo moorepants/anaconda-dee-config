@@ -102,8 +102,8 @@ We received the following requirements and desires from the contacts;
 | Contact                 | Email                           | Faculty | Department | Requirements       |
 |:------------------------|:--------------------------------|:--------|:-----------|:-------------------|
 | Margreet Docter         | M.W.Docter@tudelft.nl           |         |            | nb2214-2023        |
-| Rene van Paasen         | M.M.vanPaassen@tudelft.nl       |         |            | control (0.9.4)    |
-|                         |                                 |         |            | slycot (0.5.4)     |
+| Rene van Paasen         | M.M.vanPaassen@tudelft.nl       |         |            | control            |
+|                         |                                 |         |            | slycot             |
 | Mark Bakker             | Mark.Bakker@tudelft.nl          | CEG     |            |                    |
 | Ferdinand Grozema       | F.C.Grozema@tudelft.nl          | AS      | Chem Eng   |                    |
 | Regine Vroom            | R.W.Vroom@TUDelft.nl            | 3mE     | PME        |                    |
@@ -116,7 +116,7 @@ We received the following requirements and desires from the contacts;
 |                         |                                 |         |            | notebook extensions|
 |                         |                                 |         |            | TOC2               |
 | Peter van Nieuwenhuizen | P.R.vanNieuwenhuizen@tudelft.nl |         |            |                    |
-| Sander Bergman          | S.C.Bregman@tudelft.nl          | 3mE     |            | control (0.9.2)    |
+| Sander Bergman          | S.C.Bregman@tudelft.nl          | 3mE     |            | control            |
 | Valeri Markine          | V.L.Markine@tudelft.nl          |         |            |                    |
 | Bart Gerritsen          | B.H.M.Gerritsen@tudelft.nl      | EEMCS   | ST         | ti3111tu-2023      |
 
