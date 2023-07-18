@@ -1,20 +1,16 @@
 # Anaconda-2023.03-1 Installation
 
-
 ### Authors
 
 Bart Gerritsen, Jason Moore
 
-
 ### Contact
 
-E-mail: B.H.M.Gerritsen@TUDelft.nl, J.K.Moore@TUDelft.nl 
-
+E-mail: B.H.M.Gerritsen@TUDelft.nl, J.K.Moore@TUDelft.nl
 
 ## Intended audience
 
 ICT Staff -- Werkplekbeheer, Digital Exam environment, Anaconda admins
-
 
 ## Overview
 
@@ -38,39 +34,35 @@ After the initial installation of the `base` environment, the following **post-i
 - prepare the `base` environment to serve as a fall-back and basis for cloning for auxiliary virtual environments
 - configure Visual Studio Code
 - configure PyCharm Community
-
 - a few additional Conda _virtual environments_ are installed along, to satisfy specific user needs, without cluttering the `base` installation itself:
 
   1. Visual Studio Code virtual environment including notebooks
-  1. PyCharm Community virtual environment (no notebooks)
-  1. Spyder-with-notebook virtual environment
-  1. dedicated environments for Anaconda users according to their `requirements.txt` or `requirements.yml` 
+  2. PyCharm Community virtual environment (no notebooks)
+  3. Spyder-with-notebook virtual environment
+  4. dedicated environments for Anaconda users according to their `requirements.txt` or `requirements.yml`
 
 These environments are packed in the DEE so that they will also be available during exams. The final packaged version may be transferred to the [TU Delft Software Portal](https://software.tudelft.nl).
 
 **Remark**
 Students or Staff requiring an installation under _their own user account_ can download and installer from the [Anaconda site](https://www.anaconda.com/products/individual), install, and activate or install the additional packages themselves. If for a minimum installation or just for a Python interpreter, they may want to install `miniconda`. See the [Miniconda documentation](https://docs.conda.io/en/latest/miniconda.html).
 
-
 ## Resources
 
 The following resources can be consulted:
 
-1. [Anaconda Individual Edition 2023.07-0](https://www.anaconda.com/products/individual)
-1. [Conda configuration](https://conda.io/projects/conda/en/latest/configuration.html)
-1. [Installation procedure for multiple users -- system installation](https://docs.anaconda.com/anaconda/install/multi-user/)
-1. [PyCharm Professional with Anaconda plugin](https://www.jetbrains.com/pycharm/promo/anaconda/)
-1. [Packages](https://docs.anaconda.com/anaconda/packages/pkg-docs/)
-1. [Miniconda resources](https://docs.conda.io/en/latest/miniconda.html)
-1. [Hashes](https://docs.anaconda.com/anaconda/install/hashes/)
-
+1. [Anaconda Individual Edition 2023.07-](https://www.anaconda.com/products/individual)1
+2. [Conda configuration](https://conda.io/projects/conda/en/latest/configuration.html)
+3. [Installation procedure for multiple users -- system installation](https://docs.anaconda.com/anaconda/install/multi-user/)
+4. [PyCharm Professional with Anaconda plugin](https://www.jetbrains.com/pycharm/promo/anaconda/)
+5. [Packages](https://docs.anaconda.com/anaconda/packages/pkg-docs/)
+6. [Miniconda resources](https://docs.conda.io/en/latest/miniconda.html)
+7. [Hashes](https://docs.anaconda.com/anaconda/install/hashes/)
 
 ## Anticipating future steps
 
 We are moving towards the use of JupyterLab in this update cycle, so as [to prepare for the advent of Notebook 7](https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html) and many useful JupyterLab extensions currently under development. Students and staff members also find more comfort in working with the more versatile and modern JupyterLab, compared to the (more archaic) Jupyter Notebook web interface. One of the benefits is the advent of a debug mode for rudimentary forms of debugging while programming in notebooks.
 
 Pre-releases of the Notebook 7 are available, [see here](https://discourse.jupyter.org/t/notebook-7-pre-releases-are-available/16063). Also [see here](https://jupyter.org/enhancement-proposals/79-notebook-v7/notebook-v7.html) and [here](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html#classic)
-
 
 ## Installation -- what steps need to be undertaken?
 
@@ -80,44 +72,48 @@ For some Jupyter extensions, we need a NodeJS-server running. See https://nodejs
 
 ### Installation stages overview
 
- * Stage 1: install [Anaconda Individual Edition](https://www.anaconda.com/products/individual) (details are given below) and post install preparatory additions to obtain a general-purpose-yet-stable `base` that can be augmented by a suite of specialized virtual environments for use in IDE -- as environment -- and use in notebooks -- as kernels --. Also prepare the tools (integrated Development Environments -- IDE's) for generic use and specific use of virtual environments. 
- 
+* Stage 1: install [Anaconda Individual Edition](https://www.anaconda.com/products/individual) (details are given below) and post install preparatory additions to obtain a general-purpose-yet-stable `base` that can be augmented by a suite of specialized virtual environments for use in IDE -- as environment -- and use in notebooks -- as kernels --. Also prepare the tools (integrated Development Environments -- IDE's) for generic use and specific use of virtual environments.
+
  Tools such as DataSpell, Datalore, and Watson will not be pre-configures. Users can do this by themselves, using the online tutorials.
 
- * Stage 2: post-install the extra environments as specified by Faculties during the Consultation Round (see below), --one by one--, and post-install other kernels in the environments if needed; see [the IPython documentation](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) 
+* Stage 2: post-install the extra environments as specified by Faculties during the Consultation Round (see below), --one by one--, and post-install other kernels in the environments if needed; see [the IPython documentation](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
+* Stage 3: do prototype testing on the proto-installation obtained
 
- * Stage 3: do prototype testing on the proto-installation obtained
-
- 
 ### Stage 1: Install Anaconda Individual Edition
 
 Make sure you have Administrator rights.
 
 1. download the **installer** from the [download site](https://www.anaconda.com/products/individual), for Windows, MacOs, or Linux (see below)
-1. install the software as it comes; select **multiple**  users (all users) for a system install (with _"sys.prefix"_)
-1. make a user group `Anaconda-Users` and adjust the file access rights for this group as specified in  [the installation procedure](https://docs.anaconda.com/anaconda/install/multi-user/)
-1. integrate the `~.jupyter/custom/` forlder (with its content) in the default user profile for the DigitalExam environment
-1. verify that the installation has been successful (see below)
+2. install the software as it comes; select **multiple**  users (all users) for a system install (with _"sys.prefix"_)
+3. make a user group `Anaconda-Users` and adjust the file access rights for this group as specified in  [the installation procedure](https://docs.anaconda.com/anaconda/install/multi-user/)
+4. integrate the `~.jupyter/custom/` forlder (with its content) in the default user profile for the DigitalExam environment
+5. verify that the installation has been successful (see below)
 
 #### Documentation Windows installation procedure
+
 1. [single user](https://docs.anaconda.com/anaconda/install/windows/)
-1. [multiple user](https://docs.anaconda.com/anaconda/install/multi-user/#multi-user-anaconda-installation-on-windows)
+2. [multiple user](https://docs.anaconda.com/anaconda/install/multi-user/#multi-user-anaconda-installation-on-windows)
 
 #### MacOS installation procedure
+
 1. [single user](https://docs.anaconda.com/anaconda/install/mac-os/)
-1. [command line install](https://docs.anaconda.com/anaconda/install/mac-os/#using-the-command-line-install)
+2. [command line install](https://docs.anaconda.com/anaconda/install/mac-os/#using-the-command-line-install)
 
 #### Linux installation procedure
+
 1. [single user](https://docs.anaconda.com/anaconda/install/linux/#installing-on-linux)
-1. [multiple users](https://docs.anaconda.com/anaconda/install/multi-user/#multi-user-anaconda-installation-on-linux)
+2. [multiple users](https://docs.anaconda.com/anaconda/install/multi-user/#multi-user-anaconda-installation-on-linux)
 
 #### Verification the Installation
+
 See [here](https://docs.anaconda.com/anaconda/install/verify-install/) how to verify the installation. Also, see [here](https://docs.anaconda.com/anaconda/user-guide/getting-started/). [This page](https://docs.anaconda.com/anaconda/) also gives some pointers.
 
 #### Troubleshooting
+
 [Problems and troubleshooting](https://docs.anaconda.com/anaconda/user-guide/troubleshooting/)
 
 #### FAQ
+
 [Frequently asked questions](https://docs.anaconda.com/anaconda/user-guide/faq/#distribution-faq-windows-folder)
 
 ### Stage 2:
@@ -132,42 +128,25 @@ repeat this for each of the extra virtual environments:
 
    Check that your `base` (`anaconda3`) environment is active:
 
-    ```bash
-    $conda env list
-    ```
+    ``bash     $conda env list     ``
 
     should output something similar to:
 
-    ```bash
-    # conda environments:
-    #
-    base                  *  C:\ProgramData\Anaconda\anaconda3
-    Spyder_nb_env            C:\ProgramData\Anaconda\envs\Spyder_nb_env
-    ```
+    ``bash     # conda environments:     #     base                  *  C:\ProgramData\Anaconda\anaconda3     Spyder_nb_env            C:\ProgramData\Anaconda\envs\Spyder_nb_env     ``
 
-    The active environment is the one with the '*' . 
+    The active environment is the one with the '*' .
 
-    Now you can use the `requirements.yml` file to let conda install all other packages, as follows (assume the name of the environment to create is in file mpp`requirements.yml`):
+    Now you can use the`requirements.yml` file to let conda install all other packages, as follows (assume the name of the environment to create is in file mpp `requirements.yml`):
 
-    ```bash
-    conda env create -f requirements.yml 
-    ```
+    ``bash     conda env create -f requirements.yml      ``
 
     Be patient and monitor the process; it may take a while.
 
-    When having edited the `requirements.yml` for some reason, the easiest way to redo installation, is to lookup the environment name ENVNAME and:
+    When having edited the`requirements.yml` for some reason, the easiest way to redo installation, is to lookup the environment name ENVNAME and:
 
-    ```bash
-    conda remove -n ENVNAME --all
-    conda env create -f requirements.yml 
-    ```
+    ``bash     conda remove -n ENVNAME --all     conda env create -f requirements.yml      ``
 
     Want to do it interactively? From the Navigator, select the environment (left) and add or remove packages interactively (select installed/not installed box, lookup package and install or remove)
-
-
-
-
-
 
 In the PowerShell thus provided, check if the _base environment_ `anaconda3` is selected (as reflected in the prompt; here: `anaconda3`, which is good) and check if `python` and `conda` are in the path, by prompting their versions. The output should show something like:
 
@@ -181,26 +160,26 @@ conda 4.13.0
 
 We are now good to go installing the extra packages using `conda` commands on the command line. To install, issue the command in the rightmost column, in the table below, one-by-one, in alphabetical order:
 
-| package name | channel | command to issue in PowerShell |
-|:---|:---|:---|
-| asciitree | conda-forge | `conda install -c conda-forge asciitree` |
-| colorful | conda-forge | `conda install -c conda-forge colorful` |
-| configparser | conda-forge | `conda install -c conda-forge configparser` |
-| control |  conda-forge | `conda install -c conda-forge control` |
-| coolprop | conda-forge | `conda install -c conda-forge coolprop` |
-| intervals | conda-forge | `conda install -c conda-forge intervals` |
+| package name   | channel     | command to issue in PowerShell                  |
+| :------------- | :---------- | :---------------------------------------------- |
+| asciitree      | conda-forge | `conda install -c conda-forge asciitree`      |
+| colorful       | conda-forge | `conda install -c conda-forge colorful`       |
+| configparser   | conda-forge | `conda install -c conda-forge configparser`   |
+| control        | conda-forge | `conda install -c conda-forge control`        |
+| coolprop       | conda-forge | `conda install -c conda-forge coolprop`       |
+| intervals      | conda-forge | `conda install -c conda-forge intervals`      |
 | more_itertools | conda-forge | `conda install -c conda-forge more-itertools` |
 | nidaqmx-python | conda-forge | `conda install -c conda-forge nidaqmx-python` |
-| pulp | conda-forge | `conda install -c conda-forge pulp` |
-| pydot | conda-forge | `conda install -c conda-forge pydot` |
-| pydotplus | conda-forge | `conda install -c conda-forge pydotplus` |
-| pydstool | conda-forge | `conda install -c conda-forge pydstool` |
-| pygraphviz | alubbock | `conda install -c alubbock pygraphviz` |
-| pyvisa | conda-forge | `conda install -c conda-forge pyvisa` |
-| python-igraph | conda-forge | `conda install -c conda-forge python-igraph` |
-| shapely | conda-forge | `conda install -c conda-forge shapely` |
-| slycot | conda-forge |  `conda install -c conda-forge slycot` |
-| stopit | conda-forge | `conda install -c conda-forge stopit` |
+| pulp           | conda-forge | `conda install -c conda-forge pulp`           |
+| pydot          | conda-forge | `conda install -c conda-forge pydot`          |
+| pydotplus      | conda-forge | `conda install -c conda-forge pydotplus`      |
+| pydstool       | conda-forge | `conda install -c conda-forge pydstool`       |
+| pygraphviz     | alubbock    | `conda install -c alubbock pygraphviz`        |
+| pyvisa         | conda-forge | `conda install -c conda-forge pyvisa`         |
+| python-igraph  | conda-forge | `conda install -c conda-forge python-igraph`  |
+| shapely        | conda-forge | `conda install -c conda-forge shapely`        |
+| slycot         | conda-forge | `conda install -c conda-forge slycot`         |
+| stopit         | conda-forge | `conda install -c conda-forge stopit`         |
 
 Finally, still in the PowerShell like above, use `pip` to install packages that cannot be installed by `conda`. Usually, `conda` figures out for each of the packages to be installed, which _version_ is needed to keep the entire environment sane. Generally, `pip` does not do that. To that end, Anaconda has its own pip, to overcome this lack of _version control_:
 
@@ -208,6 +187,7 @@ Finally, still in the PowerShell like above, use `pip` to install packages that 
 conda list pip
 pip                       21.2.4           py39haa95532_0
 ```
+
 if not installed already, install `pip` using `conda`:
 
 ```powershell
@@ -216,14 +196,13 @@ conda install pip
 
 Then, in the Powershell:
 
-| package name | source / platform | command to issue in PowerShell |
-|:--------|:--------|:----------|
-| dwf | PyPI | `python -m pip install dwf` |
-| pyvisgraph | PyPI | `python -m pip install pyvisgraph` |
-| salabim | PyPI | `python -m pip install salabim` |
-| opencv-python | PyPI | `python -m pip install opencv-python` |
-| tsp | PyPI | `python -m pip install tsp` |
-
+| package name  | source / platform | command to issue in PowerShell          |
+| :------------ | :---------------- | :-------------------------------------- |
+| dwf           | PyPI              | `python -m pip install dwf`           |
+| pyvisgraph    | PyPI              | `python -m pip install pyvisgraph`    |
+| salabim       | PyPI              | `python -m pip install salabim`       |
+| opencv-python | PyPI              | `python -m pip install opencv-python` |
+| tsp           | PyPI              | `python -m pip install tsp`           |
 
 ## Verification installation
 
@@ -233,10 +212,9 @@ A first check might be to list all packages in the `base` environment, like so:
 
 ```shell
  conda list --verbose --name base > ~/ALL_PACKS_INSTALLED.txt
- ```
+```
 
 and then check out the generated file `~/ALL_PACKS_INSTALLED.txt` in your `$HOME` directory.
-
 
 ### Where are the modules installed?
 
@@ -284,7 +262,6 @@ This way, further inspection can be carried out as to the content of the install
 
 Done.
 
-
 # Appendix I
 
 List of packages installed in the base environment (`anaconda3`), supplemented with all packages requested by Faculties.
@@ -296,7 +273,6 @@ conda list --verbose --show-channel-urls --name base > ~/ALL_PACKS_INSTALLED.txt
 ```
 
 This gives something like:
-
 
 ```PowerShell
 # packages in environment at C:\Users\bhmgerritsen\Anaconda3:

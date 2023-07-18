@@ -4,7 +4,7 @@
 # conda packages, followed by pip
 #
 # ```bash
-# $ conda env create -f spyder_nb_2023.yml
+# $ conda env create -f spyder-nb-2023.yml
 # ```
 #
 # update using:
@@ -18,40 +18,34 @@
 # # example: install module pulp here in the notebook ...
 # import sys !{sys.executable} -m pip install pulp
 # ```
-# 
+#
 # Bart H.M. Gerritsen (EEMCS), version: 2023-1
 #
-name: ti3111tu-2023
+name: spyder-nb-2023
 channels:
-  - conda-forge
   - defaults
   - mro
 dependencies:
 - python==3.10
 - anaconda
+- nb_conda_kernels
 - jupyter
 - jupyterlab>=3.5.3
-- jupyter_contrib_nbextensions
-- spyder-notebook
-- nbgrader
+- qtconsole>=5.5
+- conda-forge::jupyter_contrib_nbextensions
+- conda-forge::spyder-notebook
+- numpy
+- scipy
 - matplotlib
-- asciitree
 - intervals
 - colorama
-- python-igraph
-- networkx
-- configparser
 - dataclasses
-- pygraphviz
-- pydot
-- black
-- pdoc3
+- nose
 - pytest
 - pylint
 - mypy
 - pip
-- pip:
+# - pip:
   # read all pip-packs to install in addition from file ...
-  - -r ti3111tu_requirements.txt
+  # - -r ti3111tu_requirements.txt
   # ... add any wheels below
-  
