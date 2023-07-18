@@ -1,49 +1,97 @@
-# Anaconda-2022.05 Installation
-Author: Bart Gerritsen
+# Anaconda-2023.03-1 Installation
 
-E-mail: B.H.M.Gerritsen@TUDelft.nl
+
+### Authors
+
+Bart Gerritsen, Jason Moore
+
+
+### Contact
+
+E-mail: B.H.M.Gerritsen@TUDelft.nl, J.K.Moore@TUDelft.nl 
 
 
 ## Intended audience
+
 ICT Staff -- Werkplekbeheer, Digital Exam environment, Anaconda admins
 
-## Overview
-This procedure describes how to install the TU Delft software portal Anaconda version;
 
-- the Anaconda base versions is the [Anaconda Individual Edition 2022.05](https://www.anaconda.com/products/individual). See menu option *Products*
+## Overview
+
+This procedure describes how to install the TU Delft DEE Anaconda version for 2023-2024;
+
+- the Anaconda base versions is the [Anaconda Individual Edition 2023.07-0](https://www.anaconda.com/products/individual). See menu option *Products*
 - the installation assumes **MULTIPLE users** (referred to as: _"system installation"_ , also referred to as _"sys.prefix"_)
 - as per recommendation by Anaconda, Anaconda users sharing a system installation are grouped and granted read and write permissions for the root folder and folders below
-- a single `base` environment (a.k.a. environment `anaconda3`), as created and configured in the official installation procedure by Anaconda, residing in `C:\ProgramData\Anaconda3`
-- the installation has to be **multi platform**;
-    - for Windows (X86_64)
-    - for MacOS
-    - for Linux
+- a `base` environment (a.k.a. environment `anaconda` or `anaconda3`), as created and configured in the official installation procedure by Anaconda, residing in `C:\ProgramData\Anaconda3`
+- the installation has to be **multi platform**
+  - for Windows (X86_64)
+  - for MacOS
+  - for Linux
 - the TU Delft stylesheet `tudelft.css` will not be installed in the system install, but in the users' `~/.jupyter/custom/` directory
-- this installation includes, among others, `Spyder`, `VisualStudio Code`, `Jupyter Notebook`, `JupyterLab`, and `RStudio`
+- this installation includes, among others, `Spyder`, `VisualStudio Code`, `Jupyter Notebook`, `JupyterLab`, `PyCharm Community`, `PyCharm Professional`, and `RStudio`
 - this installation includes `scikit-learn`, `TensorFlow`, and `PyTorch`, for Machine Learning
-- the Individual Edition is an **all-open-source** installation (no licenses required). This includes the installation of [PyCharm Professional with Anaconda Plugin](https://www.jetbrains.com/pycharm/promo/anaconda/) offered and promoted as part of the official installation, and **free-for-academic** use, a free [Community Edition of the JetBrains Datalore](https://datalore.jetbrains.com/) and [Trial version of Professional Edition of the JetBrains DataSpell](https://https://www.jetbrains.com/dataspell/), both for online editing and execution of Data Science Jupyter notebooks, and a trial version of [IBM Watson Studio for Anaconda users](https://dataplatform.cloud.ibm.com/login), that lets you run IBM Notebooks on IBM's Watson Studio for AI and data science, in the cloud.
+- the Individual Edition is an **all-open-source** installation (no licenses required), with a single exception: the [PyCharm Professional with Anaconda Plugin](https://www.jetbrains.com/pycharm/promo/anaconda/), offered and promoted as part of the official installation, comes as a 30-days free trial, after which a Jetbrains licencse is needed to continue its use. Workers and students of academic institutes such as the Delft University can acquire a free license. Furthermore, this includes the installation of [Visual Studio Code](https://code.visualstudio.com/) by Microsoft -- a multi-language, extendible software developing platform, and **free-for-all-usages**, a free [Community Edition of the JetBrains Datalore](https://datalore.jetbrains.com/) and [trial version of Professional Edition of the JetBrains DataSpell](https://https://www.jetbrains.com/dataspell/), both for online editing and execution of Data Science Jupyter notebooks, a **free-for-small teams** version of [JetBrains Datalore](https://www.jetbrains.com/datalore/) for data sciences and BI in Notebooks with Jupyter, Python and R, and a trial version of [IBM Watson Studio for Anaconda users](https://dataplatform.cloud.ibm.com/login), that lets you run IBM Notebooks on IBM's Watson Studio for AI and data science, in the cloud.
 
-After this installation, and after adding a few extra packages as per demand by various users in the Faculties, the packaging can commence and the final packaged version can be transferred to the [TU Delft Software Portal](https://software.tudelft.nl).
+After the initial installation of the `base` environment, the following **post-install steps** will be taken:
+
+- prepare the `base` environment to serve as a fall-back and basis for cloning for auxiliary virtual environments
+- configure Visual Studio Code
+- configure PyCharm Community
+
+- a few additional Conda _virtual environments_ are installed along, to satisfy specific user needs, without cluttering the `base` installation itself:
+
+  1. Visual Studio Code virtual environment including notebooks
+  1. PyCharm Community virtual environment (no notebooks)
+  1. Spyder-with-notebook virtual environment
+  1. dedicated environments for Anaconda users according to their `requirements.txt` or `requirements.yml` 
+
+These environments are packed in the DEE so that they will also be available during exams. The final packaged version may be transferred to the [TU Delft Software Portal](https://software.tudelft.nl).
 
 **Remark**
-Students or Staff requiring an installation under _their own user account_ can download and installer from the [Anaconda site](https://www.anaconda.com/products/individual), install, and activate or install the additional packages themselves. If for a minimum installation or just for a Python interpreter, they may want to install `miniconda`.
+Students or Staff requiring an installation under _their own user account_ can download and installer from the [Anaconda site](https://www.anaconda.com/products/individual), install, and activate or install the additional packages themselves. If for a minimum installation or just for a Python interpreter, they may want to install `miniconda`. See the [Miniconda documentation](https://docs.conda.io/en/latest/miniconda.html).
+
 
 ## Resources
-1. [Anaconda Individual Edition 2022.05](https://www.anaconda.com/products/individual)
-1. [Introduction Anaconda Individual Edition](https://www.anaconda.com/blog/individual-edition-2022-05)
+
+The following resources can be consulted:
+
+1. [Anaconda Individual Edition 2023.07-0](https://www.anaconda.com/products/individual)
+1. [Conda configuration](https://conda.io/projects/conda/en/latest/configuration.html)
 1. [Installation procedure for multiple users -- system installation](https://docs.anaconda.com/anaconda/install/multi-user/)
 1. [PyCharm Professional with Anaconda plugin](https://www.jetbrains.com/pycharm/promo/anaconda/)
 1. [Packages](https://docs.anaconda.com/anaconda/packages/pkg-docs/)
 1. [Miniconda resources](https://docs.conda.io/en/latest/miniconda.html)
 1. [Hashes](https://docs.anaconda.com/anaconda/install/hashes/)
 
+
+## Anticipating future steps
+
+We are moving towards the use of JupyterLab in this update cycle, so as [to prepare for the advent of Notebook 7](https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html) and many useful JupyterLab extensions currently under development. Students and staff members also find more comfort in working with the more versatile and modern JupyterLab, compared to the (more archaic) Jupyter Notebook web interface. One of the benefits is the advent of a debug mode for rudimentary forms of debugging while programming in notebooks.
+
+Pre-releases of the Notebook 7 are available, [see here](https://discourse.jupyter.org/t/notebook-7-pre-releases-are-available/16063). Also [see here](https://jupyter.org/enhancement-proposals/79-notebook-v7/notebook-v7.html) and [here](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html#classic)
+
+
 ## Installation -- what steps need to be undertaken?
 
- * Stage 1: install [Anaconda Individual Edition](https://www.anaconda.com/products/individual) (details are given below)
+### Prerequisites
 
- * Stage 2: post-install the extra packages as specified by Faculties during the Consultation Round (see below)
+For some Jupyter extensions, we need a NodeJS-server running. See https://nodejs.org for details and installers.
 
+### Installation stages overview
+
+ * Stage 1: install [Anaconda Individual Edition](https://www.anaconda.com/products/individual) (details are given below) and post install preparatory additions to obtain a general-purpose-yet-stable `base` that can be augmented by a suite of specialized virtual environments for use in IDE -- as environment -- and use in notebooks -- as kernels --. Also prepare the tools (integrated Development Environments -- IDE's) for generic use and specific use of virtual environments. 
+ 
+ Tools such as DataSpell, Datalore, and Watson will not be pre-configures. Users can do this by themselves, using the online tutorials.
+
+ * Stage 2: post-install the extra environments as specified by Faculties during the Consultation Round (see below), --one by one--, and post-install other kernels in the environments if needed; see [the IPython documentation](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) 
+
+ * Stage 3: do prototype testing on the proto-installation obtained
+
+ 
 ### Stage 1: Install Anaconda Individual Edition
+
+Make sure you have Administrator rights.
 
 1. download the **installer** from the [download site](https://www.anaconda.com/products/individual), for Windows, MacOs, or Linux (see below)
 1. install the software as it comes; select **multiple**  users (all users) for a system install (with _"sys.prefix"_)
@@ -74,11 +122,52 @@ See [here](https://docs.anaconda.com/anaconda/install/verify-install/) how to ve
 
 ### Stage 2:
 
-1. add (post-install) the extra packages to complete the installation as desired by the participants in the Consultation round (see specifications below)
+1. add (post-install) the extra virtual environments to complete the installation as desired by the participants in the Consultation round;
 
-Start by opening **Anaconda-Navigator** (from the Windows Start Menu) and from that environment launch PowerShell-Prompt (see image below).
+repeat this for each of the extra virtual environments:
 
-![Ananconda-Navigator](./images/nav-2022.05.png)
+   Start by opening **Anaconda-Navigator** (from the Windows Start Menu) and launch a PowerShell-Prompt (see image below).
+
+   ![Ananconda-Navigator](./images/nav-2023.07-0.png)
+
+   Check that your `base` (`anaconda3`) environment is active:
+
+    ```bash
+    $conda env list
+    ```
+
+    should output something similar to:
+
+    ```bash
+    # conda environments:
+    #
+    base                  *  C:\ProgramData\Anaconda\anaconda3
+    Spyder_nb_env            C:\ProgramData\Anaconda\envs\Spyder_nb_env
+    ```
+
+    The active environment is the one with the '*' . 
+
+    Now you can use the `requirements.yml` file to let conda install all other packages, as follows (assume the name of the environment to create is in file mpp`requirements.yml`):
+
+    ```bash
+    conda env create -f requirements.yml 
+    ```
+
+    Be patient and monitor the process; it may take a while.
+
+    When having edited the `requirements.yml` for some reason, the easiest way to redo installation, is to lookup the environment name ENVNAME and:
+
+    ```bash
+    conda remove -n ENVNAME --all
+    conda env create -f requirements.yml 
+    ```
+
+    Want to do it interactively? From the Navigator, select the environment (left) and add or remove packages interactively (select installed/not installed box, lookup package and install or remove)
+
+
+
+
+
 
 In the PowerShell thus provided, check if the _base environment_ `anaconda3` is selected (as reflected in the prompt; here: `anaconda3`, which is good) and check if `python` and `conda` are in the path, by prompting their versions. The output should show something like:
 
@@ -156,7 +245,7 @@ Find out as follows:
 Open a shell from the Anaconda Navigator. Then start the `Python` interpreter, check its version and do the same with `conda` (see above). Then, in this interactive shell:
 
 ```python
-Python 3.9.12 (main, Apr  4 2022, 05:22:27) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Python 3.9.12 (main, Apr  4 2023, 05:22:27) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from distutils.sysconfig import get_python_lib
 >>> print(f"{get_python_lib()}")
@@ -219,7 +308,7 @@ aiosignal                 1.2.0              pyhd3eb1b0_0    defaults
 alabaster                 0.7.12             pyhd3eb1b0_0    defaults
 alembic                   1.8.0              pyhd8ed1ab_0    conda-forge
 amply                     0.1.5              pyhd8ed1ab_0    conda-forge
-anaconda                  2022.05                  py39_0    defaults
+anaconda                  2023.05                  py39_0    defaults
 anaconda-client           1.9.0            py39haa95532_0    defaults
 anaconda-navigator        2.2.0            py39haa95532_0    defaults
 anaconda-project          0.10.2             pyhd3eb1b0_0    defaults
@@ -259,7 +348,7 @@ bottleneck                1.3.4            py39h080aedc_0    defaults
 brotli                    1.0.9                ha925a31_2    defaults
 brotlipy                  0.7.0           py39h2bbff1b_1003    defaults
 bzip2                     1.0.8                he774522_0    defaults
-ca-certificates           2022.3.29            haa95532_1    defaults
+ca-certificates           2023.3.29            haa95532_1    defaults
 cachetools                4.2.2              pyhd3eb1b0_0    defaults
 cairo                     1.16.0            h63a05c6_1001    conda-forge
 certifi                   2021.10.8        py39haa95532_2    defaults
@@ -298,8 +387,8 @@ cython                    0.29.28          py39hd77b12b_0    defaults
 cytoolz                   0.11.0           py39h2bbff1b_0    defaults
 daal4py                   2021.5.0         py39h8cb3d55_0    defaults
 dal                       2021.5.0           haa95532_796    defaults
-dask                      2022.2.1           pyhd3eb1b0_0    defaults
-dask-core                 2022.2.1           pyhd3eb1b0_0    defaults
+dask                      2023.2.1           pyhd3eb1b0_0    defaults
+dask-core                 2023.2.1           pyhd3eb1b0_0    defaults
 dataclasses               0.8                pyh6d0b6a4_7    defaults
 datashader                0.13.0             pyhd3eb1b0_1    defaults
 datashape                 0.5.4            py39haa95532_1    defaults
@@ -307,7 +396,7 @@ debugpy                   1.5.1            py39hd77b12b_0    defaults
 decorator                 5.1.1              pyhd3eb1b0_0    defaults
 defusedxml                0.7.1              pyhd3eb1b0_0    defaults
 diff-match-patch          20200713           pyhd3eb1b0_0    defaults
-distributed               2022.2.1           pyhd3eb1b0_0    defaults
+distributed               2023.2.1           pyhd3eb1b0_0    defaults
 docutils                  0.17.1           py39haa95532_1    defaults
 dwf                       0.1.0                    pypi_0    pypi
 entrypoints               0.4              py39haa95532_0    defaults
@@ -319,7 +408,7 @@ flask                     1.1.2              pyhd3eb1b0_0    defaults
 fonttools                 4.25.0             pyhd3eb1b0_0    defaults
 freetype                  2.10.4               hd328e21_0    defaults
 frozenlist                1.2.0            py39h2bbff1b_0    defaults
-fsspec                    2022.2.0           pyhd3eb1b0_0    defaults
+fsspec                    2023.2.0           pyhd3eb1b0_0    defaults
 future                    0.18.2           py39haa95532_1    defaults
 gensim                    4.1.2            py39hd77b12b_0    defaults
 geos                      3.10.3               h39d44d4_0    conda-forge
@@ -568,7 +657,7 @@ qtconsole                 5.3.0              pyhd3eb1b0_0    defaults
 qtpy                      2.0.1              pyhd3eb1b0_0    defaults
 queuelib                  1.5.0            py39haa95532_0    defaults
 rapidfuzz                 2.0.11           py39h2e25243_0    conda-forge
-regex                     2022.3.15        py39h2bbff1b_0    defaults
+regex                     2023.3.15        py39h2bbff1b_0    defaults
 requests                  2.27.1             pyhd3eb1b0_0    defaults
 requests-file             1.5.1              pyhd3eb1b0_0    defaults
 ripgrep                   13.0.0               h7f3b576_2    conda-forge
@@ -642,7 +731,7 @@ twisted-iocpsupport       1.0.2            py39h2bbff1b_0    defaults
 typed-ast                 1.4.3            py39h2bbff1b_1    defaults
 typing-extensions         4.1.1                hd3eb1b0_0    defaults
 typing_extensions         4.1.1              pyh06a4308_0    defaults
-tzdata                    2022a                hda174b7_0    defaults
+tzdata                    2023a                hda174b7_0    defaults
 ujson                     5.1.0            py39hd77b12b_0    defaults
 unidecode                 1.2.0              pyhd3eb1b0_0    defaults
 urllib3                   1.26.9           py39haa95532_0    defaults

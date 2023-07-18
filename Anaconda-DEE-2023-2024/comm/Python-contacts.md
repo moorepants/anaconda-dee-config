@@ -113,11 +113,13 @@ We received the following requirements and desires from the contacts;
 |                         |                                 |         |            | shapely            |
 | Mario Negrello          | m.negrello@erasmusmc.nl         | Erasmus |            | nbgrader           |
 |                         |                                 |         |            | numba              |
+|                         |                                 |         |            | cudatoolkit (?)    |
 |                         |                                 |         |            | notebook extensions|
 |                         |                                 |         |            | TOC2               |
 | Peter van Nieuwenhuizen | P.R.vanNieuwenhuizen@tudelft.nl |         |            |                    |
 | Sander Bergman          | S.C.Bregman@tudelft.nl          | 3mE     |            | control            |
 | Valeri Markine          | V.L.Markine@tudelft.nl          |         |            |                    |
+| Wouter van der Wal      | W.vanderWal@tudelft.nl          |         |            |                    |
 | Bart Gerritsen          | B.H.M.Gerritsen@tudelft.nl      | EEMCS   | ST         | ti3111tu-2023      |
 
 
