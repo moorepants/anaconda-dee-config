@@ -1,0 +1,77 @@
+# Conda environment configuration file for virtual environment
+# `ti3111tu-2023`, for use in the Digital Exam Environment
+# 
+# Guidelines
+# ----------
+#
+# - activate the environment first
+# - install pip inside environment
+# - care should be taken when adding channels or changing order
+# - prefer Conda over pip; use Conda first, pip last step. Consult:
+#
+#   https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#pip-in-env
+#
+#   for details. Use: `pip --upgrade-strategy only-if-needed `
+# - the environment goes into a location that can be found by:
+#  
+#   ```bash
+#   $ echo $CONDA_PREFIX
+#   ```
+#
+# create using:
+# 
+# ```bash
+# $ conda env create -f ti3111tu_requirements.yml
+# ```
+#
+# update using:
+# ```bash
+# $ conda env update -f ti3111tu_requirements.yml
+# ```
+# 
+# inside a notebook (not straightforward)
+#
+# ```python
+# # example: install `module pulp` here in the notebook ...
+# import sys !{sys.executable} -m pip install pulp
+# ```
+# 
+# Bart H.M. Gerritsen (EEMCS), version: 2023-07-0
+#
+name: ti3111tu-2023
+variables:
+  #ENVVAR_1: value_A
+channels:
+  - defaults
+dependencies:
+- python==3.10
+- anaconda
+- pip
+- jupyter
+- jupyterlab>=3.5.3
+- conda-forge::jupyter_contrib_nbextensions
+- conda-forge::spyder-notebook
+- conda-forge::nbgrader
+- numpy
+- scipy
+- matplotlib
+- asciitree
+- intervals
+- colorama
+- python-igraph
+- networkx
+- configparser
+- dataclasses
+- pygraphviz
+- pydot
+- black
+- pdoc3
+- pytest
+- pylint
+- mypy
+- conda-forge::stopit
+#- pip:
+#  # read all pip-packs to install in addition from file ...
+#  - -r ti3111tu_requirements.txt
+#  # ... add any wheels below
+  

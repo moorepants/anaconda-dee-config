@@ -1,0 +1,57 @@
+# Conda environment configuration file for virtual environment
+# `spyder-nb-2023`, for use in the Digital Exam Environment
+#
+# conda packages, followed by pip
+#
+# ```bash
+# $ conda env create -f spyder_nb_2023.yml
+# ```
+#
+# update using:
+# ```bash
+# $ conda env update -f spyder_nb_2023.yml
+# ```
+#
+# Occasional install using pip (notebook)
+#
+# ```python
+# # example: install module pulp here in the notebook ...
+# import sys !{sys.executable} -m pip install pulp
+# ```
+# 
+# Bart H.M. Gerritsen (EEMCS), version: 2023-1
+#
+name: ti3111tu-2023
+channels:
+  - conda-forge
+  - defaults
+  - mro
+dependencies:
+- python==3.10
+- anaconda
+- jupyter
+- jupyterlab>=3.5.3
+- jupyter_contrib_nbextensions
+- spyder-notebook
+- nbgrader
+- matplotlib
+- asciitree
+- intervals
+- colorama
+- python-igraph
+- networkx
+- configparser
+- dataclasses
+- pygraphviz
+- pydot
+- black
+- pdoc3
+- pytest
+- pylint
+- mypy
+- pip
+- pip:
+  # read all pip-packs to install in addition from file ...
+  - -r ti3111tu_requirements.txt
+  # ... add any wheels below
+  
