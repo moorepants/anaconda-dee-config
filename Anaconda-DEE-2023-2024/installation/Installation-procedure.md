@@ -55,7 +55,7 @@ The following resources can be consulted:
 3. [Installation procedure for multiple users -- system installation](https://docs.anaconda.com/anaconda/install/multi-user/)
 4. [Conda and pip packages](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment). Also see [this post](https://datacadamia.com/lang/python/conda/pypi)
 5. [PyCharm Professional with Anaconda plugin](https://www.jetbrains.com/pycharm/promo/anaconda/)
-6. [Visual Studio Code](https://code.visualstudio.com/) by Microsoft
+. [Visual Studio Code](https://code.visualstudio.com/) by Microsoft
 7. [Packages](https://docs.anaconda.com/anaconda/packages/pkg-docs/)
 8. [Miniconda resources](https://docs.conda.io/en/latest/miniconda.html)
 9. [Hashes](https://docs.anaconda.com/anaconda/install/hashes/)
@@ -93,7 +93,7 @@ Make sure you have Administrator rights.
 1. download the **installer** from the [download site](https://www.anaconda.com/products/individual), for Windows, MacOs, or Linux (see below)
 2. install the software as it comes (run the downloaded installer as Admin); select **multiple**  users (all users) for a system install (select _All Users_ rather than the default _Just for me_)
 3. make a user group `Anaconda-Users` and adjust the file access rights for this group as specified in  [the installation procedure](https://docs.anaconda.com/anaconda/install/multi-user/); users do not need modification rights on virtual environments; just read. If changes are desired, user can derive an updated version of the virtual environment _locally_ and/or issue a _change request_ if changing the DEE is also needed
-4. integrate the `~.jupyter/custom/` forlder (with its content) in the default user profile for the DigitalExam environment
+4. integrate the `~.jupyter/custom/` folder (with its content) in the default user profile for the Digital Exam environment
 5. verify that the installation has been successful (see below).
 
 **Remark**
@@ -138,7 +138,7 @@ repeat this for each of the extra virtual environments:
    ![Ananconda-Navigator](./images/nav-2023.07-1.png)
 
 **Remark**
-Students or Staff requiring an installation under _their own user account_ can download and installer from the [Anacond)
+Students or Staff requiring an installation under _their own user account_ can download and installer from the [Anaconda Download Website](https://www.anaconda.com/products/individual)
 
    Check that your `base` (`anaconda3`) environment is active:
 
