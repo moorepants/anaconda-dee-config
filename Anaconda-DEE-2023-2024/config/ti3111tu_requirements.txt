@@ -8,3 +8,4 @@
 # Bart H.M. Gerritsen (EWI), version: 2023.07-0
 #
 - pyvisgraph
+- python-tsp
