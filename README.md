@@ -4,7 +4,7 @@ This is the Anaconda Digital Exam Environment configuration description. For mor
 
 #### Author: Bart Gerritsen, EEMCS
 
-*Contact*: b.h.m.gerritsen@tudelft.nl, J.K.Moore@tudelft.nl
+*Contact*: b.h.m.gerritsen@tudelft.nl, j.k.moore@tudelft.nl
 
 ## Revision history
 
@@ -17,14 +17,14 @@ This is the Anaconda Digital Exam Environment configuration description. For mor
 
 ### 2020-2022
 
-*) each year, the version is update to contain the May-release of Anaconda (labelled as version: `year.05`). For details, refer to [anaconda.org](http://anaconda.org). 
+*) each year, the version is update to contain the May-release of Anaconda (labelled as version: `year.05`). For details, refer to [anaconda.org](http://anaconda.org).
 
 ### 2023
 
 In the academic cycle 2022-2023, major upgrades are foreseen and implemented:
 
-- there is no May-version of Anaconda; we waited for and selected the `2023.07-0`-version, released in Ju;y. 
-- in 2023, for the first time, we will make use of multiple __conda virutal environment__s, which through the use of package `nb_conda_kernels` installed in the `base` environment, can be selected in all Notebooks loaded in any of the tools. This relaxes the need to install all desired packages __collectively__ in a single `base` environment (as in previous years)
+- there is no May-version of Anaconda; we waited for and selected the `2023.07-0`-version, released in Ju;y.
+- in 2023, for the first time, we will make use of multiple __conda virtual environment__s, which through the use of package `nb_conda_kernels` installed in the `base` environment, can be selected in all Notebooks loaded in any of the tools. This relaxes the need to install all desired packages __collectively__ in a single `base` environment (as in previous years)
 - due the late advent of the 2023.07-0 Release of Anaconda, we decided to create a suite of environment based on _either_ Python 10 or 11
 - we migrate from using Jupyter Notebook or Lab, IDLE or Spyder during the exams, to a more versatile use of PyCharm, Visual Studio Code, or Spyder(-plus-notebook), in addition to JupyterLab and Jupyter Notebook. In doing so, we align with developments implemented on Vocareum and anticipate the arrival of [Notebook 7](https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html)
 
@@ -84,7 +84,7 @@ The boost of big data, AI, NLP, and machine learning efforts also fueled the gro
 The details of using modules and packages can be obtained from the [Python documentation](https://docs.python.org/3/installing/index.html) and [Python documentation](https://docs.python.org/3/distributing/index.html). Packaging info can be found [here](https://packaging.python.org/). A useful overview can be found [here](https://realpython.com/python-modules-packages/). See the [documentation on the anaconda site](https://docs.anaconda.com/anaconda/user-guide/getting-started/) for further materials and details on the use of [conda](https://conda.io/en/latest/index.html) and their distribution.
 
 ### The need for multiple environments
-The key issue here is that for Anaconda, by virtue of its package manager `conda`, packages and modules have been collected that go together well, without violations and conflicts. When we collect and combine modules ourselves in response to requests by end users _in a single agreed environment_, this integrity must be maintained with great care. That is the goal of this activity and that is what should be central in the testing. 
+The key issue here is that for Anaconda, by virtue of its package manager `conda`, packages and modules have been collected that go together well, without violations and conflicts. When we collect and combine modules ourselves in response to requests by end users _in a single agreed environment_, this integrity must be maintained with great care. That is the goal of this activity and that is what should be central in the testing.
 
 The growing complexity of this part of the process gave rise to increasing interest in other ways of accomplishing this. Still, we seek to agree on and freeze a DEE-configuration for an entire academic year. As of 2023-2024, however, we dissect the single environment in _multiple virtual environments_ tailored to specific needs of (a group of) users. This gives more flexibility to set apart conflicting or problematic user requirements, in smaller and easier to maintain environments. All users have to do is load the correct environment in their notebooks. The tools (Integrated Development Environments -- IDE's) we selected, enable users to do so.
 
@@ -153,7 +153,7 @@ The latter step has shown non-trivial, and is therefore recommended.
 
 ### Anticipating Notebook 7 and JupyterLab
 
-Classic programming education methods can be described as _Python-script-centric_, literature programming efforts as _Jupyter-Notebook-centric_. Python-centric scriptwriting is about crafting together a set of Python scripts in `*.py` files, possibly organized as a module or even a package. Jupyter notebook-centric efforts, seek to fuse coding, instructive texts and results, in an article-, blog-, or thesis-like narrative. 
+Classic programming education methods can be described as _Python-script-centric_, literature programming efforts as _Jupyter-Notebook-centric_. Python-centric scriptwriting is about crafting together a set of Python scripts in `*.py` files, possibly organized as a module or even a package. Jupyter notebook-centric efforts, seek to fuse coding, instructive texts and results, in an article-, blog-, or thesis-like narrative.
 
 Anaconda offers tools for both practices, even using the same tool suite. Below is an overview of capacities.
 
