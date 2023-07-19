@@ -1,0 +1,46 @@
+# Conda environment configuration file for virtual environment
+# `py311-2023`, for use in the Digital Exam Environment
+#
+# conda packages, followed by pip
+#
+# ```bash
+# $ conda env create -f py311_2023.yml
+# ```
+#
+# update using:
+# ```bash
+# $ conda env update -f py311_2023.yml
+# ```
+#
+# Bart H.M. Gerritsen (EEMCS), version: 2023-1
+#
+name: py311-2023
+channels:
+  - defaults
+  - anaconda
+  - mro
+dependencies:
+- python==3.11
+- anaconda
+- nb_conda_kernels
+- pip
+- numpy
+- conda-forge::slycot
+- scipy
+- control
+- coolprop
+- matplotlib
+- intervals
+- more-itertools
+- shapely
+- colorama
+- configparser
+- dataclasses
+- pandas
+- black
+- pdoc3
+- pytest
+- pylint
+- mypy
+- pip:
+  - pyvisgraph
