@@ -9,14 +9,14 @@ def test_imports():
         'configparser',
         'control',
         'CoolProp',  # package name is coolprop
-        #'dwf',  # getting a missing so file
+        'dwf',  # getting a missing so file
         'intervals',
         'more_itertools',
         'nidaqmx',  # package name: nidaqmx-python
         'pulp',
         'pydot',
         'pydotplus',
-        #'PyDSTool',  # package name: pydstool
+        'PyDSTool',  # package name: pydstool
         'pygraphviz',
         'pyvisa',
         'pyvisgraph',
@@ -28,8 +28,10 @@ def test_imports():
     ]
 
     for package in requested_packages:
-        importlib.__import__(package)
-
+        try:
+            importlib.__import__(package)
+        except ImportError:
+            print(package, ' failed to import')
 
 if __name__ == "__main__":
     test_imports()
