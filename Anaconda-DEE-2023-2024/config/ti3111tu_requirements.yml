@@ -59,7 +59,7 @@ dependencies:
   - asciitree
   - intervals
   - colorama
-  - python-igraph
+  #- python-igraph
   - networkx
   - configparser
   - dataclasses
