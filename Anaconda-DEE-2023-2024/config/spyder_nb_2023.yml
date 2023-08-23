@@ -32,7 +32,7 @@ dependencies:
   - intervals
   - jupyter
   - jupyter_contrib_nbextensions
-  - jupyterlab>=3.5.3
+  - jupyterlab
   - matplotlib
   - mypy
   - nb_conda_kernels
@@ -42,6 +42,6 @@ dependencies:
   - pylint
   - pytest
   - python==3.10
-  - qtconsole>=5.5
+  - qtconsole
   - scipy
   - spyder-notebook
