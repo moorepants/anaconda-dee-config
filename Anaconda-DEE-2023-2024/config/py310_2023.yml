@@ -1,0 +1,27 @@
+name: py310-2023
+channels:
+  - defaults
+dependencies:
+- python==3.10
+- anaconda
+- black
+- colorama
+- conda-forge::slycot
+- conda-forge:pyvisgraph
+- configparser
+- control
+- coolprop
+- dataclasses
+- intervals
+- matplotlib
+- more-itertools
+- mypy
+- nb_conda_kernels
+- numpy
+- pandas
+- pdoc3
+- pip
+- pylint
+- pytest
+- scipy
+- shapely
