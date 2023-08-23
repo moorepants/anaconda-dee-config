@@ -44,35 +44,35 @@ variables:
 channels:
   - defaults
 dependencies:
-- python==3.10
-- anaconda
-- pip
-- nb_conda_kernels
-- jupyter
-- jupyterlab>=3.5.3
-- conda-forge::jupyter_contrib_nbextensions
-- conda-forge::spyder-notebook
-- conda-forge::nbgrader
-- numpy
-- scipy
-- matplotlib
-- asciitree
-- intervals
-- colorama
-- python-igraph
-- networkx
-- configparser
-- dataclasses
-- pygraphviz
-- pydot
-- black
-- pdoc3
-- nose
-- pytest
-- pylint
-- mypy
-- conda-forge::stopit
-- pip:
-  # read all pip-packs to install in addition from file ...
-  - -r ti3111tu_requirements.txt
-  # ... add any wheels below
+  - python==3.10
+  - anaconda
+  - pip
+  - nb_conda_kernels
+  - jupyter
+  - jupyterlab>=3.5.3
+  - conda-forge::jupyter_contrib_nbextensions
+  - conda-forge::spyder-notebook
+  - conda-forge::nbgrader
+  - numpy
+  - scipy
+  - matplotlib
+  - asciitree
+  - intervals
+  - colorama
+  - python-igraph
+  - networkx
+  - configparser
+  - dataclasses
+  - pygraphviz
+  - pydot
+  - black
+  - pdoc3
+  - nose
+  - pytest
+  - pylint
+  - mypy
+  - conda-forge::stopit
+  - pip:
+    # read all pip-packs to install in addition from file ...
+    - -r ti3111tu_requirements.txt
+    # ... add any wheels below
