@@ -44,3 +44,5 @@ dependencies:
 - mypy
 - pip:
   - pyvisgraph
+
+# nb_conda_kernels control coolprop intervals more-itertools shapely colorama configparser dataclasses pandas black pdoc3 pytest pylint mypy
