@@ -1,14 +1,13 @@
 name: py310-2023
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - anaconda
   - asciitree
   - black
   - colorama
   - colorful
-  - conda-forge::slycot
-  - conda-forge:pyvisgraph
   - configparser
   - control
   - coolprop
@@ -39,5 +38,4 @@ dependencies:
   - slycot
   - stopit
   - pip:
-    - dwf
     - salabim
