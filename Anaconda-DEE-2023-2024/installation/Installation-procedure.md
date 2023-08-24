@@ -235,13 +235,12 @@ conda config --set channel_priority strict
    the participants in the Consultation round:
 
 ```
-conda env create -f config/py39-2023.yml
-conda env create -f config/py310-2023.yml
-conda env create -f config/spyder-nb-2023.yml
-conda env create -f config/ti3111tu_requirements.yml
+conda env create -f py39-2023.yml
+conda env create -f py310-2023.yml
+conda env create -f spyder-nb-2023.yml
+conda env create -f ti3111tu_requirements.yml
+conda create --name nb2214-2023 --file nb2214_requirements_windows.txt
 ```
-
-repeat this for each of the extra conda environments (if there are more).
 
 **Remark**
 Students or Staff requiring an installation under _their own user account_ can
