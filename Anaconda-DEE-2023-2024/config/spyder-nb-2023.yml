@@ -24,28 +24,24 @@
 name: spyder-nb-2023
 channels:
   - defaults
-  - mro
+  - conda-forge
 dependencies:
-- python==3.10
-- anaconda
-- nb_conda_kernels
-- jupyter
-- jupyterlab>=3.5.3
-- qtconsole>=5.5
-- conda-forge::jupyter_contrib_nbextensions
-- conda-forge::spyder-notebook
-- numpy
-- scipy
-- matplotlib
-- intervals
-- colorama
-- dataclasses
-- nose
-- pytest
-- pylint
-- mypy
-- pip
-# - pip:
-  # read all pip-packs to install in addition from file ...
-  # - -r ti3111tu_requirements.txt
-  # ... add any wheels below
+  - anaconda
+  - colorama
+  - dataclasses
+  - intervals
+  - jupyter
+  - jupyter_contrib_nbextensions
+  - jupyterlab
+  - matplotlib
+  - mypy
+  - nb_conda_kernels
+  - nose
+  - numpy
+  - pip
+  - pylint
+  - pytest
+  - python==3.10
+  - qtconsole
+  - scipy
+  - spyder-notebook
