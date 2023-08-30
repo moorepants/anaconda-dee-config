@@ -38,4 +38,5 @@ dependencies:
   - slycot
   - stopit
   - pip:
+    - dwf
     - salabim
