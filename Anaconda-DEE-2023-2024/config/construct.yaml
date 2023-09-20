@@ -1,0 +1,32 @@
+name: tudelft-anaconda
+version: "2023.09.20"
+company: Delft University of Technology
+installer_type: all
+channels:
+  - defaults
+  - conda-forge
+  - twh  # [win]
+specs:
+  - anaconda
+  - conda
+  - python =3.10
+extra_envs:
+  py39-2023:
+    environment_file: py39-2023.yml
+  py310-2023:
+    environment_file: py310-2023.yml
+  spyder-nb-2023:
+    environment_file: spyder-nb-2023.yml
+  ti3111tu-2023:
+    environment_file: ti3111tu_requirements.yml
+build_outputs:
+  - info.json
+  - pkgs_list
+  - pkgs_list:
+      env: py39-2023
+  - pkgs_list:
+      env: py310-2023
+  - pkgs_list:
+      env: spyder-nb-2023
+  - pkgs_list:
+      env: ti3111tu-2023
