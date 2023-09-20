@@ -239,7 +239,7 @@ conda env create -f py39-2023.yml
 conda env create -f py310-2023.yml
 conda env create -f spyder-nb-2023.yml
 conda env create -f ti3111tu_requirements.yml
-conda create --name nb2214-2023 --file nb2214_requirements_windows.txt
+conda env create -f nb2214_requirements.yml
 ```
 
 **Remark**

@@ -1,0 +1,28 @@
+name: nb2214
+channels:
+  - defaults
+  - conda-forge
+  - twh
+dependencies:
+  - alpaca_kernel_2  # from twh
+  - anaconda
+  - ipykernel
+  - ipywidgets
+  - jupyter
+  - jupyterlab
+  - jupytext
+  - markdown
+  - matplotlib
+  - nbclient
+  - nb_conda_kernels
+  - nbconvert
+  - nbconvert-core
+  - nbconvert-pandoc
+  - nbformat
+  - nbgrader
+  - nidaqmx-python
+  - notebook
+  - numpy
+  - python=3.10
+  - pyvisa
+  - scipy
