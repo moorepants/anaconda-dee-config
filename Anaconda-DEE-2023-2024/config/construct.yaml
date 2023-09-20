@@ -4,8 +4,6 @@ company: Delft University of Technology
 installer_type: all
 channels:
   - defaults
-  - conda-forge
-  - twh  # [win]
 specs:
   - anaconda
   - conda
@@ -19,6 +17,8 @@ extra_envs:
     environment_file: spyder-nb-2023.yml
   ti3111tu-2023:
     environment_file: ti3111tu_requirements.yml
+  nb2214-2023:
+    environment_file: nb2214_requirements.yml
 build_outputs:
   - info.json
   - pkgs_list
@@ -30,3 +30,5 @@ build_outputs:
       env: spyder-nb-2023
   - pkgs_list:
       env: ti3111tu-2023
+  - pkgs_list:
+      env: nb2214-2023
