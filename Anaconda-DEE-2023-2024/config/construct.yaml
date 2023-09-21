@@ -7,11 +7,9 @@ channels:
 specs:
   - anaconda
   - conda
-  - python =3.10
   - nb_conda_kernels
+  - python=3.10
 extra_envs:
-  py39-2023:
-    environment_file: py39-2023.yml
   py310-2023:
     environment_file: py310-2023.yml
   spyder-nb-2023:
@@ -23,8 +21,6 @@ extra_envs:
 build_outputs:
   - info.json
   - pkgs_list
-  - pkgs_list:
-      env: py39-2023
   - pkgs_list:
       env: py310-2023
   - pkgs_list:
