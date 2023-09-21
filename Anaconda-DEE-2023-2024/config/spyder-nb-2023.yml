@@ -31,7 +31,6 @@ dependencies:
   - dataclasses
   - intervals
   - jupyter
-  - jupyter_contrib_nbextensions
   - jupyterlab
   - matplotlib
   - mypy

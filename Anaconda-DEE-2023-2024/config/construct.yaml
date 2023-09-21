@@ -8,6 +8,7 @@ specs:
   - anaconda
   - conda
   - python =3.10
+  - nb_conda_kernels
 extra_envs:
   py39-2023:
     environment_file: py39-2023.yml
