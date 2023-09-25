@@ -4,28 +4,62 @@ company: Delft University of Technology
 installer_type: all
 channels:
   - defaults
+  - conda-forge
+  - twh  # [win]
 specs:
+  - alpaca_kernel_2  # [win]
   - anaconda
-  - conda
+  - asciitree
+  - black
+  - colorama
+  - colorful
+  - configparser
+  - control
+  - coolprop
+  - dataclasses
+  - graphviz
+  - intervals
+  - ipykernel
+  - ipywidgets
+  - jupyter
+  - jupyter_contrib_nbextensions  # [not win]
+  - jupyterlab
+  - jupytext
+  - markdown
+  - matplotlib
+  - more-itertools
+  - mypy
   - nb_conda_kernels
-  - python=3.10
-extra_envs:
-  py310-2023:
-    environment_file: py310-2023.yml
-  spyder-nb-2023:
-    environment_file: spyder-nb-2023.yml
-  ti3111tu-2023:
-    environment_file: ti3111tu_requirements.yml
-  nb2214-2023:
-    environment_file: nb2214_requirements.yml
+  - nbclient
+  - nbconvert
+  - nbconvert-core
+  - nbconvert-pandoc
+  - nbformat
+  - nbgrader
+  - networkx
+  - nidaqmx-python
+  - nose
+  - notebook
+  - numpy
+  - pandas
+  - pdoc3
+  - pip
+  - pulp
+  - pydot
+  - pydotplus
+  - pydstool
+  - pygraphviz
+  - pylint
+  - pytest
+  - python==3.10
+  - pyvisa
+  - pyvisgraph
+  - qtconsole
+  - scipy
+  - shapely
+  - slycot
+  - spyder-notebook
+  - stopit
 build_outputs:
   - info.json
   - pkgs_list
-  - pkgs_list:
-      env: py310-2023
-  - pkgs_list:
-      env: spyder-nb-2023
-  - pkgs_list:
-      env: ti3111tu-2023
-  - pkgs_list:
-      env: nb2214-2023
