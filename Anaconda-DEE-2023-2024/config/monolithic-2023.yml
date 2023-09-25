@@ -1,14 +1,9 @@
-name: tudelft-anaconda
-version: "2023.09.20"
-company: Delft University of Technology
-installer_type: all
+name: monolithic-2023
 channels:
   - defaults
   - conda-forge
-  - twh  # [win]
-environment_file: monolithic-2023.yml
-specs:
-  - alpaca_kernel_2  # [win]
+dependencies:
+  #- alpaca_kernel_2  # [win]
   - anaconda
   - asciitree
   - black
@@ -62,6 +57,9 @@ specs:
   - slycot
   - spyder-notebook
   - stopit
-build_outputs:
-  - info.json
-  - pkgs_list
+  - pip:
+    - dwf
+    - igraph
+    - python-tsp
+    - pyvisgraph
+    - salabim
