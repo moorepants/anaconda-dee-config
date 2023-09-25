@@ -6,7 +6,6 @@ channels:
   - defaults
   - conda-forge
   - twh  # [win]
-environment_file: monolithic-2023.yml
 specs:
   - alpaca_kernel_2  # [win]
   - anaconda
