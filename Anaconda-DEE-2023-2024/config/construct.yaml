@@ -16,6 +16,7 @@ specs:
   - configparser
   - control
   - coolprop
+  - cyipopt
   - dataclasses
   - graphviz
   - intervals
@@ -60,7 +61,6 @@ specs:
   - slycot
   - spyder-notebook
   - stopit
-post_install: post_install.sh  # [unix]
 build_outputs:
   - info.json
   - pkgs_list
