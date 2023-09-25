@@ -50,6 +50,7 @@ dependencies:
   - nb_conda_kernels
   - jupyter
   - jupyterlab>=3.5.3
+  - conda-forge::jupyter_contrib_nbextensions
   - conda-forge::spyder-notebook
   - conda-forge::nbgrader
   - numpy
