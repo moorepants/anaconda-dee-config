@@ -18,7 +18,6 @@ specs:
   - console_shortcut
   - control
   - coolprop
-  - cyipopt
   - dataclasses
   - graphviz
   - intervals
