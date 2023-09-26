@@ -5,9 +5,7 @@ installer_type: all
 channels:
   - defaults
   - conda-forge
-  - twh  # [win]
 specs:
-  - alpaca_kernel_2  # [win]
   - anaconda
   - asciitree
   - black

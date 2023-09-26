@@ -2,9 +2,7 @@
 # look to twh)
 # defaults
 # conda-forge
-# twh
 # these are all the requested packages (conda names)
-alpaca_kernel_2
 anaconda
 asciitree
 black

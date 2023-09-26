@@ -3,7 +3,6 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  #- alpaca_kernel_2  # [win]
   - anaconda
   - asciitree
   - black
