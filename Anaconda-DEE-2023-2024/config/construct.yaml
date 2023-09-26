@@ -13,7 +13,9 @@ specs:
   - black
   - colorama
   - colorful
+  - conda
   - configparser
+  - console_shortcut
   - control
   - coolprop
   - cyipopt
@@ -28,6 +30,7 @@ specs:
   - jupytext
   - markdown
   - matplotlib
+  - menuinst
   - more-itertools
   - mypy
   - nb_conda_kernels
