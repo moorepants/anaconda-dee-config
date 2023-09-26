@@ -59,7 +59,6 @@ specs:
   - python==3.10
   - pyvisa
   - pyvisgraph
-  - pyvisgraph
   - qtconsole
   - requests  # dep for python-tsp
   - scipy

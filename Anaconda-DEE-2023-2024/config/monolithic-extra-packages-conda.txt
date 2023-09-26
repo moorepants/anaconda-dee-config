@@ -49,6 +49,7 @@ pydstool
 pygraphviz
 pylint
 pytest
+python-igraph
 python==3.10
 pyvisa
 pyvisgraph
