@@ -16,7 +16,7 @@ specs:
   - colorful
   - conda
   - configparser
-  - console_shortcut
+  - console_shortcut  # [win]
   - control
   - coolprop
   - dataclasses
