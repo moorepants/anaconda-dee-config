@@ -32,7 +32,7 @@ specs:
   - jupytext
   - markdown
   - matplotlib
-  - menuinst
+  - menuinst  # [win]
   - more-itertools
   - mypy
   - nb_conda_kernels
