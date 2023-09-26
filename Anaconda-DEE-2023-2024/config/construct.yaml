@@ -11,6 +11,7 @@ specs:
   - anaconda
   - asciitree
   - black
+  - click  # dep for python-tsp & tsplib95
   - colorama
   - colorful
   - conda
@@ -19,6 +20,8 @@ specs:
   - control
   - coolprop
   - dataclasses
+  - deprecated  # dep for python-tsp & tsplib95
+  - enum34  # dep for dwf
   - graphviz
   - intervals
   - ipykernel
@@ -39,7 +42,7 @@ specs:
   - nbconvert-pandoc
   - nbformat
   - nbgrader
-  - networkx
+  - networkx  # dep for tsplib95
   - nidaqmx-python
   - nose
   - notebook
@@ -54,15 +57,19 @@ specs:
   - pygraphviz
   - pylint
   - pytest
+  - python-igraph
   - python==3.10
   - pyvisa
   - pyvisgraph
+  - pyvisgraph
   - qtconsole
+  - requests  # dep for python-tsp
   - scipy
   - shapely
   - slycot
   - spyder-notebook
   - stopit
+  - tabulate  # dep for python-tsp & tsplib95
 build_outputs:
   - info.json
   - pkgs_list
