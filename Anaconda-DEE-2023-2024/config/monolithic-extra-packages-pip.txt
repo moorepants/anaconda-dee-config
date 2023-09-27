@@ -1,5 +1,3 @@
 dwf
-igraph
 python-tsp
-pyvisgraph
 salabim

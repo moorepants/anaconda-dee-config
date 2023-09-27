@@ -1,0 +1,72 @@
+name: tudelft-anaconda
+version: "2023.09.27"
+company: Delft University of Technology
+installer_type: all
+channels:
+  - defaults
+  - conda-forge
+specs:
+  - anaconda
+  - asciitree
+  - black
+  - click  # dep for python-tsp & tsplib95
+  - colorama
+  - colorful
+  - conda
+  - configparser
+  - console_shortcut  # [win]
+  - control
+  - coolprop
+  - dataclasses
+  - deprecated  # dep for python-tsp & tsplib95
+  - enum34  # dep for dwf
+  - graphviz
+  - intervals
+  - ipykernel
+  - ipywidgets
+  - jupyter
+  - jupyter_contrib_nbextensions  # [not win]
+  - jupyterlab
+  - jupytext
+  - markdown
+  - matplotlib
+  - menuinst  # [win]
+  - more-itertools
+  - mypy
+  - nb_conda_kernels
+  - nbclient
+  - nbconvert
+  - nbconvert-core
+  - nbconvert-pandoc
+  - nbformat
+  - nbgrader
+  - networkx  # dep for tsplib95
+  - nidaqmx-python
+  - nose
+  - notebook
+  - numpy
+  - pandas
+  - pdoc3
+  - pip
+  - pulp
+  - pydot
+  - pydotplus
+  - pydstool
+  - pygraphviz
+  - pylint
+  - pytest
+  - python-igraph
+  - python==3.10
+  - pyvisa
+  - pyvisgraph
+  - qtconsole
+  - requests  # dep for python-tsp
+  - scipy
+  - shapely
+  - slycot
+  - spyder-notebook
+  - stopit
+  - tabulate  # dep for python-tsp & tsplib95
+build_outputs:
+  - info.json
+  - pkgs_list

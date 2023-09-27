@@ -1,4 +1,4 @@
-name: nb2214
+name: nb2214-2023
 channels:
   - defaults
   - conda-forge

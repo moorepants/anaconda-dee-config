@@ -2,19 +2,19 @@
 # look to twh)
 # defaults
 # conda-forge
-# twh
 # these are all the requested packages (conda names)
-anaconda
-alpaca_kernel_2
 anaconda
 asciitree
 black
+click
 colorama
 colorful
 configparser
 control
 coolprop
 dataclasses
+deprecated
+enum34
 graphviz
 intervals
 ipykernel
@@ -49,12 +49,15 @@ pydstool
 pygraphviz
 pylint
 pytest
+python-igraph
 python==3.10
 pyvisa
 pyvisgraph
 qtconsole
+requests
 scipy
 shapely
 slycot
 spyder-notebook
 stopit
+tabulate
