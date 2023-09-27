@@ -191,11 +191,43 @@ The latter step has shown non-trivial, and is therefore recommended.
 This is a list of people who have requested packages in the past or expressed
 interest in doing so.
 
+- Alexander in 't veld
+- Arend Schwab
 - Bart Gerritsen
+- Coen de Visser
+- Cornel Thill
+- Dennis van den Ouden-van-der-Horst
 - Erik Ulijn (3mE)
+- Ferdinand Grozema
 - Ferdinand Postema (LR)
+- Frank Mulder
+- Gary Steele
+- Heike Vallery
+- Iulia lefter
+- Jacco Hoekstra
 - Jason K. Moore (3mE)
+- Jeroen Kalkman
+- Joost Ellerbroek
+- Ludolf Meester
+- Marcel Sluiter
+- Marcel van den Broek
 - Margreet Docter (TNW)
+- Mario Negrello
+- Mark Bakker
+- Martijn Tannemaat
+- Miriam Coenders
 - Peter Somhorst (3mE)
+- Peter Wilders
+- Peter van Nieuwenhuizen
 - Petra Heijnen (TBM)
+- Rebeca Gonzalez Cabaleiro
+- Regine Vroom
+- Remko Uijlenhoet
 - Rene van Paassen (LR)
+- Rob Stikkelman
+- Ronald Ligteringen
+- Sander Bergman
+- Tom Viering
+- Valeri Markine
+- Walter van Gulik
+- Wouter van der Wal
