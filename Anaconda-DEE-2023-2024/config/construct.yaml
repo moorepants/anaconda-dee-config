@@ -1,5 +1,5 @@
 name: tudelft-anaconda
-version: "2023.09.20"
+version: "2023.09.27"
 company: Delft University of Technology
 installer_type: all
 channels:
