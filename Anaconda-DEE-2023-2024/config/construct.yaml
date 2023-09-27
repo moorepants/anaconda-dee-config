@@ -49,6 +49,7 @@ specs:
   - pandas
   - pdoc3
   - pip
+  - powershell_shortcut  # [win]
   - pulp
   - pydot
   - pydotplus
