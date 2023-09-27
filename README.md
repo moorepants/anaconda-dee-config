@@ -1,14 +1,15 @@
-# Anaconda-DEE-config -- Anaconda Digital Exam Environment configuration
+# Anaconda-DEE-config -- Anaconda Digital Exam Environment Configuration
 
 This repository houses the configuration files and scripts for building a TU
 Delft Anaconda standalone offline installer that includes annually requested
 software packages that extend the standard Anaconda installer. This is suitable
-for installing on TU Delft's exam computers.
+for installing on TU Delft's lab computers including those used for digital
+examinations.
 
 ## Authors:
 
 - Bart Gerritsen, EEMCS, b.h.m.gerritsen@tudelft.nl
-- Jason K. Moore, BMechE, j.k.moore@tudelft.nl
+- Jason K. Moore, 3mE, j.k.moore@tudelft.nl
 
 ## Revision history
 
@@ -91,7 +92,6 @@ Step 2: Run the installer
 Double click on the tudelft-anaconda installer and follow the prompts. By
 default this will install the TU Delft Anaconda in `C:\Program
 Files\tudelft-anaconda`.
-
 
 Step 3: Download PyPi packages
 
@@ -185,3 +185,17 @@ Various approaches exist to create a beta test environment. The method used in r
 Finally: test the DEE with the beta-release.
 
 The latter step has shown non-trivial, and is therefore recommended.
+
+## Contact list
+
+This is a list of people who have requested packages in the past or expressed
+interest in doing so.
+
+- Bart Gerritsen
+- Erik Ulijn (3mE)
+- Ferdinand Postema (LR)
+- Jason K. Moore (3mE)
+- Margreet Docter (TNW)
+- Peter Somhorst (3mE)
+- Petra Heijnen (TBM)
+- Rene van Paassen (LR)
