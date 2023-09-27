@@ -7,6 +7,7 @@ channels:
   - conda-forge
 specs:
   - anaconda
+  - anaconda-navigator
   - asciitree
   - black
   - click  # dep for python-tsp & tsplib95
