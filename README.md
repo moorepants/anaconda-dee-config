@@ -6,12 +6,12 @@ software packages that extend the standard Anaconda installer. This is suitable
 for installing on TU Delft's lab computers including those used for digital
 examinations.
 
-## Authors:
+# Authors:
 
 - Bart Gerritsen, EEMCS, b.h.m.gerritsen@tudelft.nl
 - Jason K. Moore, 3mE, j.k.moore@tudelft.nl
 
-## Revision history
+# Revision history
 
 | version | year | changes |
 |:-------:|:----:|:--------|
@@ -20,9 +20,9 @@ examinations.
 | 2022.01 | 2022 | 2022-2023 update |
 | 2023.01 | 2023 | 2023-2024 update |
 
-## Steps to build the installer
+# Steps to build the installer
 
-Step 1: Install Anaconda/Miniconda/Miniforge
+## Step 1: Install Anaconda/Miniconda/Miniforge
 
 You will need conda installed on Windows 10. You can use conda from Anaconda,
 Miniconda, or any other conda-based installation. For example, you can install
@@ -30,14 +30,14 @@ the latest Anaconda:
 
 https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Windows-x86_64.exe
 
-Step 2: Clone this repository
+## Step 2: Clone this repository
 
 ```bash
 git clone git@gitlab.ewi.tudelft.nl:bhmgerritsen/anaconda-dee-config.git
 cd anaconda-dee-config
 ```
 
-Step 3: Update and configure conda
+## Step 3: Update and configure conda
 
 This makes sure conda is up-to-date and it installs the libmamba solver and
 sets it as the default solver for your conda installation. The libmamba solver
@@ -50,10 +50,10 @@ conda install -n base conda-libmamba-solver
 conda config --set solver libmamba
 ```
 
-After this process you can set the solver back to teh default with `conda
+After this process you can set the solver back to the default with `conda
 config --set solver classic`.
 
-Step 4: Install constructor in its own environment
+## Step 4: Install constructor in its own environment
 
 You will build the installer with
 [constructor](https://github.com/conda/constructor), which is the tool used to
@@ -63,8 +63,9 @@ the libmamba solver and activate it.
 ```bash
 conda create -n constructor constructor conda-libmamba-solver
 conda activate constructor
+```
 
-Step 5: Construct the installer
+## Step 5: Construct the installer
 
 constructor will read the contents of the `construct.yaml` file, solve for the
 compatible set of packages and build a `.exe` installer that contains them.
@@ -80,20 +81,20 @@ will be `tudelft-anaconda-2023.09.27-Windows-x86_64.exe` in the directory. This
 installer can be executed on any computer that does not have Anaconda
 installed.
 
-## Installing
+# Installing
 
-Step 1: Download the installer
+## Step 1: Download the installer
 
 Download `tudelft-anaconda-2023.09.27-Windows-x86_64.exe` to the Windows 10
 computer you want to install it on.
 
-Step 2: Run the installer
+## Step 2: Run the installer
 
 Double click on the tudelft-anaconda installer and follow the prompts. By
 default this will install the TU Delft Anaconda in `C:\Program
 Files\tudelft-anaconda`.
 
-Step 3: Download PyPi packages
+## Step 3: Download PyPi packages
 
 There are four Python packages that are not included in the installer because
 they are not available as conda packages: dwf, salabim, python-tsp (depends on
@@ -104,7 +105,7 @@ tsplib95). Download these files manually:
 - https://files.pythonhosted.org/packages/a0/2b/b1932d3674758ec5f49afa72d4519334a5ac2aac4d96cfd416eb872a1959/tsplib95-0.7.1-py2.py3-none-any.whl
 - https://files.pythonhosted.org/packages/6b/48/865289cba47b9f519e8fe4bcc1888aa687ad6bec6d674809d3e9cac6663c/python_tsp-0.4.0-py3-none-any.whl
 
-Step 4: Install the PyPi packages
+## Step 4: Install the PyPi packages
 
 Open the Anaconda command prompt and install each file with pip into the base
 environment:
@@ -116,7 +117,7 @@ python -m pip install --no-deps tsplib95-0.7.1-py2.py3-none-any.whl
 python -m pip install --no-deps python_tsp-0.4.0-py3-none-any.whl
 ```
 
-## Process to agree on installation
+# Process to agree on installation
 
 The goal of agreeing on a joint installation of Anaconda is twofold:
 
@@ -147,7 +148,7 @@ The (annual) process flow is roughly as follows:
 | Sep | new environment packaged, in DEE, and published on software.tudelft.nl |
 | Sep | new issue board open on Gitlab |
 
-## The DEE and Anaconda
+# The DEE and Anaconda
 
 Anaconda publishes a new version, typically each Dec/Jan a `<year>.01` version,
 a `<year>.05` May-version and a `<year>.11` November version.In 2023, a
@@ -175,7 +176,7 @@ an inventory of the Conda package lists, as follows:
 1. perform beta testing (action: EEMCS plus user base) on the beta version
 1. release the DEE for the coming academic year
 
-## Test platform
+# Test platform
 
 Various approaches exist to create a beta test environment. The method used in recent years:
 
@@ -186,7 +187,7 @@ Finally: test the DEE with the beta-release.
 
 The latter step has shown non-trivial, and is therefore recommended.
 
-## Contact list
+# Contact list
 
 This is a list of people who have requested packages in the past or expressed
 interest in doing so.
