@@ -1,6 +1,0 @@
-### exclude files from git
-##
-## Note: test data: do not excluded log files!
-### PyCharm
-.idea
-### output

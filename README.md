@@ -1,107 +1,140 @@
-# Anaconda-DEE-config -- Anaconda Digital Exam Environment configuration
+# Anaconda-DEE-config -- Anaconda Digital Exam Environment Configuration
 
-This is the Anaconda Digital Exam Environment configuration description. For more background on the specifications, consult the user inquiry communication elsewhere in this repo.
+This repository houses the configuration files and scripts for building a TU
+Delft Anaconda standalone offline installer that includes annually requested
+software packages that extend the standard Anaconda installer. This is suitable
+for installing on TU Delft's lab computers including those used for digital
+examinations.
 
-#### Author: Bart Gerritsen, EEMCS
+## Authors:
 
-*Contact*: b.h.m.gerritsen@tudelft.nl, j.k.moore@tudelft.nl
+- Bart Gerritsen, EEMCS, b.h.m.gerritsen@tudelft.nl
+- Jason K. Moore, 3mE, j.k.moore@tudelft.nl
 
 ## Revision history
 
-| version | year | changes *) |
+| version | year | changes |
 |:-------:|:----:|:--------|
 | inital  | 2020 | initial make |
 | 2021.01 | 2021 | 2021-2022 update |
 | 2022.01 | 2022 | 2022-2023 update |
-| 2023.01 | 2023 | 2023-2024 major update |
+| 2023.01 | 2023 | 2023-2024 update |
 
-### 2020-2022
+## Steps to build the installer
 
-*) each year, the version is update to contain the May-release of Anaconda (labelled as version: `year.05`). For details, refer to [anaconda.org](http://anaconda.org).
+Step 1: Install Anaconda/Miniconda/Miniforge
 
-### 2023
+You will need conda installed on Windows 10. You can use conda from Anaconda,
+Miniconda, or any other conda-based installation. For example, you can install
+the latest Anaconda:
 
-In the academic cycle 2022-2023, major upgrades are foreseen and implemented:
+https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Windows-x86_64.exe
 
-- there is no May-version of Anaconda; we waited for and selected the `2023.07-0`-version, released in Ju;y.
-- in 2023, for the first time, we will make use of multiple __conda virtual environment__s, which through the use of package `nb_conda_kernels` installed in the `base` environment, can be selected in all Notebooks loaded in any of the tools. This relaxes the need to install all desired packages __collectively__ in a single `base` environment (as in previous years)
-- due the late advent of the 2023.07-0 Release of Anaconda, we decided to create a suite of environment based on _either_ Python 10 or 11
-- we migrate from using Jupyter Notebook or Lab, IDLE or Spyder during the exams, to a more versatile use of PyCharm, Visual Studio Code, or Spyder(-plus-notebook), in addition to JupyterLab and Jupyter Notebook. In doing so, we align with developments implemented on Vocareum and anticipate the arrival of [Notebook 7](https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html)
+Step 2: Clone this repository
 
-## Organization of this repo
-
-This repo is organized on a per-year (year-cyclic) basis.
-
-```text
-root of the repo
-.|
- | - Academic year (from-into)
-        |
-        |-- comm: communication to DUT Anaconda users faculties
-        |
-        |-- config: configuration docs, such as installation specs
-        |
-        |-- images: images used in the documents, to illustrate
-        |
-        |-- installation: installation definition and instruction
-        |
-        |-- resources: resources files (data, listings, scripts)
-        |
-        |-- tests: config test scripts and validation instructions
-  |
-  | - Next Academic year
-  | - ...
+```bash
+git clone git@gitlab.ewi.tudelft.nl:bhmgerritsen/anaconda-dee-config.git
+cd anaconda-dee-config
 ```
 
-## Anaconda
+Step 3: Update and configure conda
 
-### Python classes, modules and packages
-A class is a python data construct in which data members and operations on that data are assembled in a single structure. A class is commonly stored in a separate `*.py` file, however and although not common and  unconventional, multiple classes may be stored in a single `*.py` file. Furthermore, a `*.py` file is not exclusive for a class. A Python module is a file with the extension `.py` that exports a chunk of python code (typically: a class) for export with its own namespace, into another context.
+This makes sure conda is up-to-date and it installs the libmamba solver and
+sets it as the default solver for your conda installation. The libmamba solver
+is faster, uses less memory, gives better error messages, and can solve harder
+sets of constraints.
 
-A package is a structured collection of related modules. From a package we can export one or more modules, from a module we can export one or more attributes: members belonging to a module. A package is a directory (or: a hierarchy of directories a.k.a. as a tree) containing such modules. If the export of Python items at module or package-level needs to be customized, this is usually done by means of a `__init__.py` file.
-
-Importing packages and modules takes one of the forms:
-
-```python
-import <module> [as <alias>]
-from <package|module> import <module|attribute> [as <alias>]
+```bash
+conda update -n base conda
+conda install -n base conda-libmamba-solver
+conda config --set solver libmamba
 ```
 
-For python, a package is roughly equivalent to a module (almost everything is an object for python). Modules can be addressed internally using a dot-notation.
+After this process you can set the solver back to teh default with `conda
+config --set solver classic`.
 
-Packages in Anaconda are installed and managed by the [Conda package manager](https://docs.conda.io). Conda alse uses `pip` and can therefore also install Python modules from a wide collection of channels, most profoundly from [PyPI](https://pypi.org/).
+Step 4: Install constructor in its own environment
 
-### Jupyter Notebook, JupyterLab and JupyterHub
+You will build the installer with
+[constructor](https://github.com/conda/constructor), which is the tool used to
+build the Anaconda installer. Create an environment with only constructor and
+the libmamba solver and activate it.
 
-A specific version of Python has been developed as `IPython` and from this, [Jupyter](https://jupyter.org/about) has emerged. Central in the Jupyter initiative stands the notion of [literate programming, Knuth (1984)](https://en.wikipedia.org/wiki/Literate_programming). The notebook has a JSON file structure and is intended to be presented using an HTML-renderer. The [Jupyter Notebook and JupyterLab](https://jupyter.org/) are tools to do just this.
+```bash
+conda create -n constructor constructor conda-libmamba-solver
+conda activate constructor
 
-Notebooks can interact as cloud of actors using a server. Notebooks are not only in wide use for programming education but also for mathematics, financial, biological, system control, and many other domains of eduction. Jupyter is typically used in conjunction with a [JupyterHub](https://jupyter.org/hub) server. The [Vocareum](https://www.vocareum.com/products/) part we use at the TUDelft is its JupyterHub-server. An issue is that the Vocareum platform in _not_ a part of the DEE.
+Step 5: Construct the installer
 
-The boost of big data, AI, NLP, and machine learning efforts also fueled the growth of its usage. Jupyter is an integral part of the Anaconda installation.
+constructor will read the contents of the `construct.yaml` file, solve for the
+compatible set of packages and build a `.exe` installer that contains them.
+Run:
 
-### Further background anaconda
+```
+constructor .
+```
 
-The details of using modules and packages can be obtained from the [Python documentation](https://docs.python.org/3/installing/index.html) and [Python documentation](https://docs.python.org/3/distributing/index.html). Packaging info can be found [here](https://packaging.python.org/). A useful overview can be found [here](https://realpython.com/python-modules-packages/). See the [documentation on the anaconda site](https://docs.anaconda.com/anaconda/user-guide/getting-started/) for further materials and details on the use of [conda](https://conda.io/en/latest/index.html) and their distribution.
+in the directory with the `construct.yaml` file. This can take 10-30 minutes
+depending on your computer's speed and download speeds. After it finishes there
+will be `tudelft-anaconda-2023.09.27-Windows-x86_64.exe` in the directory. This
+installer can be executed on any computer that does not have Anaconda
+installed.
 
-### The need for multiple environments
-The key issue here is that for Anaconda, by virtue of its package manager `conda`, packages and modules have been collected that go together well, without violations and conflicts. When we collect and combine modules ourselves in response to requests by end users _in a single agreed environment_, this integrity must be maintained with great care. That is the goal of this activity and that is what should be central in the testing.
+## Installing
 
-The growing complexity of this part of the process gave rise to increasing interest in other ways of accomplishing this. Still, we seek to agree on and freeze a DEE-configuration for an entire academic year. As of 2023-2024, however, we dissect the single environment in _multiple virtual environments_ tailored to specific needs of (a group of) users. This gives more flexibility to set apart conflicting or problematic user requirements, in smaller and easier to maintain environments. All users have to do is load the correct environment in their notebooks. The tools (Integrated Development Environments -- IDE's) we selected, enable users to do so.
+Step 1: Download the installer
+
+Download `tudelft-anaconda-2023.09.27-Windows-x86_64.exe` to the Windows 10
+computer you want to install it on.
+
+Step 2: Run the installer
+
+Double click on the tudelft-anaconda installer and follow the prompts. By
+default this will install the TU Delft Anaconda in `C:\Program
+Files\tudelft-anaconda`.
+
+Step 3: Download PyPi packages
+
+There are four Python packages that are not included in the installer because
+they are not available as conda packages: dwf, salabim, python-tsp (depends on
+tsplib95). Download these files manually:
+
+- https://files.pythonhosted.org/packages/29/e1/4b44033f2c69853d10292c27b9b5e038f50ba04f7ae2907978a90d0f80df/dwf-0.1.0.tar.gz
+- https://files.pythonhosted.org/packages/c3/8c/ac72a7bb70f0d9232508845e54bdf076be853dfe993668cc5214f6e7318b/salabim-23.3.9.tar.gz
+- https://files.pythonhosted.org/packages/a0/2b/b1932d3674758ec5f49afa72d4519334a5ac2aac4d96cfd416eb872a1959/tsplib95-0.7.1-py2.py3-none-any.whl
+- https://files.pythonhosted.org/packages/6b/48/865289cba47b9f519e8fe4bcc1888aa687ad6bec6d674809d3e9cac6663c/python_tsp-0.4.0-py3-none-any.whl
+
+Step 4: Install the PyPi packages
+
+Open the Anaconda command prompt and install each file with pip into the base
+environment:
+
+```
+python -m pip install --no-deps dwf-0.1.0.tar.gz
+python -m pip install --no-deps salabim-23.3.9.tar.gz
+python -m pip install --no-deps tsplib95-0.7.1-py2.py3-none-any.whl
+python -m pip install --no-deps python_tsp-0.4.0-py3-none-any.whl
+```
 
 ## Process to agree on installation
 
-## Environment usages and specifications
 The goal of agreeing on a joint installation of Anaconda is twofold:
 
-1. to avoid a cluttering of (slightly) different python environments across the infrastructure within the TU Delft
-
-2. to avoid intricate and disturbing differences between python environments on the one hand and the DigitalExam python-environment during exams
-
+1. to avoid a cluttering of (slightly) different python environments across the
+   infrastructure within the TU Delft
+2. to avoid intricate and disturbing differences between python environments on
+   the one hand and the DigitalExam python-environment during exams
 3. to mitigate the burden of maintaining the configurations involved
 
-Typically, but not "set in stone", the Anaconda-environment is being revised and updated in a yearly cycle. ICT-WPS ("Werkplekbeheer") receives an installation instruction, drafted on behalf of all faculties by EEMCS and including all user desires, taking care of the actual implementation of a prepared package. This package may then be deployed through https://software.tydelft.nl and is at the basis of the implementation of the DigitalExam-environment.
+Typically, but not "set in stone", the Anaconda-environment is being revised
+and updated in a yearly cycle. ICT-WPS ("Werkplekbeheer") receives an
+installation instruction, drafted on behalf of all faculties by EEMCS and
+including all user desires, taking care of the actual implementation of a
+prepared package. This package may then be deployed through
+https://software.tydelft.nl and is at the basis of the implementation of the
+DigitalExam-environment.
 
-The (annual) process flow is roughly as follows;
+The (annual) process flow is roughly as follows:
 
 | Date | Action |
 |:----:|:-------|
@@ -114,12 +147,16 @@ The (annual) process flow is roughly as follows;
 | Sep | new environment packaged, in DEE, and published on software.tudelft.nl |
 | Sep | new issue board open on Gitlab |
 
-
 ## The DEE and Anaconda
 
-Anaconda publishes a new version, typically each Dec/Jan a `<year>.01` version, a `<year>.05` May-version and a `<year>.11` November version.In 2023, a slightly different Release plan was used. For our academic purposes, the May-version (or: the summer release) is considered most appropriate. It is the latest version, in due time for integration for the next academic cycle.
+Anaconda publishes a new version, typically each Dec/Jan a `<year>.01` version,
+a `<year>.05` May-version and a `<year>.11` November version.In 2023, a
+slightly different Release plan was used. For our academic purposes, the
+May-version (or: the summer release) is considered most appropriate. It is the
+latest version, in due time for integration for the next academic cycle.
 
-As soon as the version has been released by Anaconda, we install it, and make an inventory of the Conda package lists, as follows:
+As soon as the version has been released by Anaconda, we install it, and make
+an inventory of the Conda package lists, as follows:
 
 1. install the version (action: EEMCS)
 1. make a package list of the `base` environment:
@@ -138,7 +175,7 @@ As soon as the version has been released by Anaconda, we install it, and make an
 1. perform beta testing (action: EEMCS plus user base) on the beta version
 1. release the DEE for the coming academic year
 
-### Test platform
+## Test platform
 
 Various approaches exist to create a beta test environment. The method used in recent years:
 
@@ -149,24 +186,48 @@ Finally: test the DEE with the beta-release.
 
 The latter step has shown non-trivial, and is therefore recommended.
 
-# Future developments
+## Contact list
 
-### Anticipating Notebook 7 and JupyterLab
+This is a list of people who have requested packages in the past or expressed
+interest in doing so.
 
-Classic programming education methods can be described as _Python-script-centric_, literature programming efforts as _Jupyter-Notebook-centric_. Python-centric scriptwriting is about crafting together a set of Python scripts in `*.py` files, possibly organized as a module or even a package. Jupyter notebook-centric efforts, seek to fuse coding, instructive texts and results, in an article-, blog-, or thesis-like narrative.
-
-Anaconda offers tools for both practices, even using the same tool suite. Below is an overview of capacities.
-
-| Tool / IDE        | PYTHON | Notebook  |
-|-------------------|:------:|:---------:|
-| PyCharm           |        |           |
-|        -Community |   X    | read only |
-|    - Professional |   X    |     X     |
-| Visual Studio Code|   X    |     X     |
-| Spyder+Notebook   |   X    |     X     |
-| Jupyter Notebook  |        |     X     |
-
-Notes:
-
-1. All these Anaconda-packaged tools (IDE's) are free-for-academic-use, but PyCharm Professional requires a license (free for academic staff, no free campus license)
-2. Notebook 7 is currently under development, and entails the [out-phasing of the _classic_ notebook](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html#classic), widely applied within the TU Delft. At the same time, the packaged JupyterLab will become the tool of the future, at the expense of the classic Jupyter Notebook app. Like Jupyter Notebook, Jupyter Lab works in close harmony with a Jupyter Hub
+- Alexander in 't veld
+- Arend Schwab
+- Bart Gerritsen
+- Coen de Visser
+- Cornel Thill
+- Dennis van den Ouden-van-der-Horst
+- Erik Ulijn (3mE)
+- Ferdinand Grozema
+- Ferdinand Postema (LR)
+- Frank Mulder
+- Gary Steele
+- Heike Vallery
+- Iulia lefter
+- Jacco Hoekstra
+- Jason K. Moore (3mE)
+- Jeroen Kalkman
+- Joost Ellerbroek
+- Ludolf Meester
+- Marcel Sluiter
+- Marcel van den Broek
+- Margreet Docter (TNW)
+- Mario Negrello
+- Mark Bakker
+- Martijn Tannemaat
+- Miriam Coenders
+- Peter Somhorst (3mE)
+- Peter Wilders
+- Peter van Nieuwenhuizen
+- Petra Heijnen (TBM)
+- Rebeca Gonzalez Cabaleiro
+- Regine Vroom
+- Remko Uijlenhoet
+- Rene van Paassen (LR)
+- Rob Stikkelman
+- Ronald Ligteringen
+- Sander Bergman
+- Tom Viering
+- Valeri Markine
+- Walter van Gulik
+- Wouter van der Wal
