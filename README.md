@@ -211,6 +211,49 @@ pull request on this repository adding your package name to the
 `construct.yaml` file. Test building the installer locally on Windows and
 report your success (or failures) in the pull request.
 
+# FAQ
+
+My software is not available on the exam computers. How do I make it available?
+
+> The first step is to ensure that your desired package can be installed from
+Conda Forge. Search https://conda-forge.org/feedstock-outputs/ to see if your
+package is already available and if not you will need to add a recipe following
+the instructions here: https://conda-forge.org/#contribute. Once the package is
+available on Conda Forge, open a merge request on this repository adding your
+package to the `construct.yaml` file. Make sure to submit a merge request here
+months before the freeze deadline for the new academic year.
+
+Is it possible to have different conda environments other than the base
+environment?
+
+> We can add new environments using Conda Constructor and make them selectable by
+end users, but the current limitation is the 2GB limit for our exe installer on
+Windows. It is difficult to keep the installer under 2GB with even one
+additional environment if it includes the Anaconda distribution. Switching to
+only Conda Forge packages may allow us to reduce the installer size and thus
+support a limited number of additional environments.
+
+Why can't my package be installed with PyPi?
+
+> We manage a monolithic installation of packages that come from a variety of
+languages (Python, C++, C, R, Julia, CUDA, etc.). Firstly, many of the packages
+cannot be installed from PyPi, as PyPi only hosts Python packages.  Secondly,
+it is quite difficult, if not impossible, to create a compatible set of
+packages if relying on PyPi (see https://pypackaging-native.github.io/ for
+detailed explanations). The binaries available on Conda Forge are guaranteed to
+provide a compatible set by the nature of its design. Conda Forge also hosts
+packages from all programming languages. This provides a minimal headache way
+to deliver a working software environments to our students.
+
+Why can't students `pip install` or `conda install` packages while on the
+computers?
+
+> The computers are not connected to the internet so these commands will not
+work in general. It may be possible to host our own copies of Conda Forge or
+PyPi behind our firewall in the future, but this is a large undertaking. We
+also do not give students write access to the locations that either of these
+tools install packages to, so the default install will not work.
+
 # Contact list
 
 This is a list of people who have requested packages in the past or expressed
