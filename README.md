@@ -8,8 +8,8 @@ examinations.
 
 # Authors:
 
-- Bart Gerritsen, EEMCS, b.h.m.gerritsen@tudelft.nl
 - Jason K. Moore, 3mE, j.k.moore@tudelft.nl
+- Bart Gerritsen, EEMCS, b.h.m.gerritsen@tudelft.nl
 - Jan-Maarten Brockhoff, ICT, J.J.M.Brockhoff@tudelft.nl
 - Kevin Geboers, Workplace Support Education, k.f.geboers@tudelft.nl
 
@@ -17,10 +17,30 @@ examinations.
 
 | version | year | changes |
 |:-------:|:----:|:--------|
-| inital  | 2020 | initial make |
+| initial | 2020 | initial make |
 | 2021.01 | 2021 | 2021-2022 update |
 | 2022.01 | 2022 | 2022-2023 update |
 | 2023.01 | 2023 | 2023-2024 update |
+
+# Requirements
+
+- Make open source scientific software available in TU Delft computer labs
+- Make open source scientific software available for use during TU Delft
+  computer exams
+- Software should be at the latest versions (latest within ~18 months) and
+  mutually compatible
+- Installation must primarily support Windows (exam computers), but should also
+  install on Linux and Mac OSX
+- Installation must be scriptable on Windows
+- Software installation must occur on an air-gapped computer (no internet)
+
+# Solution
+
+We create a Windows executable installer for a collection of conda packages
+using [Conda Constructor](https://github.com/conda/constructor) and script its
+installation on Windows. We install a set of software packages that includes
+the Anaconda distribution and other specifically requested packages pulled from
+the Anaconda channel and the Conda Forge channel.
 
 # Steps to build the installer
 
@@ -85,7 +105,7 @@ installed.
 
 # Installing
 
-Once you have built the installer `exe`, you can use it to intall the TU Delft
+Once you have built the installer `exe`, you can use it to install the TU Delft
 Anaconda on other computers.
 
 ## Step 1: Download the installer
