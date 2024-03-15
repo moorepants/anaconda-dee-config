@@ -2,21 +2,30 @@
 
 This repository houses the configuration files and scripts for building a TU
 Delft Conda-based standalone offline installer that includes annually requested
-software packages that extend the standard Anaconda installer. This is suitable
-for installing on TU Delft's lab computers including those used for digital
-examinations.
+software packages. This is suitable for installing on TU Delft's lab computers
+including those used for digital examinations.
 
 # Maintainers
 
 Current:
 
-- Jason K. Moore, 3mE, j.k.moore@tudelft.nl
+- Jason K. Moore, ME, j.k.moore@tudelft.nl
 - Jan-Maarten Brockhoff, ICT, J.J.M.Brockhoff@tudelft.nl
 - Kevin Geboers, Workplace Support Education, k.f.geboers@tudelft.nl
 
 Past:
 
 - Bart Gerritsen, EEMCS, b.h.m.gerritsen@tudelft.nl
+
+# Contributing
+
+Managing a large university-wide software distribution takes a large effort. At
+the minimum, we ask that you contribute by opening issues in this repository to
+report bugs and software/feature requests. At the maximum, help to
+collaboratively improve the distribution through merge requests and testing the
+build and installation. We will do our best to address issues and merge
+requests in a timely manner and will also provide commit rights to those that
+would like to help maintain this repository. Reach out if that interests you.
 
 # Revision history
 
@@ -43,7 +52,7 @@ Version numbering schema: `v<year>.<two digit integer>`.
 
 # Solution
 
-We create a Windows executable installer for a collection of conda packages
+We create a Windows executable installer for a collection of Conda packages
 using [Conda Constructor](https://github.com/conda/constructor) and script its
 installation on Windows. We install a set of software packages from [Conda
 Forge](https://conda-forge.org/) and make them available via the Conda package
@@ -223,6 +232,12 @@ available on Conda Forge, open a merge request on this repository adding your
 package to the `construct.yaml` file. Make sure to submit a merge request here
 months before the freeze deadline for the new academic year.
 
+The package I need is missing from Conda Forge and adding it is beyond my
+skills.
+
+> Open an issue here and we will coach and help you get the package built on
+Conda Forge.
+
 Is it possible to have different conda environments other than the base
 environment?
 
@@ -265,7 +280,7 @@ interest in doing so.
 - Coen de Visser
 - Cornel Thill
 - Dennis van den Ouden-van-der-Horst
-- Erik Ulijn (3mE)
+- Erik Ulijn (ME)
 - Ferdinand Grozema
 - Ferdinand Postema (LR)
 - Frank Mulder
@@ -273,7 +288,7 @@ interest in doing so.
 - Heike Vallery
 - Iulia lefter
 - Jacco Hoekstra
-- Jason K. Moore (3mE)
+- Jason K. Moore (ME)
 - Jeroen Kalkman
 - Joost Ellerbroek
 - Ludolf Meester
@@ -284,7 +299,7 @@ interest in doing so.
 - Mark Bakker
 - Martijn Tannemaat
 - Miriam Coenders
-- Peter Somhorst (3mE)
+- Peter Somhorst (ME)
 - Peter Wilders
 - Peter van Nieuwenhuizen
 - Petra Heijnen (TBM)
