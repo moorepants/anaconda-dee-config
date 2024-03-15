@@ -15,12 +15,14 @@ examinations.
 
 # Revision history
 
-| version | year | changes |
-|:-------:|:----:|:--------|
-| initial | 2020 | initial make |
-| 2021.01 | 2021 | 2021-2022 update |
-| 2022.01 | 2022 | 2022-2023 update |
-| 2023.01 | 2023 | 2023-2024 update |
+Version numbering schema: `v<year>.<two digit integer>`.
+
+| version  | year | changes          |
+|:--------:|:----:|:-----------------|
+| v2020.01 | 2020 | initial make     |
+| v2021.01 | 2021 | 2021-2022 update |
+| v2022.01 | 2022 | 2022-2023 update |
+| v2023.01 | 2023 | 2023-2024 update |
 
 # Requirements
 
