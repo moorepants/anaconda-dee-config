@@ -19,8 +19,8 @@ Past:
 
 # Contributing
 
-Managing a large university-wide software distribution takes a large effort. At
-the minimum, we ask that you contribute by opening issues in this repository to
+Managing a university-wide software distribution takes a large effort. At the
+minimum, we ask that you contribute by opening issues in this repository to
 report bugs and software/feature requests. At the maximum, help to
 collaboratively improve the distribution through merge requests and testing the
 build and installation. We will do our best to address issues and merge
@@ -87,15 +87,15 @@ The (annual) process flow is roughly as follows:
 | Jul  | alpha testing new installation and repair apparent errors                    |
 | Aug  | do beta (field) testing in faculties                                         |
 | Sep  | new environment packaged, in DEE, and published on software.tudelft.nl       |
-| Sep  | new issues opened on Gitlab                                                  |
+| Sep+ | new issues opened on Gitlab                                                  |
 
 # Steps to build the installer
 
 ## Step 1: Install Anaconda/Miniconda/Miniforge
 
 You will need conda installed on Windows 10. You can use conda from Anaconda,
-Miniconda, or any other conda-based installation. For example, you can install
-the latest Miniconda from:
+Miniconda, Miniforge, or any other conda-based installation. For example, you
+can install the latest Miniconda from:
 
 https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 
@@ -108,9 +108,9 @@ cd anaconda-dee-config
 
 ## Step 3: Update and configure conda
 
-This makes sure conda is up-to-date and is using the libmamba solver. The
-libmamba solver is faster, uses less memory, gives better error messages, and
-can solve harder sets of constraints.
+This makes sure conda is up-to-date and is using the recently added libmamba
+solver. The libmamba solver is faster, uses less memory, gives better error
+messages, and can solve harder sets of constraints.
 
 ```bash
 conda update -n base conda
@@ -157,7 +157,8 @@ computer you want to install it on.
 ## Step 2: Run the installer
 
 Double click on the tudelft-anaconda installer and follow the prompts. By
-default this will install the TU Delft Anaconda in `C:\Program Files\tudelft-anaconda`.
+default this will install the TU Delft Anaconda in `C:\Program
+Files\tudelft-anaconda`.
 
 ## Step 3: Download PyPi packages
 
@@ -195,28 +196,26 @@ conda list --verbose --show-channel-urls -n base > base-pkgs.lst
 
 # Testing the installations
 
-Various approaches exist to create a beta test environment. The method used in
-recent years:
+Various approaches exist to create a beta testing environment that matches the
+exam computers. The method used in recent years:
 
 - assign a test machine and test using RemoteDesktop (Citrix)
 - assign access rights to a beta tester
 
-Finally: test the DEE with the beta-release.
-
-The latter step has shown non-trivial, and is therefore recommended.
+Request these from WPS.
 
 # Adding new packages to the installer
 
-If you need a conda package that is not available in Conda Forge
-installation, you can request inclusion of the package. The first step is to
-check if your package is available in [Conda Forge](https://conda-forge.org/).
-Search [this list](https://conda-forge.org/#add_recipe) to check (note that
-package names may differ from PyPi, CRAN, etc.). If your package is not present
-in Conda Forge, then you should initiate a new package build following [the
-instructions to add a recipe](https://conda-forge.org/#add_recipe).
+If you need a conda package that is not available in Conda Forge installation,
+you can request inclusion of the package. The first step is to check if your
+package is available in [Conda Forge](https://conda-forge.org/).  Search [this
+list](https://conda-forge.org/#add_recipe) to check (note that package names
+may differ from PyPi, CRAN, etc.). If your package is not present in Conda
+Forge, then you should initiate a new package build following [the instructions
+to add a recipe](https://conda-forge.org/#add_recipe).
 
 Once the package is available on Conda Forge for Windows 64 bit systems, open a
-pull request on this repository adding your package name to the
+merge request on this repository adding your package name to the
 `construct.yaml` file. Test building the installer locally on Windows and
 report your success (or failures) in the pull request.
 
@@ -242,23 +241,32 @@ Is it possible to have different conda environments other than the base
 environment?
 
 > We can add new environments using Conda Constructor and make them selectable by
-end users, but the current limitation is the 2GB limit for our exe installer on
-Windows. It is difficult to keep the installer under 2GB with even one
+end users, but the current limitation is the 2GB maximum for our exe installer
+on Windows. It is difficult to keep the installer under 2GB with even one
 additional environment if it includes the Anaconda distribution. Switching to
 only Conda Forge packages may allow us to reduce the installer size and thus
 support a limited number of additional environments.
 
-Why can't my package be installed with PyPi?
+Why can't my package be installed with PyPi/Cargo/NPM/CRAN?
 
-> We manage a monolithic installation of packages that come from a variety of
-languages (Python, C++, C, R, Julia, CUDA, etc.). Firstly, many of the packages
-cannot be installed from PyPi, as PyPi only hosts Python packages.  Secondly,
-it is quite difficult, if not impossible, to create a compatible set of
-packages if relying on PyPi (see https://pypackaging-native.github.io/ for
-detailed explanations). The binaries available on Conda Forge are guaranteed to
-provide a compatible set by the nature of its design. Conda Forge also hosts
-packages from all programming languages. This provides a minimal headache way
-to deliver a working software environments to our students.
+> Software building and installing ranges from simple to extremely complex,
+even for a single package. This is further complicated by trying to have a
+mutually compatible set of hundreds or thousands of packages installed
+together. We manage a monolithic installation of packages that come from a
+variety of languages (Python, C++, C, R, Julia, CUDA, etc.). Firstly, many of
+the packages cannot be installed from a single languages' repository, e.g. PyPi
+only hosts Python packages. Secondly, it is quite difficult, if not
+impossible, to create a compatible set of packages if relying on PyPi (see
+https://pypackaging-native.github.io/ for detailed explanations). A tenable
+solution that does not require excessive amounts of time and complexity for
+this team is to rely on Conda Forge for solving these problems (with our
+help!). The binaries available on Conda Forge are guaranteed to provide a
+compatible set by the nature of its design. Even though it may seem simple to
+install your package on your computer, it may not be so here. Every special
+case we add, costs us more time. So we default to Conda Forge packages with
+rare exceptions that depend on available volunteer time. This provides a
+minimal headache way to deliver a working software environments to our
+students.
 
 Why can't students `pip install` or `conda install` packages while on the
 computers?
@@ -276,6 +284,7 @@ interest in doing so.
 
 - Alexander in 't veld
 - Arend Schwab
+- Artur Schweidtmann
 - Bart Gerritsen
 - Coen de Visser
 - Cornel Thill
