@@ -1,17 +1,31 @@
-# Anaconda-DEE-config -- Anaconda Digital Exam Environment Configuration
+# Conda-DEE-config -- Conda Digital Exam Environment Configuration
 
 This repository houses the configuration files and scripts for building a TU
-Delft Anaconda standalone offline installer that includes annually requested
-software packages that extend the standard Anaconda installer. This is suitable
-for installing on TU Delft's lab computers including those used for digital
-examinations.
+Delft Conda-based standalone offline installer that includes annually requested
+software packages. This is suitable for installing on TU Delft's lab computers
+including those used for digital examinations.
 
-# Authors:
+# Maintainers
 
-- Jason K. Moore, 3mE, j.k.moore@tudelft.nl
-- Bart Gerritsen, EEMCS, b.h.m.gerritsen@tudelft.nl
+Current:
+
+- Jason K. Moore, ME, j.k.moore@tudelft.nl
 - Jan-Maarten Brockhoff, ICT, J.J.M.Brockhoff@tudelft.nl
 - Kevin Geboers, Workplace Support Education, k.f.geboers@tudelft.nl
+
+Past:
+
+- Bart Gerritsen, EEMCS, b.h.m.gerritsen@tudelft.nl
+
+# Contributing
+
+Managing a university-wide software distribution takes a large effort. At the
+minimum, we ask that you contribute by opening issues in this repository to
+report bugs and software/feature requests. At the maximum, help to
+collaboratively improve the distribution through merge requests and testing the
+build and installation. We will do our best to address issues and merge
+requests in a timely manner and will also provide commit rights to those that
+would like to help maintain this repository. Reach out if that interests you.
 
 # Revision history
 
@@ -38,21 +52,52 @@ Version numbering schema: `v<year>.<two digit integer>`.
 
 # Solution
 
-We create a Windows executable installer for a collection of conda packages
+We create a Windows executable installer for a collection of Conda packages
 using [Conda Constructor](https://github.com/conda/constructor) and script its
-installation on Windows. We install a set of software packages that includes
-the Anaconda distribution and other specifically requested packages pulled from
-the Anaconda channel and the Conda Forge channel.
+installation on Windows. We install a set of software packages from [Conda
+Forge](https://conda-forge.org/) and make them available via the Conda package
+manager.
+
+# Process to agree on installation
+
+The goal of agreeing on a joint installation of a conda-based distribution is
+multifold:
+
+1. to avoid a cluttering of (slightly) different Python environments across the
+   infrastructure within the TU Delft
+2. to avoid intricate and disturbing differences between Python environments on
+   the one hand and the DigitalExam python-environment during exams
+3. to mitigate the burden of maintaining the configurations involved
+
+This installation is revised and updated in a yearly cycle. ICT-WPS
+("Werkplekbeheer") receives an installation instruction, drafted on behalf of
+all faculties by the team that runs this repository, taking care of the actual
+implementation of a prepared package. This package may then be deployed through
+https://software.tudelft.nl and is at the basis of the implementation of the
+DigitalExam-environment.
+
+The (annual) process flow is roughly as follows:
+
+| Date | Action                                                                       |
+|:----:|:----------------------------------------------------------------------------:|
+| Apr  | review the issues brought up in the running academic year                    |
+| May  | set out a master plan with ICT Werkplekbeheer                                |
+| Jun  | send around communication to users community to express new needs and wishes |
+| Jun  | draft an installation specification and work plan and send to ICT            |
+| Jul  | alpha testing new installation and repair apparent errors                    |
+| Aug  | do beta (field) testing in faculties                                         |
+| Sep  | new environment packaged, in DEE, and published on software.tudelft.nl       |
+| Sep+ | new issues opened on Gitlab                                                  |
 
 # Steps to build the installer
 
 ## Step 1: Install Anaconda/Miniconda/Miniforge
 
 You will need conda installed on Windows 10. You can use conda from Anaconda,
-Miniconda, or any other conda-based installation. For example, you can install
-the latest Anaconda from:
+Miniconda, Miniforge, or any other conda-based installation. For example, you
+can install the latest Miniconda from:
 
-https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Windows-x86_64.exe
+https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 
 ## Step 2: Clone this repository
 
@@ -63,36 +108,30 @@ cd anaconda-dee-config
 
 ## Step 3: Update and configure conda
 
-This makes sure conda is up-to-date and it installs the libmamba solver and
-sets it as the default solver for your conda installation. The libmamba solver
-is faster, uses less memory, gives better error messages, and can solve harder
-sets of constraints.
+This makes sure conda is up-to-date and is using the recently added libmamba
+solver. The libmamba solver is faster, uses less memory, gives better error
+messages, and can solve harder sets of constraints.
 
 ```bash
 conda update -n base conda
-conda install -n base conda-libmamba-solver
-conda config --set solver libmamba
 ```
-
-After this installed build process you can set the solver back to the default
-with `conda config --set solver classic`, if needed.
 
 ## Step 4: Install constructor in its own environment
 
 You will build the installer with
 [constructor](https://github.com/conda/constructor), which is the tool used to
 build the Anaconda installer. Create an environment with only constructor and
-the libmamba solver and activate it.
+activate it.
 
 ```bash
-conda create -n constructor constructor conda-libmamba-solver
+conda create -n constructor constructor
 conda activate constructor
 ```
 
 ## Step 5: Construct the installer
 
 constructor will read the contents of the `construct.yaml` file, solve for the
-compatible set of packages and build a `.exe` installer that contains them. TO
+compatible set of packages and build a `.exe` installer that contains them. To
 build the installer, run:
 
 ```
@@ -101,7 +140,7 @@ constructor .
 
 in the directory with the `construct.yaml` file. This can take 10-30 minutes
 depending on your computer's speed and download speeds. After it finishes there
-will be `tudelft-anaconda-2023.09.27-Windows-x86_64.exe` in the directory. This
+will be `tudelft-anaconda-<date>-Windows-x86_64.exe` in the directory. This
 installer can be executed on any computer that does not have Anaconda
 installed.
 
@@ -112,13 +151,14 @@ Anaconda on other computers.
 
 ## Step 1: Download the installer
 
-Download `tudelft-anaconda-2023.09.27-Windows-x86_64.exe` to the Windows 10
+Download `tudelft-anaconda-<date>-Windows-x86_64.exe` to the Windows 10
 computer you want to install it on.
 
 ## Step 2: Run the installer
 
 Double click on the tudelft-anaconda installer and follow the prompts. By
-default this will install the TU Delft Anaconda in `C:\Program Files\tudelft-anaconda`.
+default this will install the TU Delft Anaconda in `C:\Program
+Files\tudelft-anaconda`.
 
 ## Step 3: Download PyPi packages
 
@@ -146,90 +186,36 @@ python -m pip install --no-deps python_tsp-0.4.0-py3-none-any.whl
 Note that dwf will not import unless the proprietary software "Digilent
 Waveforms" is installed and accessible in standard locations.
 
-# Process to agree on installation
+## Step 5: Check versions
 
-The goal of agreeing on a joint installation of Anaconda is multifold:
+The full list of packages and their versions can be created with:
 
-1. to avoid a cluttering of (slightly) different Python environments across the
-   infrastructure within the TU Delft
-2. to avoid intricate and disturbing differences between Python environments on
-   the one hand and the DigitalExam python-environment during exams
-3. to mitigate the burden of maintaining the configurations involved
+```
+conda list --verbose --show-channel-urls -n base > base-pkgs.lst
+```
 
-Typically, but not "set in stone", the Anaconda-environment is being revised
-and updated in a yearly cycle. ICT-WPS ("Werkplekbeheer") receives an
-installation instruction, drafted on behalf of all faculties by EEMCS and
-including all user desires, taking care of the actual implementation of a
-prepared package. This package may then be deployed through
-https://software.tudelft.nl and is at the basis of the implementation of the
-DigitalExam-environment.
+# Testing the installations
 
-The (annual) process flow is roughly as follows:
-
-| Date | Action |
-|:----:|:-------|
-| Apr | review the issues brought up in the running academic year |
-| May | set out a master plan with ICT Werkplekbeheer |
-| Jun | send around communication to users community to express new needs and wishes |
-| Jun | draft an installation specification and work plan and send to ICT |
-| Jul | alpha testing new installation and repair apparent errors |
-| Aug | do beta (field) testing in faculties |
-| Sep | new environment packaged, in DEE, and published on software.tudelft.nl |
-| Sep | new issues opened on Gitlab |
-
-# The DEE and Anaconda
-
-Anaconda publishes a new version, typically each Dec/Jan a `<year>.01` version,
-a `<year>.05` May-version and a `<year>.11` November version. For our academic
-purposes, the May-version (or: the summer release) is considered most
-appropriate. It is the latest version, in due time for integration for the next
-academic cycle.
-
-As soon as the version has been released by Anaconda, we install it, and make
-an inventory of the Conda package lists, as follows:
-
-1. install the version (action: EEMCS)
-1. make a package list of the `base` environment:
-   ```shell
-   conda list --verbose --show-channel-urls -n base > base-pkgs.lst
-   ```
-1. communicate (action: EEMCS) this to the user base with the faculties, for
-   supplementation, requirements, and issues
-1. develop (action: EEMCS) a (local) prototype of the DEE and do early
-   verification
-1. design and define installation instruction (action: EEMCS) for an alpha
-   version of the DEE, based on the local prototype
-1. submit installation instructions (action: EEMCS) to WPS
-1. implement (action: WPS) an alpha version of the DEE
-1. do alpha testing on the alpha version (action: WPS plus user base)
-1. hand over (action: WPS) the alpha version for beta testing
-1. perform beta testing (action: EEMCS plus user base) on the beta version
-1. release the DEE for the coming academic year
-
-# Test platform
-
-Various approaches exist to create a beta test environment. The method used in
-recent years:
+Various approaches exist to create a beta testing environment that matches the
+exam computers. The method used in recent years:
 
 - assign a test machine and test using RemoteDesktop (Citrix)
 - assign access rights to a beta tester
 
-Finally: test the DEE with the beta-release.
-
-The latter step has shown non-trivial, and is therefore recommended.
+Request these from WPS.
 
 # Adding new packages to the installer
 
-If you need a conda package that is not available in the base Anaconda
-installation, you can request inclusion of the package. The first step is to
-check if your package is available in [Conda Forge](https://conda-forge.org/).
-Search [this list](https://conda-forge.org/#add_recipe) to check (note that
-package names may differ from PyPi, CRAN, etc.). If your package is not present
-in Conda Forge, then you should initiate a new package build following [the
-instructions to add a recipe](https://conda-forge.org/#add_recipe).
+If you need a conda package that is not available in Conda Forge installation,
+you can request inclusion of the package. The first step is to check if your
+package is available in [Conda Forge](https://conda-forge.org/).  Search [this
+list](https://conda-forge.org/#add_recipe) to check (note that package names
+may differ from PyPi, CRAN, etc.). If your package is not present in Conda
+Forge, then you should initiate a new package build following [the instructions
+to add a recipe](https://conda-forge.org/#add_recipe).
 
 Once the package is available on Conda Forge for Windows 64 bit systems, open a
-pull request on this repository adding your package name to the
+merge request on this repository adding your package name to the
 `construct.yaml` file. Test building the installer locally on Windows and
 report your success (or failures) in the pull request.
 
@@ -245,27 +231,42 @@ available on Conda Forge, open a merge request on this repository adding your
 package to the `construct.yaml` file. Make sure to submit a merge request here
 months before the freeze deadline for the new academic year.
 
+The package I need is missing from Conda Forge and adding it is beyond my
+skills.
+
+> Open an issue here and we will coach and help you get the package built on
+Conda Forge.
+
 Is it possible to have different conda environments other than the base
 environment?
 
 > We can add new environments using Conda Constructor and make them selectable by
-end users, but the current limitation is the 2GB limit for our exe installer on
-Windows. It is difficult to keep the installer under 2GB with even one
+end users, but the current limitation is the 2GB maximum for our exe installer
+on Windows. It is difficult to keep the installer under 2GB with even one
 additional environment if it includes the Anaconda distribution. Switching to
 only Conda Forge packages may allow us to reduce the installer size and thus
 support a limited number of additional environments.
 
-Why can't my package be installed with PyPi?
+Why can't my package be installed with PyPi/Cargo/NPM/CRAN?
 
-> We manage a monolithic installation of packages that come from a variety of
-languages (Python, C++, C, R, Julia, CUDA, etc.). Firstly, many of the packages
-cannot be installed from PyPi, as PyPi only hosts Python packages.  Secondly,
-it is quite difficult, if not impossible, to create a compatible set of
-packages if relying on PyPi (see https://pypackaging-native.github.io/ for
-detailed explanations). The binaries available on Conda Forge are guaranteed to
-provide a compatible set by the nature of its design. Conda Forge also hosts
-packages from all programming languages. This provides a minimal headache way
-to deliver a working software environments to our students.
+> Software building and installing ranges from simple to extremely complex,
+even for a single package. This is further complicated by trying to have a
+mutually compatible set of hundreds or thousands of packages installed
+together. We manage a monolithic installation of packages that come from a
+variety of languages (Python, C++, C, R, Julia, CUDA, etc.). Firstly, many of
+the packages cannot be installed from a single languages' repository, e.g. PyPi
+only hosts Python packages. Secondly, it is quite difficult, if not
+impossible, to create a compatible set of packages if relying on PyPi (see
+https://pypackaging-native.github.io/ for detailed explanations). A tenable
+solution that does not require excessive amounts of time and complexity for
+this team is to rely on Conda Forge for solving these problems (with our
+help!). The binaries available on Conda Forge are guaranteed to provide a
+compatible set by the nature of its design. Even though it may seem simple to
+install your package on your computer, it may not be so here. Every special
+case we add, costs us more time. So we default to Conda Forge packages with
+rare exceptions that depend on available volunteer time. This provides a
+minimal headache way to deliver a working software environments to our
+students.
 
 Why can't students `pip install` or `conda install` packages while on the
 computers?
@@ -283,11 +284,12 @@ interest in doing so.
 
 - Alexander in 't veld
 - Arend Schwab
+- Artur Schweidtmann
 - Bart Gerritsen
 - Coen de Visser
 - Cornel Thill
 - Dennis van den Ouden-van-der-Horst
-- Erik Ulijn (3mE)
+- Erik Ulijn (ME)
 - Ferdinand Grozema
 - Ferdinand Postema (LR)
 - Frank Mulder
@@ -295,7 +297,7 @@ interest in doing so.
 - Heike Vallery
 - Iulia lefter
 - Jacco Hoekstra
-- Jason K. Moore (3mE)
+- Jason K. Moore (ME)
 - Jeroen Kalkman
 - Joost Ellerbroek
 - Ludolf Meester
@@ -306,7 +308,7 @@ interest in doing so.
 - Mark Bakker
 - Martijn Tannemaat
 - Miriam Coenders
-- Peter Somhorst (3mE)
+- Peter Somhorst (ME)
 - Peter Wilders
 - Peter van Nieuwenhuizen
 - Petra Heijnen (TBM)
