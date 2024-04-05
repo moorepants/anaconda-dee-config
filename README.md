@@ -280,7 +280,6 @@ tools install packages to, so the default install will not work.
 This is a list of people who have requested packages in the past or expressed
 interest in doing so.
 
-- Alexander in 't veld
 - Artur Schweidtmann
 - Bart Gerritsen
 - Coen de Visser
@@ -303,7 +302,6 @@ interest in doing so.
 - Margreet Docter (TNW)
 - Mario Negrello
 - Mark Bakker
-- Martijn Tannemaat
 - Miriam Coenders
 - Peter Somhorst (ME)
 - Peter Wilders
@@ -317,5 +315,4 @@ interest in doing so.
 - Sander van Cranenburgh
 - Tom Viering
 - Valeri Markine
-- Walter van Gulik
 - Wouter van der Wal
