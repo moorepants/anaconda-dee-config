@@ -99,6 +99,7 @@ specs:
   - qtconsole
   - requests  # dep for python-tsp
   - rope
+  - salabim
   - scikit-image
   - scikit-learn
   - scikits.odes
