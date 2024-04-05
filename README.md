@@ -36,7 +36,7 @@ Version numbering schema: `v<year>.<two digit integer>`.
 | v2020.01 | 2020 | initial make     |
 | v2021.01 | 2021 | 2021-2022 update |
 | v2022.01 | 2022 | 2022-2023 update |
-| v2023.01 | 2023 | 2023-2024 update |
+| [v2023.01](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2023.01) | 2023 | 2023-2024 update |
 
 # Requirements
 
@@ -78,16 +78,18 @@ DigitalExam-environment.
 
 The (annual) process flow is roughly as follows:
 
-| Date | Action                                                                       |
-|:----:|:----------------------------------------------------------------------------:|
-| Apr  | review the issues brought up in the running academic year                    |
-| May  | set out a master plan with ICT Werkplekbeheer                                |
-| Jun  | send around communication to users community to express new needs and wishes |
-| Jun  | draft an installation specification and work plan and send to ICT            |
-| Jul  | alpha testing new installation and repair apparent errors                    |
-| Aug  | do beta (field) testing in faculties                                         |
-| Sep  | new environment packaged, in DEE, and published on software.tudelft.nl       |
-| Sep+ | new issues opened on Gitlab                                                  |
+| Date  | Action                                                                       |
+|:-----:|:----------------------------------------------------------------------------:|
+| Mar   | review the issues brought up in the running academic year                    |
+| Apr   | set out a master plan with ICT Werkplekbeheer                                |
+| May   | send around communication to users community to express new needs and wishes |
+| Jun   | draft an installation specification and work plan and send to ICT            |
+| Jul 1 | package version number freeze                                                |
+| Jul   | alpha testing new installation and repair apparent errors                    |
+| Jul   | tweak package version pins and create any necessary conda environments       |
+| Aug   | do beta (field) testing in faculties                                         |
+| Sep 1 | new environment packaged, in DEE, and published on software.tudelft.nl       |
+| Sep+  | new issues opened on Gitlab                                                  |
 
 # Steps to build the installer
 
@@ -274,6 +276,13 @@ work in general. It may be possible to host our own copies of Conda Forge or
 PyPi behind our firewall in the future, but this is a large undertaking. We
 also do not give students write access to the locations that either of these
 tools install packages to, so the default install will not work.
+
+Why are there no version specifications in the `construct.yaml` file? How do we
+know what version will be installed?
+
+> We install the latest Conda Forge version of all packages up to the
+July 1 version freeze date. Build the installer to see what versions are
+installed. We are working on a way to publish regular version lists.
 
 # Contact list
 
