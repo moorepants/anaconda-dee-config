@@ -1,5 +1,5 @@
 name: tudelft-anaconda
-version: "2023.09.27"
+version: "2024.dev"
 company: Delft University of Technology
 installer_type: all
 channels:
@@ -63,6 +63,7 @@ specs:
   - pyvisgraph
   - qtconsole
   - requests  # dep for python-tsp
+  - salabim
   - scipy
   - shapely
   - slycot
