@@ -281,7 +281,6 @@ This is a list of people who have requested packages in the past or expressed
 interest in doing so.
 
 - Alexander in 't veld
-- Arend Schwab
 - Artur Schweidtmann
 - Bart Gerritsen
 - Coen de Visser
@@ -314,9 +313,7 @@ interest in doing so.
 - Regine Vroom
 - Remko Uijlenhoet
 - Rene van Paassen (LR)
-- Rob Stikkelman
 - Ronald Ligteringen
-- Sander Bergman
 - Sander van Cranenburgh
 - Tom Viering
 - Valeri Markine
