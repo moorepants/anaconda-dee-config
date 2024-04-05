@@ -316,3 +316,4 @@ interest in doing so.
 - Tom Viering
 - Valeri Markine
 - Wouter van der Wal
+- director-ce@tudelft.nl (Requested by Artur Schweidtmann)
