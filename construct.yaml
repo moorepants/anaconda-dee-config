@@ -1,16 +1,21 @@
 name: tudelft-anaconda
-version: "2023.09.27"
+version: "v2024.dev"
 company: Delft University of Technology
 installer_type: all
 channels:
-  - defaults
   - conda-forge
 specs:
-  - anaconda
-  - anaconda-navigator
+  - altair
+  - defaults::anaconda-navigator  # only thing from defaults!
+  - arrow
   - asciitree
+  - astropy
+  - autopep8
   - black
+  - bokeh
+  - bzip2
   - click  # dep for python-tsp & tsplib95
+  - cloudpickle
   - colorama
   - colorful
   - conda
@@ -18,23 +23,39 @@ specs:
   - console_shortcut  # [win]
   - control
   - coolprop
+  - curl
+  - cython
+  - dash
+  - dask
   - dataclasses
+  - datashader
   - deprecated  # dep for python-tsp & tsplib95
+  - dill
   - enum34  # dep for dwf
+  - flask
+  - gmpy2
   - graphviz
+  - h5py
+  - holoviews
   - intervals
   - ipykernel
+  - ipython
   - ipywidgets
+  - jedi
   - jupyter
   - jupyter_contrib_nbextensions  # [not win]
   - jupyterlab
   - jupytext
   - markdown
   - matplotlib
+  - mccabe
   - menuinst  # [win]
+  - mkl-service  # [win]
   - more-itertools
+  - mpmath
   - mypy
   - nb_conda_kernels
+  - nbclassic
   - nbclient
   - nbconvert
   - nbconvert-core
@@ -45,30 +66,64 @@ specs:
   - nidaqmx-python
   - nose
   - notebook
+  - numba
+  - numexpr
   - numpy
+  - packaging
   - pandas
+  - pandoc
   - pdoc3
+  - pillow
   - pip
+  - plotly
   - powershell_shortcut  # [win]
   - pulp
+  - pyarrow
+  - pydantic
   - pydot
   - pydotplus
   - pydstool
+  - pyflakes
+  - pygments
   - pygraphviz
   - pylint
+  - pyqt
+  - pytables
   - pytest
+  - python
   - python-igraph
-  - python==3.10
+  - pythreejs
   - pyvisa
   - pyvisgraph
+  - pyyaml
   - qtconsole
   - requests  # dep for python-tsp
+  - rope
+  - scikit-image
+  - scikit-learn
+  - scikits.odes
   - scipy
+  - scrapy
+  - seaborn
+  - setuptools
   - shapely
   - slycot
+  - sphinx
+  - spyder
+  - spyder-kernels
   - spyder-notebook
+  - sqlalchemy
+  - sqlite
+  - statsmodels
   - stopit
+  - sympy
   - tabulate  # dep for python-tsp & tsplib95
+  - toolz
+  - traitlets
+  - tzdata
+  - urllib3
+  - wheel
+  - xarray
 build_outputs:
   - info.json
   - pkgs_list
