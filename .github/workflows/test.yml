@@ -1,0 +1,70 @@
+name: windows
+
+on: [push]
+
+# cancels prior builds for this workflow when new commit is pushed
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          python-version: "3.11"
+          miniforge-version: latest
+      - name: Install constructor
+        run: |
+          conda info
+          conda install constructor
+      - name: Build the installer
+        run: |
+          constructor .
+          python pretty_pkg_list.py
+          (Get-Item -Path .\tudelft-anaconda-v2024.dev-Windows-x86_64.exe).Length/1MB
+      - name: Archive the package list
+        uses: actions/upload-artifact@v4
+        with:
+          name: tudelft-anaconda-pkg-list
+          path: pkg-list.base.txt
+      - name: Archive the installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: tudelft-anaconda-installer
+          path: tudelft-anaconda-v2024.dev-Windows-x86_64.exe
+  install:
+    name: Install and test
+    runs-on: windows-latest
+    needs: build
+    defaults:
+      run:
+        shell: pwsh
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: tudelft-anaconda-installer
+      - run: dir
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          installer-url: file:///D:/a/anaconda-dee-config/anaconda-dee-config/tudelft-anaconda-v2024.dev-Windows-x86_64.exe
+          auto-activate-base: true
+          activate-environment: ""
+      - name: Test
+        run: |
+          conda info
+          conda list
+          python test_imports.py
