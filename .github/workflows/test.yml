@@ -56,10 +56,11 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: tudelft-anaconda-installer
+      - run: dir
       - uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
-          installer-url: file://tudelft-anaconda-v2024.dev-Windows-x86_64.exe
+          installer-url: file:\\tudelft-anaconda-v2024.dev-Windows-x86_64.exe
       - name: Test
         run: |
           conda info

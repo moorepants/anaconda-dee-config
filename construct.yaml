@@ -6,7 +6,7 @@ channels:
   - conda-forge
 specs:
   - altair
-  - defaults::anaconda-navigator  # only thing from defaults!
+  #- defaults::anaconda-navigator  # only thing from defaults!
   - arrow
   - asciitree
   - astropy
