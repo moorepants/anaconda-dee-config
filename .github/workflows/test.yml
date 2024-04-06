@@ -23,13 +23,12 @@ jobs:
           auto-update-conda: true
           python-version: "3.11"
           miniforge-version: latest
-      - name: Conda
+      - name: Install constructor
         run: |
           conda info
           conda install constructor
-          conda list
-      - name: Conda
+      - name: Build the installer
         run: |
           constructor .
-          Get-Content .\pkg-list.base.txt
-
+          python pretty_pkg_list.py
+          (Get-Item -Path .\tudelft-anaconda-v2024.dev-Windows-x86_64.exe).Length/1MB
