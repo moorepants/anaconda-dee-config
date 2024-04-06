@@ -55,6 +55,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: tudelft-anaconda-installer
+          path: tudelft-anaconda-v2024.dev-Windows-x86_64.exe
       - uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
