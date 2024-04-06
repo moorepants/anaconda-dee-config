@@ -11,6 +11,9 @@ jobs:
   build:
     name:
     runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
     strategy:
       fail-fast: false
     steps:
@@ -21,8 +24,12 @@ jobs:
           python-version: "3.11"
           miniforge-version: latest
       - name: Conda
-        shell: pwsh
         run: |
           conda info
           conda install constructor
           conda list
+      - name: Conda
+        run: |
+          constructor .
+          Get-Content .\pkg-list.base.txt
+
