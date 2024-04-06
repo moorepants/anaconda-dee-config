@@ -293,7 +293,6 @@ interest in doing so.
 - Bart Gerritsen
 - Coen de Visser
 - Cornel Thill
-- Dennis van den Ouden-van-der-Horst
 - Erik Ulijn (ME)
 - Ferdinand Grozema
 - Ferdinand Postema (LR)
