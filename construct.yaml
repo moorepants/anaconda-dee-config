@@ -6,7 +6,7 @@ channels:
   - conda-forge
 specs:
   - altair
-  - defaults::anaconda-navigator  # only thing from defaults!
+  - defaults::anaconda-navigator
   - arrow
   - asciitree
   - astropy
@@ -20,7 +20,7 @@ specs:
   - colorful
   - conda
   - configparser
-  - console_shortcut  # [win]
+  - defaults::console_shortcut  # [win]
   - control
   - coolprop
   - curl
@@ -76,7 +76,7 @@ specs:
   - pillow
   - pip
   - plotly
-  - powershell_shortcut  # [win]
+  - defaults::powershell_shortcut  # [win]
   - pulp
   - pyarrow
   - pydantic
