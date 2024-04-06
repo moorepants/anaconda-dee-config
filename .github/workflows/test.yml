@@ -61,6 +61,8 @@ jobs:
         with:
           auto-update-conda: true
           installer-url: file:///D:/a/anaconda-dee-config/anaconda-dee-config/tudelft-anaconda-v2024.dev-Windows-x86_64.exe
+          auto-activate-base: true
+          activate-environment: ""
       - name: Test
         run: |
           conda info
