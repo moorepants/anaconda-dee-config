@@ -22,7 +22,7 @@ jobs:
           miniforge-version: latest
       - name: Conda
         shell: pwsh
-        run:
-          - conda info
-          - conda install constructor
-          - conda list
+        run: |
+          conda info
+          conda install constructor
+          conda list
