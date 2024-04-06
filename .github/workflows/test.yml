@@ -32,3 +32,8 @@ jobs:
           constructor .
           python pretty_pkg_list.py
           (Get-Item -Path .\tudelft-anaconda-v2024.dev-Windows-x86_64.exe).Length/1MB
+      - name: Archive the installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: tudelft-anaconda-installer
+          path: tudelft-anaconda-v2024.dev-Windows-x86_64.exe
