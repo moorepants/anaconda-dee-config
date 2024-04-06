@@ -1,0 +1,27 @@
+name: windows
+
+on: [push, pull_request]
+
+# cancels prior builds for this workflow when new commit is pushed
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v3
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          python-version: "3.11"
+          miniforge-version: latest
+      - name: Conda
+        shell: pwsh
+        run: conda info
+        run: conda install constructor
+        run: conda list
