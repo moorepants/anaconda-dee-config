@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
@@ -45,22 +45,20 @@ jobs:
   install:
     name: Install and test
     runs-on: windows-latest
+    needs: build
     defaults:
       run:
         shell: pwsh
     strategy:
       fail-fast: false
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: tudelft-anaconda-installer
-          path: tudelft-anaconda-v2024.dev-Windows-x86_64.exe
       - uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
-          python-version: "3.11"
-          miniforge-version: latest
           installer-url: tudelft-anaconda-v2024.dev-Windows-x86_64.exe
       - name: Test
         run: |
