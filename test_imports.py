@@ -11,7 +11,6 @@ def test_imports():
         'configparser',
         'control',
         'cython',
-        'dwf',  # getting a missing so file
         'intervals',
         'more_itertools',
         'nidaqmx',  # package name: nidaqmx-python

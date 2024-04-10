@@ -31,7 +31,6 @@ specs:
   - datashader
   - deprecated  # dep for python-tsp & tsplib95
   - dill
-  - enum34  # dep for dwf
   - flask
   - gmpy2
   - graphviz
