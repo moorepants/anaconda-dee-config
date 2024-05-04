@@ -14,7 +14,6 @@ specs:
   - black
   - bokeh
   - bzip2
-  - click  # dep for python-tsp & tsplib95
   - cloudpickle
   - colorama
   - colorful
@@ -29,7 +28,6 @@ specs:
   - dask
   - dataclasses
   - datashader
-  - deprecated  # dep for python-tsp & tsplib95
   - dill
   - flask
   - gmpy2
@@ -61,7 +59,7 @@ specs:
   - nbconvert-pandoc
   - nbformat
   - nbgrader
-  - networkx  # dep for tsplib95
+  - networkx
   - nidaqmx-python
   - nose
   - notebook
@@ -91,12 +89,13 @@ specs:
   - pytest
   - python
   - python-igraph
+  - python-tsp
   - pythreejs
   - pyvisa
   - pyvisgraph
   - pyyaml
   - qtconsole
-  - requests  # dep for python-tsp
+  - requests
   - rope
   - salabim
   - scikit-image
@@ -117,7 +116,6 @@ specs:
   - statsmodels
   - stopit
   - sympy
-  - tabulate  # dep for python-tsp & tsplib95
   - toolz
   - traitlets
   - tzdata
