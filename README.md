@@ -162,26 +162,7 @@ Double click on the tudelft-anaconda installer and follow the prompts. By
 default this will install the TU Delft Anaconda in `C:\Program
 Files\tudelft-anaconda`.
 
-## Step 3: Download PyPi packages
-
-There are three Python packages that are not included in the installer because
-they are not available as conda packages: python-tsp (depends on tsplib95).
-Download these files manually:
-
-- https://files.pythonhosted.org/packages/a0/2b/b1932d3674758ec5f49afa72d4519334a5ac2aac4d96cfd416eb872a1959/tsplib95-0.7.1-py2.py3-none-any.whl
-- https://files.pythonhosted.org/packages/6b/48/865289cba47b9f519e8fe4bcc1888aa687ad6bec6d674809d3e9cac6663c/python_tsp-0.4.0-py3-none-any.whl
-
-## Step 4: Install the PyPi packages
-
-Open the Anaconda command prompt and install each file with pip into the base
-environment (the order matters for the tsp packages):
-
-```
-python -m pip install --no-deps tsplib95-0.7.1-py2.py3-none-any.whl
-python -m pip install --no-deps python_tsp-0.4.0-py3-none-any.whl
-```
-
-## Step 5: Check versions
+## Step 3: Check versions
 
 The full list of packages and their versions can be created with:
 
