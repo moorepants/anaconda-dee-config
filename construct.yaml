@@ -4,8 +4,6 @@ company: Delft University of Technology
 installer_type: all
 channels:
   - conda-forge
-condarc:
-  channel_priority: strict
 specs:
   - altair
   - defaults::anaconda-navigator
