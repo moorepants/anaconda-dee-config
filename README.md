@@ -135,6 +135,11 @@ git clone https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config.git
 cd anaconda-dee-config
 ```
 
+If you don't want to use Git you can download a zip file of the latest version
+of this repository from:
+
+https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/archive/master/anaconda-dee-config-master.zip
+
 ## Step 3: Update and configure conda
 
 This makes sure conda is up-to-date and is using the recently added libmamba
