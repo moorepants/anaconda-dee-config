@@ -49,6 +49,7 @@ specs:
   - matplotlib
   - mccabe
   - menuinst  # [win]
+  - mesa
   - mkl-service  # [win]
   - more-itertools
   - mpmath
