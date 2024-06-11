@@ -93,13 +93,31 @@ The (annual) process flow is roughly as follows:
 
 # Steps to build the installer
 
-## Step 1: Install Anaconda/Miniconda/Miniforge
+## Step 1: Install Anaconda/Miniconda/Miniforge and Git
 
 You will need conda installed on Windows 10. You can use conda from Anaconda,
 Miniconda, Miniforge, or any other conda-based installation. For example, you
 can install the latest Miniconda from:
 
+- Anaconda: https://www.anaconda.com/download/
+- Miniconda: https://docs.anaconda.com/free/miniconda/miniconda-install/
+- Miniforge: https://conda-forge.org/miniforge/
+
+The latest Miniconda Windows installer is at:
+
 https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+
+Install Git, either:
+
+- Follow general isntallation instructions for your Operating System. For
+  example, Github provides this guidance:
+  https://github.com/git-guides/install-git
+- or, install Git with conda (open the Anaconda/Conda prompt in Windows or a
+  Terminal in OSX or Linux) and type:
+
+```bash
+conda install -c conda-forge git
+```
 
 ## Step 2: Clone this repository
 
@@ -153,7 +171,7 @@ Anaconda on other computers.
 
 ## Step 1: Download the installer
 
-Download `tudelft-anaconda-<date>-Windows-x86_64.exe` to the Windows 10
+Download `tudelft-anaconda-<version>-Windows-x86_64.exe` to the Windows 10
 computer you want to install it on.
 
 ## Step 2: Run the installer
