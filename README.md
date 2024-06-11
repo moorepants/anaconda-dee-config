@@ -174,7 +174,7 @@ constructor .
 
 in the directory with the `construct.yaml` file. This can take 10-30 minutes
 depending on your computer's speed and download speeds. After it finishes there
-will be `tudelft-anaconda-<date>-Windows-x86_64.exe` in the directory. This
+will be `tudelft-anaconda-<version>-Windows-x86_64.exe` in the directory. This
 installer can be executed on any computer that does not have Anaconda
 installed.
 
@@ -187,6 +187,13 @@ Anaconda on other computers.
 
 Download `tudelft-anaconda-<version>-Windows-x86_64.exe` to the Windows 10
 computer you want to install it on.
+
+We build Windows installers in this Github CI action:
+
+https://github.com/moorepants/anaconda-dee-config/actions
+
+The files can be downloaded up to 90 days after the build. Click the workflow
+run (likely the latest one) and then download from the "Artifacts" section:
 
 ## Step 2: Run the installer
 
