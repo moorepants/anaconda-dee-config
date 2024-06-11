@@ -97,7 +97,7 @@ The (annual) process flow is roughly as follows:
 
 You will need conda installed on Windows 10. You can use conda from Anaconda,
 Miniconda, Miniforge, or any other conda-based installation. For example, you
-can install the latest Miniconda from:
+can install the latest of the mentioned three installers from:
 
 - Anaconda: https://www.anaconda.com/download/
 - Miniconda: https://docs.anaconda.com/free/miniconda/miniconda-install/
