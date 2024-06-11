@@ -121,8 +121,17 @@ conda install -c conda-forge git
 
 ## Step 2: Clone this repository
 
+If you have SSH setup for the EWI Gitlab use:
+
 ```bash
 git clone git@gitlab.ewi.tudelft.nl:bhmgerritsen/anaconda-dee-config.git
+cd anaconda-dee-config
+```
+
+else use:
+
+```bash
+git clone https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config.git
 cd anaconda-dee-config
 ```
 
