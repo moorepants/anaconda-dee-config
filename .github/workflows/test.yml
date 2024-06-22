@@ -70,4 +70,4 @@ jobs:
           conda info
           conda list
           python test_imports.py
-          tudelft-anaconda/envs/pytorch/bin/python tests/test_pytorch.py
+          conda run -n pytorch python tests/test_pytorch.py
