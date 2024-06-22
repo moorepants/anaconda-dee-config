@@ -130,6 +130,7 @@ extra_envs:
   pytorch:
     specs:
       - cpuonly
+      - ipykernel  # allows access to this env using nb_conda_kernels
       - pytorch
       - torchaudio
       - torchvision
