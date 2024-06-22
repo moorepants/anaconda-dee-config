@@ -92,13 +92,10 @@ specs:
   - python-igraph
   - python-tsp
   - pythreejs
-  - pytorch
-  - pytorch_geometric
   - pyvisa
   - pyvisgraph
   - pyyaml
   - qtconsole
-  - rdkit
   - requests
   - rope
   - salabim
@@ -129,3 +126,12 @@ specs:
 build_outputs:
   - info.json
   - pkgs_list
+extra_envs:
+  pytorch:
+    specs:
+      - cpuonly
+      - pytorch
+      - torchaudio
+      - torchvision
+    channels:
+      - pytorch
