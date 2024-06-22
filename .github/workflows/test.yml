@@ -70,3 +70,5 @@ jobs:
           conda info
           conda list
           python test_imports.py
+          python test_slycot.py
+          python tests/test_pytorch.py
