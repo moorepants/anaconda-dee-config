@@ -135,3 +135,4 @@ extra_envs:
       - torchvision
     channels:
       - pytorch
+      - defaults
