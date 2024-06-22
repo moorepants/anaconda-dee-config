@@ -92,10 +92,13 @@ specs:
   - python-igraph
   - python-tsp
   - pythreejs
+  - pytorch
+  - pytorch_geometric
   - pyvisa
   - pyvisgraph
   - pyyaml
   - qtconsole
+  - rdkit
   - requests
   - rope
   - salabim
@@ -118,6 +121,7 @@ specs:
   - stopit
   - sympy
   - toolz
+  - torchvision-cpu
   - traitlets
   - tzdata
   - urllib3
