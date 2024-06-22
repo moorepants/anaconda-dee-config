@@ -121,7 +121,6 @@ specs:
   - stopit
   - sympy
   - toolz
-  - torchvision-cpu
   - traitlets
   - tzdata
   - urllib3
