@@ -92,10 +92,13 @@ specs:
   - python-igraph
   - python-tsp
   - pythreejs
+  - pytorch
+  - pytorch_geometric
   - pyvisa
   - pyvisgraph
   - pyyaml
   - qtconsole
+  - rdkit
   - requests
   - rope
   - salabim
