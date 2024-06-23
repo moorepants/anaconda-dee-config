@@ -132,8 +132,10 @@ extra_envs:
       - cpuonly
       - ipykernel  # allows access to this env using nb_conda_kernels
       - pytorch
+      - rdkit
+      - torch_geometric
       - torchaudio
       - torchvision
     channels:
       - pytorch
-      - defaults
+      - conda-forge
