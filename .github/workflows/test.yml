@@ -69,5 +69,6 @@ jobs:
         run: |
           conda info
           conda list
-          python test_imports.py
+          conda run -n base python tests/test_imports.py
+          conda run -n base python tests/test_slycot.py
           conda run -n pytorch python tests/test_pytorch.py

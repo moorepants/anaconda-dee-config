@@ -131,7 +131,6 @@ extra_envs:
     specs:
       - cpuonly
       - ipykernel  # allows access to this env using nb_conda_kernels
-      - jupyter
       - matplotlib
       - numpy
       - pandas
