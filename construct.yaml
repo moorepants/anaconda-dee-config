@@ -127,3 +127,23 @@ specs:
 build_outputs:
   - info.json
   - pkgs_list
+extra_envs:
+  pytorch:
+    specs:
+      - cpuonly
+      - ipykernel  # allows access to this env using nb_conda_kernels
+      - matplotlib
+      - numpy
+      - pandas
+      - pytorch
+      - pytorch_geometric
+      - rdkit
+      - scikit-learn
+      - scipy
+      - seaborn
+      - torchaudio
+      - torchvision
+      - tqdm
+    channels:
+      - pytorch
+      - conda-forge
