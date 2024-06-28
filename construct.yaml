@@ -6,7 +6,6 @@ channels:
   - conda-forge
 specs:
   - altair
-  - defaults::anaconda-navigator
   - arrow
   - asciitree
   - astropy
@@ -19,7 +18,6 @@ specs:
   - colorful
   - conda
   - configparser
-  - defaults::console_shortcut  # [win]
   - control
   - coolprop
   - curl
@@ -28,6 +26,9 @@ specs:
   - dask
   - dataclasses
   - datashader
+  - defaults::anaconda-navigator
+  - defaults::console_shortcut  # [win]
+  - defaults::powershell_shortcut  # [win]
   - dill
   - flask
   - gmpy2
@@ -74,7 +75,6 @@ specs:
   - pillow
   - pip
   - plotly
-  - defaults::powershell_shortcut  # [win]
   - pulp
   - pyarrow
   - pydantic
@@ -92,10 +92,16 @@ specs:
   - python-igraph
   - python-tsp
   - pythreejs
+  - pytorch::cpuonly
+  - pytorch::pytorch
+  - pytorch::torchaudio
+  - pytorch::torchvision
+  - pytorch_geometric
   - pyvisa
   - pyvisgraph
   - pyyaml
   - qtconsole
+  - rdkit
   - requests
   - rope
   - salabim
@@ -126,24 +132,3 @@ specs:
 build_outputs:
   - info.json
   - pkgs_list
-extra_envs:
-  pytorch:
-    specs:
-      - cpuonly
-      - ipykernel  # allows access to this env using nb_conda_kernels
-      - jupyter
-      - matplotlib
-      - numpy
-      - pandas
-      - pytorch
-      - pytorch_geometric
-      - rdkit
-      - scikit-learn
-      - scipy
-      - seaborn
-      - torchaudio
-      - torchvision
-      - tqdm
-    channels:
-      - pytorch
-      - conda-forge
