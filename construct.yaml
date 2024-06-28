@@ -1,150 +1,149 @@
 name: tudelft-anaconda
-version: "v2024.dev"
+version: v2024.dev
 company: Delft University of Technology
 installer_type: all
 channels:
   - conda-forge
 specs:
-  - altair
-  - defaults::anaconda-navigator
-  - arrow
-  - asciitree
-  - astropy
-  - autopep8
-  - black
-  - bokeh
-  - bzip2
-  - cloudpickle
-  - colorama
-  - colorful
-  - conda
-  - configparser
-  - defaults::console_shortcut  # [win]
-  - control
-  - coolprop
-  - curl
-  - cython
-  - dash
-  - dask
-  - dataclasses
-  - datashader
-  - dill
-  - flask
-  - gmpy2
-  - graphviz
-  - h5py
-  - holoviews
-  - intervals
-  - ipykernel
-  - ipython
-  - ipywidgets
-  - jedi
-  - jupyter
-  - jupyter_contrib_nbextensions  # [not win]
-  - jupyterlab
-  - jupytext
-  - markdown
-  - matplotlib
-  - mccabe
-  - menuinst  # [win]
-  - mesa
-  - mkl-service  # [win]
-  - more-itertools
-  - mpmath
-  - mypy
-  - nb_conda_kernels
-  - nbclassic
-  - nbclient
-  - nbconvert
-  - nbconvert-core
-  - nbconvert-pandoc
-  - nbformat
-  - nbgrader
-  - networkx
-  - nidaqmx-python
-  - nose
-  - notebook
-  - numba
-  - numexpr
-  - numpy
-  - packaging
-  - pandas
-  - pandoc
-  - pdoc3
-  - pillow
-  - pip
-  - plotly
-  - defaults::powershell_shortcut  # [win]
-  - pulp
-  - pyarrow
-  - pydantic
-  - pydot
-  - pydotplus
-  - pydstool
-  - pyflakes
-  - pygments
-  - pygraphviz
-  - pylint
-  - pyqt
-  - pytables
-  - pytest
-  - python
-  - python-igraph
-  - python-tsp
-  - pythreejs
-  - pyvisa
-  - pyvisgraph
-  - pyyaml
-  - qtconsole
-  - requests
-  - rope
-  - ruamel_yaml
-  - salabim
-  - scikit-image
-  - scikit-learn
-  - scikits.odes
-  - scipy
-  - scrapy
-  - seaborn
-  - setuptools
-  - shapely
-  - slycot
-  - sphinx
-  - spyder
-  - spyder-kernels
-  - spyder-notebook
-  - sqlalchemy
-  - sqlite
-  - statsmodels
-  - stopit
-  - sympy
-  - toolz
-  - traitlets
-  - tzdata
-  - urllib3
-  - wheel
-  - xarray
+  - altair ==5.3.0
+  - defaults::anaconda-navigator ==2.5.4
+  - arrow ==1.3.0
+  - asciitree ==0.3.3
+  - astropy ==6.1.1
+  - autopep8 ==2.0.4
+  - black ==24.4.2
+  - bokeh ==3.4.2
+  - bzip2 ==1.0.8
+  - cloudpickle ==3.0.0
+  - colorama ==0.4.6
+  - colorful ==0.5.6
+  - conda ==24.5.0
+  - configparser ==7.0.0
+  - defaults::console_shortcut ==0.1.1 # [win]
+  - control ==0.10.0
+  - coolprop ==6.4.1
+  - curl ==8.8.0
+  - cython ==3.0.10
+  - dash ==2.17.1
+  - dask ==2024.6.2
+  - dataclasses ==0.8
+  - datashader ==0.16.2
+  - dill ==0.3.8
+  - flask ==3.0.3
+  - gmpy2 ==2.1.5
+  - graphviz ==11.0.0
+  - h5py ==3.11.0
+  - holoviews ==1.19.0
+  - intervals ==0.9.2
+  - ipykernel ==6.29.4
+  - ipython ==8.25.0
+  - ipywidgets ==8.1.3
+  - jedi ==0.19.1
+  - jupyter ==1.0.0
+  - jupyterlab ==4.2.3
+  - jupytext ==1.16.2
+  - markdown ==3.6
+  - matplotlib ==3.8.4
+  - mccabe ==0.7.0
+  - menuinst ==2.1.1 # [win]
+  - mesa ==2.3.0
+  - mkl-service ==2.4.1 # [win]
+  - more-itertools ==10.3.0
+  - mpmath ==1.3.0
+  - mypy ==1.10.1
+  - nb_conda_kernels ==2.5.1
+  - nbclassic ==1.1.0
+  - nbclient ==0.10.0
+  - nbconvert ==7.16.4
+  - nbconvert-core ==7.16.4
+  - nbconvert-pandoc ==7.16.4
+  - nbformat ==5.10.4
+  - nbgrader ==0.9.3
+  - networkx ==3.3
+  - nidaqmx-python ==0.9.0
+  - nose ==1.3.7
+  - notebook ==7.2.1
+  - numba ==0.60.0
+  - numexpr ==2.10.0
+  - numpy ==1.26.4
+  - packaging ==24.1
+  - pandas ==2.2.2
+  - pandoc ==3.2.1
+  - pdoc3 ==0.11.1
+  - pillow ==10.3.0
+  - pip ==24.0
+  - plotly ==5.22.0
+  - defaults::powershell_shortcut ==0.0.1 # [win]
+  - pulp ==2.8.0
+  - pyarrow ==16.1.0
+  - pydantic ==2.7.4
+  - pydot ==2.0.0
+  - pydotplus ==2.0.2
+  - pydstool ==0.91.0
+  - pyflakes ==3.2.0
+  - pygments ==2.18.0
+  - pygraphviz ==1.13
+  - pylint ==3.2.4
+  - pyqt ==5.15.9
+  - pytables ==3.9.2
+  - pytest ==8.2.2
+  - python ==3.11.9
+  - python-igraph ==0.11.5
+  - python-tsp ==0.4.1
+  - pythreejs ==2.4.2
+  - pyvisa ==1.14.1
+  - pyvisgraph ==0.2.1
+  - pyyaml ==6.0.1
+  - qtconsole ==5.5.2
+  - requests ==2.32.3
+  - rope ==1.13.0
+  - ruamel_yaml ==0.15.80
+  - salabim ==24.0.8
+  - scikit-image ==0.24.0
+  - scikit-learn ==1.5.0
+  - scikits.odes ==2.7.0
+  - scipy ==1.14.0
+  - scrapy ==2.11.2
+  - seaborn ==0.13.2
+  - setuptools ==70.1.1
+  - shapely ==2.0.4
+  - slycot ==0.6.0
+  - sphinx ==7.3.7
+  - spyder ==5.5.5
+  - spyder-kernels ==2.5.2
+  - spyder-notebook ==0.5.1
+  - sqlalchemy ==2.0.31
+  - sqlite ==3.46.0
+  - statsmodels ==0.14.2
+  - stopit ==1.1.2
+  - sympy ==1.12.1
+  - toolz ==0.12.1
+  - traitlets ==5.14.3
+  - tzdata ==2024a
+  - urllib3 ==2.2.2
+  - wheel ==0.43.0
+  - xarray ==2024.6.0
 extra_envs:
   pytorch:
     channels:
       - pytorch
       - conda-forge
     specs:
-      - cpuonly
-      - ipykernel  # allows access to this env using nb_conda_kernels
-      - matplotlib
-      - numpy
-      - pandas
-      - python
-      - pytorch
-      - pytorch_geometric
-      - rdkit
-      - scikit-learn
-      - scipy
-      - seaborn
-      - torchaudio
-      - torchvision
-      - tqdm
+      - cpuonly ==2.0
+      - ipykernel ==6.29.4  # allows access to this env using nb_conda_kernels
+      - matplotlib ==3.8.4
+      - numpy ==1.26.4
+      - pandas ==2.2.2
+      - python ==3.11.9
+      - pytorch ==2.3.1
+      - pytorch_geometric ==2.5.3
+      - rdkit ==2024.03.3
+      - scikit-learn ==1.5.0
+      - scipy ==1.14.0
+      - seaborn ==0.13.2
+      - torchaudio ==2.3.1
+      - torchvision ==0.18.1
+      - tqdm ==4.66.4
 build_outputs:
   - info.json
   - pkgs_list
