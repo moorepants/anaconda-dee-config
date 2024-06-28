@@ -4,8 +4,10 @@ prints the pkg-list.base.txt constructor output a bit prettier
 """
 
 import re
+import sys
 import pprint
 from ruamel.yaml import YAML
+from ruamel.yaml.comments import CommentedSeq
 
 with open('pkg-list.base.txt') as f:
     pkgs_raw = f.readlines()
@@ -55,9 +57,10 @@ for pkg in construct_data['specs']:
 pprint.pprint(sorted(updated_specs))
 
 comments = construct_data['specs']
-from ruamel.yaml.comments import CommentedSeq
 construct_data['specs'] = CommentedSeq(updated_specs)
 construct_data['specs']._yaml_comment = comments
 
-import sys
-yaml.dump(construct_data, sys.stdout)
+yaml.indent(mapping=2, sequence=4, offset=2)
+with open('construct-lock.yaml', 'w') as f:
+    yaml.dump(construct_data, f)
+    yaml.dump(construct_data, sys.stdout)
