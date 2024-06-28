@@ -141,8 +141,6 @@ extra_envs:
       - scikit-learn
       - scipy
       - seaborn
-      - torch
-      - torch_geometric
       - torchaudio
       - torchvision
       - tqdm
