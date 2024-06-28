@@ -34,11 +34,16 @@ jobs:
           constructor .
           python pretty_pkg_list.py
           (Get-Item -Path .\tudelft-anaconda-v2024.dev-Windows-x86_64.exe).Length/1MB
-      - name: Archive the package list
+      - name: Archive the base package list
         uses: actions/upload-artifact@v4
         with:
-          name: tudelft-anaconda-pkg-list
+          name: tudelft-conda-base-pkg-list
           path: pkg-list.base.txt
+      - name: Archive the pytorch env package list
+        uses: actions/upload-artifact@v4
+        with:
+          name: tudelft-conda-pytorch-pkg-list
+          path: pkg-list.pytorch.txt
       - name: Archive the installer
         uses: actions/upload-artifact@v4
         with:

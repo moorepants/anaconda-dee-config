@@ -124,11 +124,11 @@ specs:
   - urllib3
   - wheel
   - xarray
-build_outputs:
-  - info.json
-  - pkgs_list
 extra_envs:
   pytorch:
+    channels:
+      - pytorch
+      - conda-forge
     specs:
       - cpuonly
       - ipykernel  # allows access to this env using nb_conda_kernels
@@ -144,6 +144,8 @@ extra_envs:
       - torchaudio
       - torchvision
       - tqdm
-    channels:
-      - pytorch
-      - conda-forge
+build_outputs:
+  - info.json
+  - pkgs_list
+  - pkgs_list:
+    env: pytorch
