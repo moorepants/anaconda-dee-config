@@ -135,6 +135,7 @@ extra_envs:
       - matplotlib
       - numpy
       - pandas
+      - python
       - pytorch
       - pytorch_geometric
       - rdkit
@@ -148,4 +149,4 @@ build_outputs:
   - info.json
   - pkgs_list
   - pkgs_list:
-    env: pytorch
+      env: pytorch
