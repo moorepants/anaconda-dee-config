@@ -98,6 +98,7 @@ specs:
   - qtconsole
   - requests
   - rope
+  - ruamel_yaml
   - salabim
   - scikit-image
   - scikit-learn
