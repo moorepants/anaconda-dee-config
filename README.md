@@ -109,7 +109,7 @@ https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 
 Install Git, either:
 
-- Follow general isntallation instructions for your Operating System. For
+- Follow general installation instructions for your Operating System. For
   example, Github provides this guidance:
   https://github.com/git-guides/install-git
 - or, install Git with conda (open the Anaconda/Conda prompt in Windows or a
@@ -153,9 +153,9 @@ conda update -n base conda
 ## Step 4: Install constructor in its own environment
 
 You will build the installer with
-[constructor](https://github.com/conda/constructor), which is the tool used to
-build the Anaconda installer. Create an environment with only constructor and
-activate it.
+[constructor](https://github.com/conda/constructor), which is the same tool
+used to build the Anaconda installer. Create an environment with only
+constructor and activate it.
 
 ```bash
 conda create -n constructor constructor
