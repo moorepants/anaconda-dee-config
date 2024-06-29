@@ -1,9 +1,9 @@
-# Conda-DEE-config -- Conda Digital Exam Environment Configuration
+# Conda-DEE-Config -- Conda Digital Exam Environment Configuration
 
 This repository houses the configuration files and scripts for building a TU
-Delft Conda-based standalone offline installer that includes annually requested
-software packages. This is suitable for installing on TU Delft's lab computers
-including those used for digital examinations.
+Delft [Conda](https://docs.conda.io)-based standalone offline installer that
+includes annually requested software packages. This is suitable for installing
+on TU Delft's lab computers including those used for digital examinations.
 
 # Maintainers
 
@@ -91,6 +91,131 @@ The (annual) process flow is roughly as follows:
 | Aug   | do beta (field) testing in faculties                                         |
 | Sep 1 | new environment packaged, in DEE, and published on software.tudelft.nl       |
 | Sep+  | new issues opened on Gitlab                                                  |
+
+# Adding new packages to the installer
+
+If you need a conda package that is not available in Conda Forge installation,
+you can request inclusion of the package. The first step is to check if your
+package is available in [Conda Forge](https://conda-forge.org/).  Search [this
+list](https://conda-forge.org/#add_recipe) to check (note that package names
+may differ from PyPi, CRAN, etc.). If your package is not present in Conda
+Forge, then you should initiate a new package build following [the instructions
+to add a recipe](https://conda-forge.org/#add_recipe).
+
+Once the package is available on Conda Forge for Windows 64 bit systems, open a
+merge request on this repository adding your package name to the
+`construct.yaml` file. Test building the installer locally on Windows and
+report your success (or failures) in the pull request.
+
+# FAQ
+
+My software is not available on the exam computers. How do I make it available?
+
+> The first step is to ensure that your desired package can be installed from
+Conda Forge. Search https://conda-forge.org/feedstock-outputs/ to see if your
+package is already available and if not you will need to add a recipe following
+the instructions here: https://conda-forge.org/#contribute. Once the package is
+available on Conda Forge, open a merge request on this repository adding your
+package to the `construct.yaml` file. Make sure to submit a merge request here
+months before the freeze deadline for the new academic year.
+
+The package I need is missing from Conda Forge and adding it is beyond my
+skills.
+
+> Open an issue here and we will coach and help you get the package built on
+Conda Forge.
+
+Is it possible to have different conda environments other than the base
+environment?
+
+> We can add new environments using Conda Constructor and make them selectable by
+end users, but the current limitation is the 2GB maximum for our exe installer
+on Windows. It is difficult to keep the installer under 2GB with even one
+additional environment if it includes the Anaconda distribution. Switching to
+only Conda Forge packages may allow us to reduce the installer size and thus
+support a limited number of additional environments.
+
+Why can't my package be installed with PyPi/Cargo/NPM/CRAN?
+
+> Software building and installing ranges from simple to extremely complex,
+even for a single package. This is further complicated by trying to have a
+mutually compatible set of hundreds or thousands of packages installed
+together. We manage a monolithic installation of packages that come from a
+variety of languages (Python, C++, C, R, Julia, CUDA, etc.). Firstly, many of
+the packages cannot be installed from a single languages' repository, e.g. PyPi
+only hosts Python packages. Secondly, it is quite difficult, if not
+impossible, to create a compatible set of packages if relying on PyPi (see
+https://pypackaging-native.github.io/ for detailed explanations). A tenable
+solution that does not require excessive amounts of time and complexity for
+this team is to rely on Conda Forge for solving these problems (with our
+help!). The binaries available on Conda Forge are guaranteed to provide a
+compatible set by the nature of its design. Even though it may seem simple to
+install your package on your computer, it may not be so here. Every special
+case we add, costs us more time. So we default to Conda Forge packages with
+rare exceptions that depend on available volunteer time. This provides a
+minimal headache way to deliver a working software environments to our
+students.
+
+Why can't students `pip install` or `conda install` packages while on the
+computers?
+
+> The computers are not connected to the internet so these commands will not
+work in general. It may be possible to host our own copies of Conda Forge or
+PyPi behind our firewall in the future, but this is a large undertaking. We
+also do not give students write access to the locations that either of these
+tools install packages to, so the default install will not work.
+
+Why are there no version specifications in the `construct.yaml` file? How do we
+know what version will be installed?
+
+> We install the latest Conda Forge version of all packages up to the
+July 1 version freeze date. Build the installer to see what versions are
+installed. We are working on a way to publish regular version lists.
+
+# Contact list
+
+This is a list of people who have requested packages in the past or expressed
+interest in doing so.
+
+- Artur Schweidtmann
+- Bart Gerritsen
+- Coen de Visser
+- Cornel Thill
+- Erik Ulijn (ME)
+- Ferdinand Grozema
+- Ferdinand Postema (LR)
+- Frank Mulder
+- Gary Steele
+- Heike Vallery
+- Helma Torkamaan
+- Iulia lefter
+- Jacco Hoekstra
+- Jason K. Moore (ME)
+- Jeroen Kalkman
+- Joost Ellerbroek
+- Ludolf Meester
+- Marcel Sluiter
+- Marcel van den Broek
+- Margreet Docter (TNW)
+- Mario Negrello
+- Mark Bakker
+- Miriam Coenders
+- Özge Okur
+- Peter Somhorst (ME)
+- Peter Wilders
+- Peter van Nieuwenhuizen
+- Petra Heijnen (TBM)
+- Rebeca Gonzalez Cabaleiro
+- Regine Vroom
+- Remko Uijlenhoet
+- Rene van Paassen (LR)
+- Ronald Ligteringen
+- Ruud van der Ent
+- Sander van Cranenburgh
+- Tom Viering
+- Valeri Markine
+- Wouter van der Wal
+- director-ce@tudelft.nl (Requested by Artur Schweidtmann)
 
 # Steps to build the installer
 
@@ -219,128 +344,3 @@ exam computers. The method used in recent years:
 - assign access rights to a beta tester
 
 Request these from WPS.
-
-# Adding new packages to the installer
-
-If you need a conda package that is not available in Conda Forge installation,
-you can request inclusion of the package. The first step is to check if your
-package is available in [Conda Forge](https://conda-forge.org/).  Search [this
-list](https://conda-forge.org/#add_recipe) to check (note that package names
-may differ from PyPi, CRAN, etc.). If your package is not present in Conda
-Forge, then you should initiate a new package build following [the instructions
-to add a recipe](https://conda-forge.org/#add_recipe).
-
-Once the package is available on Conda Forge for Windows 64 bit systems, open a
-merge request on this repository adding your package name to the
-`construct.yaml` file. Test building the installer locally on Windows and
-report your success (or failures) in the pull request.
-
-# FAQ
-
-My software is not available on the exam computers. How do I make it available?
-
-> The first step is to ensure that your desired package can be installed from
-Conda Forge. Search https://conda-forge.org/feedstock-outputs/ to see if your
-package is already available and if not you will need to add a recipe following
-the instructions here: https://conda-forge.org/#contribute. Once the package is
-available on Conda Forge, open a merge request on this repository adding your
-package to the `construct.yaml` file. Make sure to submit a merge request here
-months before the freeze deadline for the new academic year.
-
-The package I need is missing from Conda Forge and adding it is beyond my
-skills.
-
-> Open an issue here and we will coach and help you get the package built on
-Conda Forge.
-
-Is it possible to have different conda environments other than the base
-environment?
-
-> We can add new environments using Conda Constructor and make them selectable by
-end users, but the current limitation is the 2GB maximum for our exe installer
-on Windows. It is difficult to keep the installer under 2GB with even one
-additional environment if it includes the Anaconda distribution. Switching to
-only Conda Forge packages may allow us to reduce the installer size and thus
-support a limited number of additional environments.
-
-Why can't my package be installed with PyPi/Cargo/NPM/CRAN?
-
-> Software building and installing ranges from simple to extremely complex,
-even for a single package. This is further complicated by trying to have a
-mutually compatible set of hundreds or thousands of packages installed
-together. We manage a monolithic installation of packages that come from a
-variety of languages (Python, C++, C, R, Julia, CUDA, etc.). Firstly, many of
-the packages cannot be installed from a single languages' repository, e.g. PyPi
-only hosts Python packages. Secondly, it is quite difficult, if not
-impossible, to create a compatible set of packages if relying on PyPi (see
-https://pypackaging-native.github.io/ for detailed explanations). A tenable
-solution that does not require excessive amounts of time and complexity for
-this team is to rely on Conda Forge for solving these problems (with our
-help!). The binaries available on Conda Forge are guaranteed to provide a
-compatible set by the nature of its design. Even though it may seem simple to
-install your package on your computer, it may not be so here. Every special
-case we add, costs us more time. So we default to Conda Forge packages with
-rare exceptions that depend on available volunteer time. This provides a
-minimal headache way to deliver a working software environments to our
-students.
-
-Why can't students `pip install` or `conda install` packages while on the
-computers?
-
-> The computers are not connected to the internet so these commands will not
-work in general. It may be possible to host our own copies of Conda Forge or
-PyPi behind our firewall in the future, but this is a large undertaking. We
-also do not give students write access to the locations that either of these
-tools install packages to, so the default install will not work.
-
-Why are there no version specifications in the `construct.yaml` file? How do we
-know what version will be installed?
-
-> We install the latest Conda Forge version of all packages up to the
-July 1 version freeze date. Build the installer to see what versions are
-installed. We are working on a way to publish regular version lists.
-
-# Contact list
-
-This is a list of people who have requested packages in the past or expressed
-interest in doing so.
-
-- Artur Schweidtmann
-- Bart Gerritsen
-- Coen de Visser
-- Cornel Thill
-- Erik Ulijn (ME)
-- Ferdinand Grozema
-- Ferdinand Postema (LR)
-- Frank Mulder
-- Gary Steele
-- Heike Vallery
-- Helma Torkamaan
-- Iulia lefter
-- Jacco Hoekstra
-- Jason K. Moore (ME)
-- Jeroen Kalkman
-- Joost Ellerbroek
-- Ludolf Meester
-- Marcel Sluiter
-- Marcel van den Broek
-- Margreet Docter (TNW)
-- Mario Negrello
-- Mark Bakker
-- Miriam Coenders
-- Özge Okur
-- Peter Somhorst (ME)
-- Peter Wilders
-- Peter van Nieuwenhuizen
-- Petra Heijnen (TBM)
-- Rebeca Gonzalez Cabaleiro
-- Regine Vroom
-- Remko Uijlenhoet
-- Rene van Paassen (LR)
-- Ronald Ligteringen
-- Ruud van der Ent
-- Sander van Cranenburgh
-- Tom Viering
-- Valeri Markine
-- Wouter van der Wal
-- director-ce@tudelft.nl (Requested by Artur Schweidtmann)
