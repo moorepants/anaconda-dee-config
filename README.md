@@ -304,7 +304,7 @@ compatible set of packages and build a `.exe` installer that contains them.
 On Windows, to build the installer, run:
 
 ```
-set CONDA_CHANNEL_PRIORITY=strict
+set "CONDA_CHANNEL_PRIORITY=strict"
 constructor .
 ```
 
