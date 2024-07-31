@@ -26,7 +26,7 @@ jobs:
       - name: Install constructor
         run: |
           conda info
-          conda install constructor
+          conda install constructor=3.4.5
       - name: Build the installer
         env:
           CONDA_CHANNEL_PRIORITY: strict
