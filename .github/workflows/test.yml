@@ -28,8 +28,6 @@ jobs:
           conda info
           conda install constructor
       - name: Build the installer
-        env:
-          CONDA_CHANNEL_PRIORITY: strict
         run: |
           constructor .
           python pretty_pkg_list.py
