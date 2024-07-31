@@ -245,7 +245,15 @@ Install Git, either:
 conda install -c conda-forge git
 ```
 
-## Step 2: Clone this repository
+## Step 2: Download this repository
+
+If you want to build a specific version of the installer then download the
+release files from:
+
+https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/releases
+
+If you want to work with the development version, then use one of the following
+methods to obtain the files:
 
 If you have SSH setup for the EWI Gitlab use:
 
