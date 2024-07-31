@@ -299,11 +299,19 @@ conda activate constructor
 ## Step 5: Construct the installer
 
 constructor will read the contents of the `construct.yaml` file, solve for the
-compatible set of packages and build a `.exe` installer that contains them. To
-build the installer, run:
+compatible set of packages and build a `.exe` installer that contains them.
+
+On Windows, to build the installer, run:
 
 ```
+set CONDA_CHANNEL_PRIORITY=strict
 constructor .
+```
+
+or on Mac or Linux, run:
+
+```
+CONDA_CHANNEL_PRIORITY=strict constructor .
 ```
 
 in the directory with the `construct.yaml` file. This can take 10-30 minutes
