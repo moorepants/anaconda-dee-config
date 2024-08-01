@@ -26,10 +26,11 @@ jobs:
       - name: Install constructor
         run: |
           conda info
-          conda install constructor
+          conda install constructor "nsis=*=*log"
       - name: Build the installer
         env:
-          CONDA_CHANNEL_PRIORITY: strict
+          - CONDA_CHANNEL_PRIORITY: strict
+          - NSIS_USING_LOG_BUILD: 1
         run: |
           constructor .
           python pretty_pkg_list.py
