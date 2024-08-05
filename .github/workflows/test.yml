@@ -77,3 +77,9 @@ jobs:
           conda run -n base python tests/test_imports.py
           conda run -n base python tests/test_slycot.py
           conda run -n pytorch python tests/test_pytorch.py
+      - name: Check permissions
+        run: |
+          Get-Acl C:\Users\runneradmin\miniconda\Scripts\alembic.exe | fl
+          Get-Acl C:\Users\runneradmin\miniconda\Scripts\ipython.exe | fl
+          Get-Acl C:\Users\runneradmin\miniconda\Scripts\jupyter-kernel.exe | fl
+          Get-Acl C:\Users\runneradmin\miniconda\Scripts\spyder.exe | fl
