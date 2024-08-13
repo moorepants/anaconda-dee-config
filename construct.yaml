@@ -82,9 +82,11 @@ specs:
   - pydotplus ==2.0.2
   - pydstool ==0.91.0
   - pyflakes ==3.2.0
+  - pygame
   - pygments ==2.18.0
   - pygraphviz ==1.13
   - pylint ==3.2.4
+  - pymunk
   - pyqt ==5.15.9
   - pytables ==3.9.2
   - pytest ==8.2.2
