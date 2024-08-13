@@ -193,6 +193,7 @@ interest in doing so.
 - Jacco Hoekstra
 - Jason K. Moore (ME)
 - Jeroen Kalkman
+- Jordan Boyle (IDE)
 - Joost Ellerbroek
 - Ludolf Meester
 - Marcel Sluiter
