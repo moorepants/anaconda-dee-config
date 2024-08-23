@@ -30,6 +30,7 @@ specs:
   - dataclasses ==0.8
   - datashader ==0.16.2
   - dill ==0.3.8
+  - ffmpeg ==7.0.2
   - flask ==3.0.3
   - gmpy2 ==2.1.5
   - graphviz ==11.0.0
