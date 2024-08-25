@@ -33,7 +33,7 @@ jobs:
         run: |
           constructor .
           python pretty_pkg_list.py
-          (Get-Item -Path .\tudelft-anaconda-v2024.03-Windows-x86_64.exe).Length/1MB
+          (Get-Item -Path .\tudelft-anaconda-v2024.04.dev-Windows-x86_64.exe).Length/1MB
       - name: Archive the base package list
         uses: actions/upload-artifact@v4
         with:
@@ -48,7 +48,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tudelft-anaconda-installer
-          path: tudelft-anaconda-v2024.03-Windows-x86_64.exe
+          path: tudelft-anaconda-v2024.04.dev-Windows-x86_64.exe
   install:
     name: Install and test
     runs-on: windows-latest
@@ -67,7 +67,7 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
-          installer-url: file:///D:/a/anaconda-dee-config/anaconda-dee-config/tudelft-anaconda-v2024.03-Windows-x86_64.exe
+          installer-url: file:///D:/a/anaconda-dee-config/anaconda-dee-config/tudelft-anaconda-v2024.04.dev-Windows-x86_64.exe
           auto-activate-base: true
           activate-environment: ""
       - name: Test
