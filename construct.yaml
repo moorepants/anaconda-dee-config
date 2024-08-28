@@ -45,7 +45,7 @@ specs:
   - markdown ==3.6
   - matplotlib ==3.8.4
   - mccabe ==0.7.0
-  - menuinst ==2.1.1 # [win]
+  - menuinst ==2.1.1
   - mesa ==2.3.0
   - miniforge_console_shortcut ==2.0
   - mkl-service ==2.4.1 # [win]
