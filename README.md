@@ -39,7 +39,8 @@ Version numbering schema: `v<year>.<two digit integer>`.
 | [v2023.01](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2023.01) | 2023-2024 update |
 | [v2024.01](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.01) | first testing release for 2024-2025 academic year |
 | [v2024.02](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.02) | second testing release for 2024-2025 academic year |
-| [v2024.03](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.03) | final release for 2024-2025 academic year |
+| [v2024.03](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.03) | pre-final release for 2024-2025 academic year |
+| [v2024.04](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.04) | final release for 2024-2025 academic year |
 
 # Requirements
 

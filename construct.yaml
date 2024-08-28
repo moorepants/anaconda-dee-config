@@ -1,5 +1,5 @@
 name: tudelft-anaconda
-version: v2024.04.dev
+version: v2024.04
 company: Delft University of Technology
 installer_type: all
 channels:
