@@ -6,7 +6,6 @@ channels:
   - conda-forge
 specs:
   - altair ==5.3.0
-  - defaults::anaconda-navigator ==2.5.4
   - arrow ==1.3.0
   - asciitree ==0.3.3
   - astropy ==6.1.1
@@ -19,7 +18,6 @@ specs:
   - colorful ==0.5.6
   - conda ==24.5.0
   - configparser ==7.0.0
-  - defaults::console_shortcut ==0.1.1 # [win]
   - control ==0.10.0
   - coolprop ==6.4.1
   - curl ==8.8.0
@@ -49,6 +47,7 @@ specs:
   - mccabe ==0.7.0
   - menuinst ==2.1.1 # [win]
   - mesa ==2.3.0
+  - miniforge_console_shortcut ==2.0
   - mkl-service ==2.4.1 # [win]
   - more-itertools ==10.3.0
   - mpmath ==1.3.0
@@ -75,7 +74,6 @@ specs:
   - pillow ==10.3.0
   - pip ==24.0
   - plotly ==5.22.0
-  - defaults::powershell_shortcut ==0.0.1 # [win]
   - pulp ==2.8.0
   - pyarrow ==16.1.0
   - pydantic ==2.7.4
