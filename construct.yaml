@@ -10,6 +10,8 @@ specs:
   - asciitree ==0.3.3
   - astropy ==6.1.1
   - autopep8 ==2.0.4
+  - biogeme ==3.2.14
+  - biogeme-optimization ==0.0.10
   - black ==24.4.2
   - bokeh ==3.4.2
   - bzip2 ==1.0.8
@@ -22,7 +24,7 @@ specs:
   - coolprop ==6.4.1
   - curl ==8.8.0
   - cython ==3.0.10
-  - cythonbiogeme ==1.0.3
+  - cythonbiogeme ==1.0.4
   - dash ==2.17.1
   - dask ==2024.6.2
   - dataclasses ==0.8
