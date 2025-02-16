@@ -132,7 +132,6 @@ extra_envs:
     channels:
       - conda-forge
     specs:
-      - cpuonly
       - ipykernel  # allows access to this env using nb_conda_kernels
       - matplotlib
       - numpy
