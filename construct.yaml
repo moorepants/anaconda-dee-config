@@ -144,7 +144,8 @@ extra_envs:
       - scipy
       - seaborn
       - spyder-kernels  # allows access to this environment in spyder
-      - torchaudio
+      # NOTE : no windows builds on conda-forge of torchaudio
+      #- torchaudio
       - torchvision
       - tqdm
 build_outputs:
