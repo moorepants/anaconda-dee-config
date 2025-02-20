@@ -1,0 +1,50 @@
+2025.01.dev
+===========
+
+- Add packages (base):
+
+  - biogeme (Sander van Cranenburgh)
+  - biogeme-optimization (Sander van Cranenburgh)
+
+2024.04
+=======
+
+- Final release for the 2024-2025 school year.
+- Removed anaconda-navigator, console_shortcut, and powershell_shortcut (only
+  remaining packages from defaults).
+- Add miniforge console shortcut in place of console_shortcut.
+- Removed use of defaults channel(s).
+
+2024.03
+=======
+
+- Pre-final release for the 2024-2025 school year.
+- Adds packages (base):
+
+  - cythonbiogeme (Sander van Cranenburgh)
+  - pymunk (Jordan Boyle)
+  - pygame (Jordon Boyle)
+  - ffmpeg (Omar Kammouh)
+
+2024.02
+=======
+
+- Second testing release for the 2024-2025 academic year.
+- Adds the spyder-kernels package to access the pytorch environment in Spyder.
+- Ensured strict channel priority on Window
+
+2024.01
+=======
+
+- First release for the 2024-2025 academic year for summer testing.
+- Packaged all PyPi-only packages on Conda Forge.
+- Moved to installing all packages from Conda Forge with a few exceptions using
+  strict channel priority.
+- Added a conda environment for pytorch w/ supporting packages for Artur
+  Schweidtmann's course.
+- Improved installer build instructions.
+- Build Windows installer with Github CI.
+- Added script that generates pins for the package list.
+- Consolidated tests in one location.
+- Added salabim, python-tsp, mesa, ipykernel, spyder-kernels, scikits.odes.
+- Removed dwf.
