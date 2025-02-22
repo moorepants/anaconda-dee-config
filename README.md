@@ -210,7 +210,7 @@ interest in doing so.
 | Ludolf Meester | L.E.Meester@tudelft.nl | | |
 | Marcel Sluiter | M.H.F.Sluiter@tudelft.nl | | |
 | Marcel van den Broek | Marcel.vandenBroek@tudelft.nl | | |
-| Margreet Docter | M.W.Docter@tudelft.nl | TNW | nb2214-2023 |
+| Margreet Docter | M.W.Docter@tudelft.nl | TNW | |
 | Mario Negrello | m.negrello@erasmusmc.nl | | nbgrader, numba, notebook extensions, TOC2 |
 | Mark Bakker | Mark.Bakker@tudelft.nl| | |
 | Max Theisen | M.F.Theisen@tudelft.nl | | pytorch, pytorch_geometric, torchvision-cpu, rdkit |
