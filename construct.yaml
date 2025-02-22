@@ -38,6 +38,7 @@ specs:
   - holoviews
   - intervals
   - ipykernel
+  - ipympl
   - ipython
   - ipywidgets
   - jedi
