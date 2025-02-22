@@ -195,7 +195,7 @@ interest in doing so.
 | Helma Torkamaan | | | |
 | Iulia lefter | | | |
 | Jacco Hoekstra | | | |
-| Jason K. Moore | j.k.moore@tudelft.nl | ME | numpy, scipy, sympy, matplotlib, sckits.odes |
+| Jason K. Moore | j.k.moore@tudelft.nl | ME | sckits.odes |
 | Jeroen Kalkman | | | |
 | Jordan Boyle | | IDE | pygame, pymunk |
 | Joost Ellerbroek | | | |
@@ -219,7 +219,7 @@ interest in doing so.
 | Rene van Paassen (LR) | | | control, slycot |
 | Ronald Ligteringen | | | |
 | Ruud van der Ent | | | |
-| Sander van Cranenburgh | | | |
+| Sander van Cranenburgh | | | biogeme, biogeme-optimization, cython-biogeme |
 | Tom Viering | | | |
 | Valeri Markine | | | |
 | Wouter van der Wal | | | |
