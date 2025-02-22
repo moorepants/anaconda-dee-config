@@ -33,14 +33,14 @@ Version numbering schema: `v<year>.<two digit integer>`.
 
 | version  | changes          |
 |:--------:|:-----------------|
-| v2020.01 | initial make     |
-| v2021.01 | 2021-2022 update |
-| v2022.01 | 2022-2023 update |
-| [v2023.01](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2023.01) | 2023-2024 update |
-| [v2024.01](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.01) | first testing release for 2024-2025 academic year |
-| [v2024.02](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.02) | second testing release for 2024-2025 academic year |
-| [v2024.03](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.03) | pre-final release for 2024-2025 academic year |
 | [v2024.04](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.04) | final release for 2024-2025 academic year |
+| [v2024.03](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.03) | pre-final release for 2024-2025 academic year |
+| [v2024.02](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.02) | second testing release for 2024-2025 academic year |
+| [v2024.01](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2024.01) | first testing release for 2024-2025 academic year |
+| [v2023.01](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/tags/v2023.01) | 2023-2024 update |
+| v2022.01 | 2022-2023 update |
+| v2021.01 | 2021-2022 update |
+| v2020.01 | initial make     |
 
 # Requirements
 
