@@ -175,6 +175,14 @@ know what version will be installed?
 July 1 version freeze date. Build the installer to see what versions are
 installed. We are working on a way to publish regular version lists.
 
+Will you install may favorite IDE (e.g. PyCharm, VS Code, etc.)?
+
+> We can install any IDE that is installable from a Conda Forge package. For
+> example, we install and provide Spyder and Jupyter Lab as part of this
+> software distribution. If your desired IDE is not installable from Conda
+> Forge, you should contact ICT with your request as it is outside the scope of
+> this effort.
+
 # Contact and request list
 
 This is a list of people who have requested packages in the past or expressed
