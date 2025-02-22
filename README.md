@@ -182,50 +182,51 @@ interest in doing so.
 
 | Name               | Email | Faculty | Requests |
 |:------------------:|:-----:|:-------:|:--------:|
-| Artur Schweidtmann |       |         |          |
-| Bart Gerritsen     |       |         |          |
-| Coen de Visser | | | |
-| Cornel Thill | | | |
-| Erik Ulijn (ME) | | | |
-| Ferdinand Grozema | | | |
-| Ferdinand Postema (LR) | | | |
-| Frank Mulder | | | |
-| Gary Steele | | | |
-| Heike Vallery | | | |
-| Helma Torkamaan | | | |
-| Iulia lefter | | | |
-| Jacco Hoekstra | | | |
+| Artur Schweidtmann | A.Schweidtmann@tudelft.nl      |         |          |
+| Bart Gerritsen     | B.H.M.Gerritsen@tudelft.nl      |         |          |
+| Coen de Visser | C.C.deVisser@tudelft.nl | | |
+| Cornel Thill | C.H.Thill@tudelft.nl | | |
+| Erik Ulijn (ME) | E.H.M.Ulijn@tudelft.nl | | |
+| Ferdinand Grozema | F.C.Grozema@tudelft.nl| | |
+| Ferdinand Postema (LR) | F.N.Postema@tudelft.nl | | |
+| Frank Mulder | f.mulder@tudelft.nl | | |
+| Gary Steele | G.A.Steele@tudelft.nl | | |
+| Heike Vallery | h.vallery@tudelft.nl | | |
+| Helma Torkamaan | H.Torkamaan@tudelft.nl | | |
+| Iulia lefter | i.lefter@tudelft.nl | | |
+| Jacco Hoekstra | J.M.Hoekstra@tudelft.nl| | |
 | Jason K. Moore | j.k.moore@tudelft.nl | ME | sckits.odes |
-| Jeroen Kalkman | | | |
-| Jordan Boyle | | IDE | pygame, pymunk |
-| Joost Ellerbroek | | | |
-| Ludolf Meester | | | |
-| Marcel Sluiter | | | |
-| Marcel van den Broek | | | |
-| Margreet Docter | | TNW | nb2214-2023 |
+| Jeroen Kalkman | J.Kalkman@tudelft.nl| | |
+| Joost Ellerbroek | j.ellerbroek@tudelft.nl | | |
+| Jordan Boyle | J.H.Boyle@tudelft.nl | IDE | pygame, pymunk |
+| Ludolf Meester | L.E.Meester@tudelft.nl | | |
+| Marcel Sluiter | M.H.F.Sluiter@tudelft.nl | | |
+| Marcel van den Broek | Marcel.vandenBroek@tudelft.nl | | |
+| Margreet Docter | M.W.Docter@tudelft.nl | TNW | nb2214-2023 |
 | Mario Negrello | m.negrello@erasmusmc.nl | | nbgrader, numba, notebook extensions, TOC2 |
-| Mark Bakker | | | |
-| Max Theisen | | | pytorch, pytorch_geometric, torchvision-cpu, rdkit |
-| Miriam Coenders | | | |
-| Omar Kammouh | | | mesa, ffmpeg |
-| Özge Okur | | | |
-| Peter Somhorst (ME) | | | |
-| Peter Wilders | | | |
-| Peter van Nieuwenhuizen | | | |
-| Petra Heijnen (TBM) | | | more_itertools, pyvisgraph, shapely |
-| Rebeca Gonzalez Cabaleiro | | | |
-| Regine Vroom | | | |
-| Remko Uijlenhoet | | | |
-| Rene van Paassen (LR) | | | control, slycot |
-| Ronald Ligteringen | | | |
-| Ruud van der Ent | | | |
-| Sander van Cranenburgh | | | biogeme, biogeme-optimization, cython-biogeme |
-| Tom Viering | | | |
-| Valeri Markine | | | |
-| Wouter van der Wal | | | |
-| director-ce@tudelft.nl (Requested by Artur Schweidtmann) | | | |
+| Mark Bakker | Mark.Bakker@tudelft.nl| | |
+| Max Theisen | M.F.Theisen@tudelft.nl | | pytorch, pytorch_geometric, torchvision-cpu, rdkit |
+| Miriam Coenders | a.m.j.coenders@tudelft.nl | | |
+| Omar Kammouh | O.Kammouh@tudelft.nl | | mesa, ffmpeg |
+| Özge Okur | O.Okur-1@tudelft.nl | | |
+| Peter Somhorst | P.Somhorst@tudelft.nl | ME | |
+| Peter Wilders | P.Wilders@tudelft.nl| | |
+| Peter van Nieuwenhuizen | P.R.vanNieuwenhuizen@tudelft.nl| | |
+| Petra Heijnen (TBM) | P.W.Heijnen@tudelft.nl | | more_itertools, pyvisgraph, shapely |
+| Rebeca Gonzalez Cabaleiro | r.gonzalezcabaleiro@tudelft.nl | | |
+| Regine Vroom | r.w.vroom@tudelft.nl | | |
+| Remko Uijlenhoet | r.uijlenhoet@tudelft.nl | | |
+| Rene van Paassen (LR) | M.M.vanPaassen@tudelft.nl | | control, slycot |
+| Ronald Ligteringen | R.Ligteringen@tudelft.nl| | |
+| Ruud van der Ent | R.J.vanderEnt@tudelft.nl | | |
+| Sander van Cranenburgh | s.vancranenburgh@tudelft.nl | | biogeme, biogeme-optimization, cython-biogeme |
+| Tom Viering | T.J.Viering@tudelft.nl | | |
+| Valeri Markine | v.l.markine@tudelft.nl | | |
+| Wouter van der Wal | w.vanderwal@tudelft.nl | | |
+| Requested by Artur Schweidtmann | director-ce@tudelft.nl | | |
 
 # Steps to build the installer
+
 
 ## Step 1: Install Anaconda/Miniconda/Miniforge and Git
 
