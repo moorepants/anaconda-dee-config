@@ -175,52 +175,55 @@ know what version will be installed?
 July 1 version freeze date. Build the installer to see what versions are
 installed. We are working on a way to publish regular version lists.
 
-# Contact list
+# Contact and request list
 
 This is a list of people who have requested packages in the past or expressed
 interest in doing so.
 
-- Artur Schweidtmann
-- Bart Gerritsen
-- Coen de Visser
-- Cornel Thill
-- Erik Ulijn (ME)
-- Ferdinand Grozema
-- Ferdinand Postema (LR)
-- Frank Mulder
-- Gary Steele
-- Heike Vallery
-- Helma Torkamaan
-- Iulia lefter
-- Jacco Hoekstra
-- Jason K. Moore (ME)
-- Jeroen Kalkman
-- Jordan Boyle (IDE)
-- Joost Ellerbroek
-- Ludolf Meester
-- Marcel Sluiter
-- Marcel van den Broek
-- Margreet Docter (TNW)
-- Mario Negrello
-- Mark Bakker
-- Miriam Coenders
-- Omar Kammouh
-- Özge Okur
-- Peter Somhorst (ME)
-- Peter Wilders
-- Peter van Nieuwenhuizen
-- Petra Heijnen (TBM)
-- Rebeca Gonzalez Cabaleiro
-- Regine Vroom
-- Remko Uijlenhoet
-- Rene van Paassen (LR)
-- Ronald Ligteringen
-- Ruud van der Ent
-- Sander van Cranenburgh
-- Tom Viering
-- Valeri Markine
-- Wouter van der Wal
-- director-ce@tudelft.nl (Requested by Artur Schweidtmann)
+| Name               | Email | Faculty | Requests |
+|:------------------:|:-----:|:-------:|:--------:|
+| Artur Schweidtmann |       |         |          |
+| Bart Gerritsen     |       |         |          |
+| Coen de Visser | | | |
+| Cornel Thill | | | |
+| Erik Ulijn (ME) | | | |
+| Ferdinand Grozema | | | |
+| Ferdinand Postema (LR) | | | |
+| Frank Mulder | | | |
+| Gary Steele | | | |
+| Heike Vallery | | | |
+| Helma Torkamaan | | | |
+| Iulia lefter | | | |
+| Jacco Hoekstra | | | |
+| Jason K. Moore | j.k.moore@tudelft.nl | ME | sckits.odes |
+| Jeroen Kalkman | | | |
+| Jordan Boyle | | IDE | pygame, pymunk |
+| Joost Ellerbroek | | | |
+| Ludolf Meester | | | |
+| Marcel Sluiter | | | |
+| Marcel van den Broek | | | |
+| Margreet Docter | | TNW | nb2214-2023 |
+| Mario Negrello | m.negrello@erasmusmc.nl | | nbgrader, numba, notebook extensions, TOC2 |
+| Mark Bakker | | | |
+| Max Theisen | | | pytorch, pytorch_geometric, torchvision-cpu, rdkit |
+| Miriam Coenders | | | |
+| Omar Kammouh | | | mesa, ffmpeg |
+| Özge Okur | | | |
+| Peter Somhorst (ME) | | | |
+| Peter Wilders | | | |
+| Peter van Nieuwenhuizen | | | |
+| Petra Heijnen (TBM) | | | more_itertools, pyvisgraph, shapely |
+| Rebeca Gonzalez Cabaleiro | | | |
+| Regine Vroom | | | |
+| Remko Uijlenhoet | | | |
+| Rene van Paassen (LR) | | | control, slycot |
+| Ronald Ligteringen | | | |
+| Ruud van der Ent | | | |
+| Sander van Cranenburgh | | | biogeme, biogeme-optimization, cython-biogeme |
+| Tom Viering | | | |
+| Valeri Markine | | | |
+| Wouter van der Wal | | | |
+| director-ce@tudelft.nl (Requested by Artur Schweidtmann) | | | |
 
 # Steps to build the installer
 
