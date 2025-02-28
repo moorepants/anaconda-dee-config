@@ -99,11 +99,11 @@ The (annual) process flow is roughly as follows:
 
 If you need a conda package that is not available in Conda Forge installation,
 you can request inclusion of the package. The first step is to check if your
-package is available in [Conda Forge](https://conda-forge.org/).  Search [this
-list](https://conda-forge.org/#add_recipe) to check (note that package names
+package is available in [Conda Forge](https://conda-forge.org/). Search [this
+list](https://conda-forge.org/packages) to check (note that package names
 may differ from PyPi, CRAN, etc.). If your package is not present in Conda
 Forge, then you should initiate a new package build following [the instructions
-to add a recipe](https://conda-forge.org/#add_recipe).
+to add a recipe](https://conda-forge.org/docs/maintainer/adding_pkgs).
 
 Once the package is available on Conda Forge for Windows 64 bit systems, open a
 merge request on this repository adding your package name to the
@@ -115,12 +115,13 @@ report your success (or failures) in the pull request.
 My software is not available on the exam computers. How do I make it available?
 
 > The first step is to ensure that your desired package can be installed from
-Conda Forge. Search https://conda-forge.org/feedstock-outputs/ to see if your
-package is already available and if not you will need to add a recipe following
-the instructions here: https://conda-forge.org/#contribute. Once the package is
-available on Conda Forge, open a merge request on this repository adding your
-package to the `construct.yaml` file. Make sure to submit a merge request here
-months before the freeze deadline for the new academic year.
+Conda Forge. Search https://conda-forge.org/packages to see if your package is
+already available and if not you will need to add a recipe following the
+instructions here: https://conda-forge.org/docs/maintainer/adding_pkgs. Once
+the package is available on Conda Forge, open a merge request on this
+repository adding your package to the `construct.yaml` file. Make sure to
+submit a merge request here months before the freeze deadline for the new
+academic year.
 
 The package I need is missing from Conda Forge and adding it is beyond my
 skills.
@@ -131,12 +132,10 @@ Conda Forge.
 Is it possible to have different conda environments other than the base
 environment?
 
-> We can add new environments using Conda Constructor and make them selectable by
-end users, but the current limitation is the 2GB maximum for our exe installer
-on Windows. It is difficult to keep the installer under 2GB with even one
-additional environment if it includes the Anaconda distribution. Switching to
-only Conda Forge packages may allow us to reduce the installer size and thus
-support a limited number of additional environments.
+> We can add new environments using Conda Constructor and make them selectable
+by end users, but the current limitation is the 2GB maximum for our exe
+installer on Windows. It is difficult to keep the installer under 2GB with even
+one additional environment.
 
 Why can't my package be installed with PyPi/Cargo/NPM/CRAN?
 
@@ -150,12 +149,12 @@ only hosts Python packages. Secondly, it is quite difficult, if not
 impossible, to create a compatible set of packages if relying on PyPi (see
 https://pypackaging-native.github.io/ for detailed explanations). A tenable
 solution that does not require excessive amounts of time and complexity for
-this team is to rely on Conda Forge for solving these problems (with our
-help!). The binaries available on Conda Forge are guaranteed to provide a
-compatible set by the nature of its design. Even though it may seem simple to
-install your package on your computer, it may not be so here. Every special
-case we add, costs us more time. So we default to Conda Forge packages with
-rare exceptions that depend on available volunteer time. This provides a
+this team is to rely on Conda Forge for solving these problems. The binaries
+available on Conda Forge are guaranteed to provide a compatible set by the
+nature of its design. Even though it may seem simple to install your package on
+your computer, it may not be so in a offline installer (for Windows). Every
+special case we add, costs us more time. So we default to Conda Forge packages
+with rare exceptions that depend on available volunteer time. This provides a
 minimal headache way to deliver a working software environments to our
 students.
 
@@ -166,22 +165,23 @@ computers?
 work in general. It may be possible to host our own copies of Conda Forge or
 PyPi behind our firewall in the future, but this is a large undertaking. We
 also do not give students write access to the locations that either of these
-tools install packages to, so the default install will not work.
+tools install packages to, so the default install will not work. You can
+provide packages to the students via the shared drive and they can install them
+in their personal drive as a workaround.
 
 Why are there no version specifications in the `construct.yaml` file? How do we
 know what version will be installed?
 
 > We install the latest Conda Forge version of all packages up to the
 July 1 version freeze date. Build the installer to see what versions are
-installed. We are working on a way to publish regular version lists.
+installed or check the latest Github Actions output (see below).
 
 Will you install may favorite IDE (e.g. PyCharm, VS Code, etc.)?
 
 > We can install any IDE that is installable from a Conda Forge package. For
-> example, we install and provide Spyder and Jupyter Lab as part of this
-> software distribution. If your desired IDE is not installable from Conda
-> Forge, you should contact ICT with your request as it is outside the scope of
-> this effort.
+example, we install and provide Spyder and Jupyter Lab as part of this software
+distribution. If your desired IDE is not installable from Conda Forge, you
+should contact ICT with your request as it is outside the scope of this effort.
 
 # Contact and request list
 
@@ -238,7 +238,7 @@ interest in doing so.
 
 ## Step 1: Install Anaconda/Miniconda/Miniforge and Git
 
-You will need conda installed on Windows 10. You can use conda from Anaconda,
+You will need conda installed on Windows. You can use conda from Anaconda,
 Miniconda, Miniforge, or any other conda-based installation. For example, you
 can install the latest of the mentioned three installers from:
 
@@ -305,7 +305,7 @@ conda update -n base conda
 
 You will build the installer with
 [constructor](https://github.com/conda/constructor), which is the same tool
-used to build the Anaconda installer. Create an environment with only
+used to build the official Anaconda installer. Create an environment with only
 constructor and activate it.
 
 ```bash
@@ -344,7 +344,7 @@ Anaconda on other computers.
 
 ## Step 1: Download the installer
 
-Download `tudelft-anaconda-<version>-Windows-x86_64.exe` to the Windows 10
+Download `tudelft-anaconda-<version>-Windows-x86_64.exe` to the Windows
 computer you want to install it on.
 
 We build Windows installers in this Github CI action:
