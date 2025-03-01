@@ -333,7 +333,7 @@ CONDA_CHANNEL_PRIORITY=strict constructor .
 
 in the directory with the `construct.yaml` file. This can take 10-30 minutes
 depending on your computer's speed and download speeds. After it finishes there
-will be `tudelft-anaconda-<version>-Windows-x86_64.exe` in the directory. This
+will be `tudelft-conda-<version>-Windows-x86_64.exe` in the directory. This
 installer can be executed on any computer that does not have Anaconda
 installed.
 
@@ -344,7 +344,7 @@ Anaconda on other computers.
 
 ## Step 1: Download the installer
 
-Download `tudelft-anaconda-<version>-Windows-x86_64.exe` to the Windows
+Download `tudelft-conda-<version>-Windows-x86_64.exe` to the Windows
 computer you want to install it on.
 
 We build Windows installers in this Github CI action:
@@ -356,9 +356,9 @@ run (likely the latest one) and then download from the "Artifacts" section:
 
 ## Step 2: Run the installer
 
-Double click on the tudelft-anaconda installer and follow the prompts. By
+Double click on the tudelft-conda installer and follow the prompts. By
 default this will install the TU Delft Anaconda in `C:\Program
-Files\tudelft-anaconda`.
+Files\tudelft-conda`.
 
 ## Step 3: Check versions
 
