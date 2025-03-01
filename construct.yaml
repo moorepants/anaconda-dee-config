@@ -1,4 +1,4 @@
-name: tudelft-anaconda
+name: tudelft-conda
 version: v2025.01.dev
 company: Delft University of Technology
 installer_type: all
