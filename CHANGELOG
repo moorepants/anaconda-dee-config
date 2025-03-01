@@ -1,10 +1,14 @@
 2025.01.dev
 ===========
 
-- Add packages (base):
+- Add packages:
 
-  - biogeme (Sander van Cranenburgh)
-  - biogeme-optimization (Sander van Cranenburgh)
+  - biogeme [base] (Sander van Cranenburgh)
+  - biogeme-optimization [base] (Sander van Cranenburgh)
+
+- Remove packages:
+
+  - pydstool [base]
 
 2024.04
 =======

@@ -82,7 +82,6 @@ specs:
   - pydantic
   - pydot
   - pydotplus
-  - pydstool
   - pyflakes
   - pygame
   - pygments
