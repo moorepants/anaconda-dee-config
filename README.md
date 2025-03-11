@@ -309,7 +309,7 @@ used to build the official Anaconda installer. Create an environment with only
 constructor and activate it.
 
 ```bash
-conda create -n constructor constructor=3.9.3
+conda create -n constructor constructor
 conda activate constructor
 ```
 
