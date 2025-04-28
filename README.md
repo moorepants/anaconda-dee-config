@@ -235,7 +235,6 @@ interest in doing so.
 
 # Steps to build the installer
 
-
 ## Step 1: Install Anaconda/Miniconda/Miniforge and Git
 
 You will need conda installed on Windows. You can use conda from Anaconda,
@@ -352,13 +351,12 @@ We build Windows installers in this Github CI action:
 https://github.com/moorepants/anaconda-dee-config/actions
 
 The files can be downloaded up to 90 days after the build. Click the workflow
-run (likely the latest one) and then download from the "Artifacts" section:
+run (likely the latest one) and then download from the "Artifacts" section.
 
 ## Step 2: Run the installer
 
-Double click on the tudelft-conda installer and follow the prompts. By
-default this will install the TU Delft Anaconda in `C:\Program
-Files\tudelft-conda`.
+Double click on the tudelft-conda installer and follow the prompts. By default
+this will install the TU Delft Anaconda in `C:\Program Files\tudelft-conda`.
 
 ## Step 3: Check versions
 
