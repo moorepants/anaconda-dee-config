@@ -356,7 +356,8 @@ run (likely the latest one) and then download from the "Artifacts" section.
 ## Step 2: Run the installer
 
 Double click on the tudelft-conda installer and follow the prompts. By default
-this will install the TU Delft Anaconda in `C:\Program Files\tudelft-conda`.
+this will install the TU Delft Conda distribution in `C:\Program
+Files\tudelft-conda`.
 
 ## Step 3: Check versions
 
