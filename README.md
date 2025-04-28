@@ -351,7 +351,8 @@ We build Windows installers in this Github CI action:
 https://github.com/moorepants/anaconda-dee-config/actions
 
 The files can be downloaded up to 90 days after the build. Click the workflow
-run (likely the latest one) and then download from the "Artifacts" section.
+run (likely the latest one) and then download from the "Artifacts" section. You
+can likely only see these if you are logged into Github.
 
 ## Step 2: Run the installer
 
