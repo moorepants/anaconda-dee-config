@@ -191,7 +191,6 @@ interest in doing so.
 | Name               | Email | Faculty | Requests |
 |:------------------:|:-----:|:-------:|:--------:|
 | Artur Schweidtmann | A.Schweidtmann@tudelft.nl      |         |          |
-| Bart Gerritsen     | B.H.M.Gerritsen@tudelft.nl      |         |          |
 | Coen de Visser | C.C.deVisser@tudelft.nl | | |
 | Cornel Thill | C.H.Thill@tudelft.nl | | |
 | Erik Ulijn (ME) | E.H.M.Ulijn@tudelft.nl | | |
