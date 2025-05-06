@@ -83,7 +83,6 @@ specs:
   - sphinx
   - spyder
   - spyder-kernels
-  - spyder-notebook
   - sqlalchemy
   - sqlite
   - statsmodels
