@@ -40,7 +40,6 @@ specs:
   - matplotlib
   - mccabe
   - menuinst
-  - mesa
   - more-itertools
   - mpmath
   - mypy
