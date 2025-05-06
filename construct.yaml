@@ -64,7 +64,6 @@ specs:
   - pillow
   - pip
   - plotly
-  - pulp
   - pydantic
   - pydot
   - pydotplus
