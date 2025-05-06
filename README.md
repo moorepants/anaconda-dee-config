@@ -228,6 +228,7 @@ interest in doing so.
 | Ruud van der Ent | R.J.vanderEnt@tudelft.nl | | |
 | Sander van Cranenburgh | s.vancranenburgh@tudelft.nl | | biogeme, biogeme-optimization, cython-biogeme |
 | Tom Viering | T.J.Viering@tudelft.nl | | |
+| Tom van Woudenberg | T.R.vanWoudenberg@tudelft.nl | CEG | |
 | Valeri Markine | v.l.markine@tudelft.nl | | |
 | Wouter van der Wal | w.vanderwal@tudelft.nl | | |
 | Requested by Artur Schweidtmann | director-ce@tudelft.nl | | |
