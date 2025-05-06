@@ -15,7 +15,6 @@ specs:
   - colorful
   - conda
   - configparser
-  - coolprop
   - curl
   - cython
   - dash
