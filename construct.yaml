@@ -3,15 +3,10 @@ version: v2025.01.dev
 company: Delft University of Technology
 installer_type: all
 channels:
-  - conda-forge
+  - defaults
 specs:
-  - altair
-  - arrow
-  - asciitree
   - astropy
   - autopep8
-  - biogeme
-  - biogeme-optimization
   - black
   - bokeh
   - bzip2
@@ -20,17 +15,14 @@ specs:
   - colorful
   - conda
   - configparser
-  - control
   - coolprop
   - curl
   - cython
-  - cythonbiogeme
   - dash
   - dask
   - dataclasses
   - datashader
   - dill
-  - ffmpeg
   - flask
   - gmpy2
   - graphviz
@@ -50,8 +42,6 @@ specs:
   - mccabe
   - menuinst
   - mesa
-  - miniforge_console_shortcut
-  - mkl-service  # [win]
   - more-itertools
   - mpmath
   - mypy
@@ -64,7 +54,6 @@ specs:
   - nbformat
   - nbgrader
   - networkx
-  - nidaqmx-python
   - nose
   - notebook
   - numba
@@ -78,7 +67,6 @@ specs:
   - pip
   - plotly
   - pulp
-  - pyarrow
   - pydantic
   - pydot
   - pydotplus
@@ -102,15 +90,12 @@ specs:
   - requests
   - rope
   - ruamel_yaml
-  - salabim
   - scikit-image
   - scikit-learn
-  - scikits.odes
   - scipy
   - scrapy
   - seaborn
   - setuptools
-  - shapely
   - slycot
   - sphinx
   - spyder
@@ -127,30 +112,6 @@ specs:
   - urllib3
   - wheel
   - xarray
-extra_envs:
-  pytorch:
-    channels:
-      - pytorch
-      - conda-forge
-    specs:
-      - cpuonly
-      - ipykernel  # allows access to this env using nb_conda_kernels
-      - matplotlib
-      - numpy
-      - pandas
-      - python
-      - pytorch
-      - pytorch_geometric
-      - rdkit
-      - scikit-learn
-      - scipy
-      - seaborn
-      - spyder-kernels  # allows access to this environment in spyder
-      - torchaudio
-      - torchvision
-      - tqdm
 build_outputs:
   - info.json
   - pkgs_list
-  - pkgs_list:
-      env: pytorch
