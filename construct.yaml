@@ -3,7 +3,7 @@ version: v2025.01.dev
 company: Delft University of Technology
 installer_type: all
 channels:
-  - defaults
+  - conda-forge
 specs:
   - astropy
   - autopep8
