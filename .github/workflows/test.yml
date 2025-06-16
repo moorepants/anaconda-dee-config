@@ -26,10 +26,10 @@ jobs:
       - name: Install constructor
         run: |
           conda info
-          conda install pip setuptools "ruamel.yaml>=0.11.14,<0.19" "pillow >=3.1" jinja2 "jsonschema>=4"
+          conda install pip setuptools setuptools_scm conda "ruamel.yaml>=0.11.14,<0.19" "pillow >=3.1" jinja2 "jsonschema>=4"
           # conda install constructor>=3.11.2
           git clone -b all-users-permissions-win https://github.com/conda/constructor.git
-          pip install --no-deps -e constructor/
+          python -m pip install --no-deps -e constructor/
       - name: Build the installer
         env:
           CONDA_CHANNEL_PRIORITY: strict
