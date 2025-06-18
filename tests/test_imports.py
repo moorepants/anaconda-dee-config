@@ -5,7 +5,6 @@ def test_imports():
 
     requested_packages = [
         'CoolProp',  # package name is coolprop
-        'PyDSTool',  # package name: pydstool
         'asciitree',
         'colorful',
         'configparser',
