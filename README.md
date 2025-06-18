@@ -58,9 +58,9 @@ Version numbering schema: `v<year>.<two digit integer>`.
 
 We create a Windows executable installer for a collection of Conda packages
 using [Conda Constructor](https://github.com/conda/constructor) and script its
-installation on Windows. We install a set of software packages from [Conda
-Forge](https://conda-forge.org/) and make them available via the Conda package
-manager.
+installation for batch deployment on Windows. We install a set of software
+packages from [Conda Forge](https://conda-forge.org/) and make them available
+via the Conda package manager.
 
 # Process to agree on installation
 
@@ -69,8 +69,8 @@ multifold:
 
 1. to avoid a cluttering of (slightly) different Python environments across the
    infrastructure within the TU Delft
-2. to avoid intricate and disturbing differences between Python environments on
-   the one hand and the DigitalExam python-environment during exams
+2. to avoid intricate and disturbing differences between Python environments
+   used during instruction and exams
 3. to mitigate the burden of maintaining the configurations involved
 
 This installation is revised and updated in a yearly cycle. ICT-WPS
@@ -78,7 +78,7 @@ This installation is revised and updated in a yearly cycle. ICT-WPS
 all faculties by the team that runs this repository, taking care of the actual
 implementation of a prepared package. This package may then be deployed through
 https://software.tudelft.nl and is at the basis of the implementation of the
-DigitalExam-environment.
+DigitalExam environment.
 
 The (annual) process flow is roughly as follows:
 
@@ -370,10 +370,18 @@ conda list --verbose --show-channel-urls -n base > base-pkgs.lst
 
 # Testing the installations
 
-Various approaches exist to create a beta testing environment that matches the
-exam computers. The method used in recent years:
+After executing the installer you can run these basic tests to check if things
+are working properly:
+
+```
+conda run -n base python tests/test_imports.py
+conda run -n base python tests/test_slycot.py
+conda run -n base python tests/test_biogeme.py
+conda run -n pytorch python tests/test_pytorch.py
+```
+
+You can also ask WPS to provide access to a TU Delft computer for testing. Two
+options are:
 
 - assign a test machine and test using RemoteDesktop (Citrix)
 - assign access rights to a beta tester
-
-Request these from WPS.
