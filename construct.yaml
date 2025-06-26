@@ -69,7 +69,7 @@ specs:
   - notebook
   - numba
   - numexpr
-  - numpy
+  - numpy >=2
   - packaging
   - pandas
   - pandoc
