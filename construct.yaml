@@ -20,7 +20,7 @@ specs:
   - colorful
   - conda
   - configparser
-  - repa::control >=0.10.1  # avoid 0.10.1, see https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/issues/81
+  - repa::control ==0.10.1b  # avoid 0.10.1, see https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/issues/81
   - coolprop
   - curl
   - cython
