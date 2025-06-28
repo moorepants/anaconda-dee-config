@@ -191,7 +191,7 @@ interest in doing so.
 | Name               | Email | Faculty | Requests |
 |:------------------:|:-----:|:-------:|:--------:|
 | Artur Schweidtmann | A.Schweidtmann@tudelft.nl      |         |          |
-| Coen de Visser | C.C.deVisser@tudelft.nl | | |
+| Coen de Visser | C.C.deVisser@tudelft.nl | AE | control |
 | Cornel Thill | C.H.Thill@tudelft.nl | | |
 | Erik Ulijn (ME) | E.H.M.Ulijn@tudelft.nl | | |
 | Ferdinand Grozema | F.C.Grozema@tudelft.nl| | |
@@ -223,7 +223,7 @@ interest in doing so.
 | Rebeca Gonzalez Cabaleiro | r.gonzalezcabaleiro@tudelft.nl | | |
 | Regine Vroom | r.w.vroom@tudelft.nl | | |
 | Remko Uijlenhoet | r.uijlenhoet@tudelft.nl | | |
-| Rene van Paassen (LR) | M.M.vanPaassen@tudelft.nl | | control, slycot |
+| Rene van Paassen (LR) | M.M.vanPaassen@tudelft.nl | AE | control, slycot |
 | Ronald Ligteringen | R.Ligteringen@tudelft.nl| | |
 | Ruud van der Ent | R.J.vanderEnt@tudelft.nl | | |
 | Sander van Cranenburgh | s.vancranenburgh@tudelft.nl | | biogeme, biogeme-optimization, cython-biogeme |
