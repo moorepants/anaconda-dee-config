@@ -95,10 +95,13 @@ specs:
   - python-igraph
   - python-tsp
   - pythreejs
+  - pytorch
+  - pytorch_geometric
   - pyvisa
   - pyvisgraph
   - pyyaml
   - qtconsole
+  - rdkit
   - requests
   - rope
   - ruamel_yaml
@@ -122,35 +125,13 @@ specs:
   - stopit
   - sympy
   - toolz
+  - torchvision
+  - tqdm
   - traitlets
   - tzdata
   - urllib3
   - wheel
   - xarray
-extra_envs:
-  pytorch:
-    channels:
-      - pytorch
-      - conda-forge
-    specs:
-      - cpuonly
-      - ipykernel  # allows access to this env using nb_conda_kernels
-      - matplotlib
-      - numpy
-      - pandas
-      - python
-      - pytorch
-      - pytorch_geometric
-      - rdkit
-      - scikit-learn
-      - scipy
-      - seaborn
-      - spyder-kernels  # allows access to this environment in spyder
-      - torchaudio
-      - torchvision
-      - tqdm
 build_outputs:
   - info.json
   - pkgs_list
-  - pkgs_list:
-      env: pytorch
