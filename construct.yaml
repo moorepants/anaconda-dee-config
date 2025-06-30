@@ -20,7 +20,7 @@ specs:
   - colorful
   - conda
   - configparser
-  - control !=0.10.1  # avoid 0.10.1, see https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/issues/81
+  - control # TODO : avoid 0.10.1, see https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/issues/81
   - coolprop
   - curl
   - cython
