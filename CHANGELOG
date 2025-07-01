@@ -1,5 +1,5 @@
-2025.02.dev
-===========
+2025.02
+=======
 
 - Install control 0.10.1c from the repa anaconda channel to avoid regression
   and maintain NumPy 2.0 compatibility.

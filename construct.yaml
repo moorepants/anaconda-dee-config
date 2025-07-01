@@ -1,5 +1,5 @@
 name: tudelft-conda
-version: v2025.02.dev
+version: v2025.02
 company: Delft University of Technology
 installer_type: all
 channels:
