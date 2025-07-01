@@ -3,6 +3,16 @@ version: v2025.02.dev
 company: Delft University of Technology
 installer_type: all
 channels:
+  # NOTE: Rene van Paasen made a patch to control 0.10.1 for a regression and
+  # hosts it in on his repa anconda channel. control 0.10.1 is the first
+  # control version to support NumPy 2. repa only has three packages in his
+  # channel as of July 1, 2025: control, libode, pyode and we do not install
+  # libode or pyode, so we can safely give strict priority to repa to only pull
+  # in control. See
+  # https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/issues/81
+  # for more information. This channel should be removed whenever control
+  # >0.10.1 is released. Using repa::control with strict does not seem to work.
+  - repa
   - conda-forge
 specs:
   - altair ==5.5.0
@@ -20,7 +30,7 @@ specs:
   - colorful ==0.5.6
   - conda ==25.5.1
   - configparser ==7.2.0
-  - control ==0.10.1  # TODO : avoid 0.10.1, see https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/issues/81
+  - control ==0.10.1c
   - coolprop ==6.7.0
   - curl ==8.14.1
   - cython ==3.1.2
