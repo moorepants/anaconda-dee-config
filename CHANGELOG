@@ -1,7 +1,8 @@
-2025.01.dev
-===========
+2025.01
+=======
 
 - First release for the 2025-2026 academic year for summer testing.
+- Renamed the installer to "tudelft-conda" instead of "tudelft-anaconda".
 - Add packages:
 
   - biogeme [base] (Sander van Cranenburgh)
@@ -11,9 +12,8 @@
 
   - pydstool [base] (?)
 
-- Fixed incorrect permission when installing as a SYSTEM user on Windows.
 - Updated software versions for 2025 based on Python 3.12 and NumPy 2.
-- Renamed the installer to "tudelft-conda" instead of "tudelft-anaconda".
+- Fixed incorrect permission when installing as a SYSTEM user on Windows.
 
 2024.04
 =======
