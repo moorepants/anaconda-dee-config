@@ -106,7 +106,7 @@ specs:
   - scikit-image ==0.25.2
   - scikit-learn ==1.7.0
   - scikits.odes ==3.1.1
-  - scipy ==1.15.3
+  - scipy ==1.15.2
   - scrapy ==2.13.2
   - seaborn ==0.13.2
   - setuptools ==80.9.0
