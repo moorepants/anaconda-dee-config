@@ -116,9 +116,9 @@ specs:
   - scikit-image ==0.25.2
   - scikit-learn ==1.7.0
   - scikits.odes ==3.1.1
-  - scipy ==1.16.0
+  - scipy
   - scrapy ==2.13.2
-  - seaborn ==0.13.2
+  - seaborn
   - setuptools ==80.9.0
   - shapely ==2.1.1
   - slycot ==0.6.0
@@ -128,7 +128,7 @@ specs:
   - spyder-notebook ==0.6.1
   - sqlalchemy ==2.0.41
   - sqlite ==3.50.2
-  - statsmodels ==0.14.4
+  - statsmodels
   - stopit ==1.1.2
   - sympy ==1.14.0
   - toolz ==1.0.0
