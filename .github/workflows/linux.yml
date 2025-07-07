@@ -3,8 +3,8 @@ name: linux-amd64
 # only run this action if merged to master
 on:
   push:
-    branches:
-      - master
+    #branches:
+      #- master
 
 # cancels prior builds for this workflow when new commit is pushed
 concurrency:
