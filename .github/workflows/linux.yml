@@ -1,0 +1,87 @@
+name: linux-amd64
+
+# only run this action if merged to master
+on:
+  push:
+    branches:
+      - master
+
+# cancels prior builds for this workflow when new commit is pushed
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          python-version: "3.12"
+          miniforge-version: latest
+      - name: Install constructor
+        run: |
+          conda info
+          conda install pip setuptools setuptools_scm conda conda-standalone "ruamel.yaml>=0.11.14,<0.19" "pillow >=3.1" jinja2 "jsonschema>=4"
+          # conda install constructor>=3.11.2
+          # Use development version to get this fix: https://github.com/conda/constructor/pull/991
+          git clone --depth 1 https://github.com/conda/constructor.git
+          python -m pip install --no-deps -e constructor/
+      - name: Build the installer
+        env:
+          CONDA_CHANNEL_PRIORITY: strict
+        run: |
+          constructor .
+          python pretty_pkg_list.py
+      - name: Archive the base package list
+        uses: actions/upload-artifact@v4
+        with:
+          name: tudelft-conda-base-pkg-list
+          path: pkg-list.base.txt
+      - name: Archive the pytorch env package list
+        uses: actions/upload-artifact@v4
+        with:
+          name: tudelft-conda-pytorch-pkg-list
+          path: pkg-list.pytorch.txt
+      - name: Archive the installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: tudelft-conda-installer
+          path: tudelft-conda-v2025.03.dev-Linux-x86_64.sh
+  install:
+    name: Install and test
+    runs-on: ubuntu-latest
+    needs: build
+    defaults:
+      run:
+        shell: bash
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: tudelft-conda-installer
+      - run: dir
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          installer-url: tudelft-conda-v2025.03.dev-Linux-x86_64.sh
+          auto-activate-base: true
+          activate-environment: ""
+      - name: Test
+        run: |
+          conda info
+          conda list
+          conda run -n base python tests/test_imports.py
+          conda run -n base python tests/test_slycot.py
+          conda run -n base python tests/test_biogeme.py
+          conda run -n pytorch python tests/test_pytorch.py
