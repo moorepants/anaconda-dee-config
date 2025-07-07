@@ -153,8 +153,8 @@ extra_envs:
       - pytorch_geometric ==2.6.1
       - rdkit ==2025.03.3
       - scikit-learn ==1.7.0
-      - scipy ==1.16.0
-      - seaborn ==0.13.2
+      - scipy
+      - seaborn
       - spyder-kernels ==3.0.5  # allows access to this environment in spyder
       - torchaudio ==2.5.1
       - torchvision ==0.20.1
