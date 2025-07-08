@@ -1,6 +1,7 @@
 2025.03.dev
 ===========
 
+- Bump statsmodels to 0.14.5 to be compatible with SciPy 1.16.0.
 - Bump control to 0.10.2 from Conda Forge.
 
 2025.02
