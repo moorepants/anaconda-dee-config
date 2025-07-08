@@ -70,11 +70,12 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: tudelft-conda-installer
-      - run: dir
+      - run: pwd
+      - run: ls -al
       - uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
-          installer-url: tudelft-conda-v2025.03.dev-Linux-x86_64.sh
+          installer-url: file://tudelft-conda-v2025.03.dev-Linux-x86_64.sh
           auto-activate-base: true
           activate-environment: ""
       - name: Test
