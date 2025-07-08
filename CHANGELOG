@@ -1,6 +1,19 @@
 2025.03.dev
 ===========
 
+- Updated packages:
+
+  - control [base]: repa::0.10.1c -> conda-forge::0.10.2
+
+- Added packages:
+
+  - ipython [pytorch]
+
+- Removed packages:
+
+  - cpuonly [pytorch]
+  - torchaudio [pytorch]
+
 2025.02
 =======
 
