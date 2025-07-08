@@ -1,4 +1,4 @@
-name: linux-amd64
+name: linux-64
 
 # only run this action if merged to master
 on:

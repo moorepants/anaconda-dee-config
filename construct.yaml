@@ -140,7 +140,6 @@ specs:
 extra_envs:
   pytorch:
     channels:
-      - pytorch
       - conda-forge
     specs:
       - cpuonly
@@ -156,7 +155,6 @@ extra_envs:
       - scipy
       - seaborn
       - spyder-kernels  # allows access to this environment in spyder
-      - torchaudio
       - torchvision
       - tqdm
 build_outputs:
