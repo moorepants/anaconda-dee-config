@@ -116,9 +116,9 @@ specs:
   - scikit-image ==0.25.2
   - scikit-learn ==1.7.0
   - scikits.odes ==3.1.1
-  - scipy
+  - scipy ==1.16.0
   - scrapy ==2.13.2
-  - seaborn
+  - seaborn ==0.13.2
   - setuptools ==80.9.0
   - shapely ==2.1.1
   - slycot ==0.6.0
@@ -128,7 +128,7 @@ specs:
   - spyder-notebook ==0.6.1
   - sqlalchemy ==2.0.41
   - sqlite ==3.50.2
-  - statsmodels
+  - statsmodels ==0.14.5
   - stopit ==1.1.2
   - sympy ==1.14.0
   - toolz ==1.0.0
@@ -153,8 +153,8 @@ extra_envs:
       - pytorch_geometric ==2.6.1
       - rdkit ==2025.03.3
       - scikit-learn ==1.7.0
-      - scipy
-      - seaborn
+      - scipy ==1.16.0
+      - seaborn ==0.13.2
       - spyder-kernels ==3.0.5  # allows access to this environment in spyder
       - torchaudio ==2.5.1
       - torchvision ==0.20.1
