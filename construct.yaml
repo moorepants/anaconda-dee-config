@@ -148,7 +148,7 @@ extra_envs:
       - matplotlib
       - numpy
       - pandas
-      - python ==3.12.11
+      - python
       - pytorch
       - pytorch_geometric
       - rdkit
