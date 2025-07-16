@@ -1,10 +1,6 @@
 name: linux-64
 
-# only run this action if merged to master
-on:
-  push:
-    #branches:
-      #- master
+on: [push]
 
 # cancels prior builds for this workflow when new commit is pushed
 concurrency:
