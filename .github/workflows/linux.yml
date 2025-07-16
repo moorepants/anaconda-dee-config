@@ -1,10 +1,6 @@
 name: linux-64
 
-# only run this action if merged to master
-on:
-  push:
-    #branches:
-      #- master
+on: [push]
 
 # cancels prior builds for this workflow when new commit is pushed
 concurrency:
@@ -44,17 +40,17 @@ jobs:
       - name: Archive the base package list
         uses: actions/upload-artifact@v4
         with:
-          name: tudelft-conda-base-pkg-list
+          name: tudelft-conda-linux-64-base-pkg-list
           path: pkg-list.base.txt
       - name: Archive the pytorch env package list
         uses: actions/upload-artifact@v4
         with:
-          name: tudelft-conda-pytorch-pkg-list
+          name: tudelft-conda-linux-64-pytorch-pkg-list
           path: pkg-list.pytorch.txt
       - name: Archive the installer
         uses: actions/upload-artifact@v4
         with:
-          name: tudelft-conda-installer
+          name: tudelft-conda-linux-64-installer
           path: tudelft-conda-v2025.03.dev-Linux-x86_64.sh
   install:
     name: Install and test
@@ -69,7 +65,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
-          name: tudelft-conda-installer
+          name: tudelft-conda-linux-64-installer
       - run: pwd
       - run: ls -al
       - uses: conda-incubator/setup-miniconda@v3

@@ -1,6 +1,30 @@
 2025.03.dev
 ===========
 
+- Removed the pytorch channel for building the pytorch environment to support
+  linux and mac installers. The pytorch environment is now built solely from
+  the Conda Forge packages. The cpuonly and torchaudio packages were removed
+  due to not being available from Conda Forge.
+- Updated packages:
+
+  - [base] repa::0.10.1c -> conda-forge::0.10.2
+  - [base] statsmodels 0.14.4 -> statsmodels to 0.14.5 (to be compatible with
+    SciPy 1.16.0)
+  - [pytorch] numpy 2.3.0 -> numpy 2.3.1
+  - [pytorch] pytorch 2.5.1 -> pytorch 2.7.1
+  - [pytorch] rdkit 2025.03.3 -> rdkit 2025.03.4
+  - [pytorch] torchvision 0.20.1 -> torchvision 0.22.0
+
+- Added packages:
+
+  - [pytorch] ipython 8.37.0
+
+- Removed packages:
+
+  - [pytorch] cpuonly
+  - [pytorch] torchaudio
+
+
 2025.02
 =======
 
