@@ -2,6 +2,10 @@ name: tudelft-conda
 version: v2025.03.dev
 company: Delft University of Technology
 installer_type: all
+write_condarc: true
+default_channels:
+  - conda-forge
+  - nodefaults
 channels:
   - conda-forge
 specs:
