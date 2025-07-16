@@ -1,7 +1,9 @@
 name: tudelft-conda
 version: v2025.03.dev
 company: Delft University of Technology
-installer_type: all
+installer_type: exe  # [win]
+installer_type: pkg  # [osx]
+installer_type: sh  # [linux]
 channels:
   # NOTE: Rene van Paasen made a patch to control 0.10.1 for a regression and
   # hosts it in on his repa anconda channel. control 0.10.1 is the first
@@ -142,21 +144,21 @@ extra_envs:
     channels:
       - conda-forge
     specs:
-      - ipykernel  # allows access to this env using nb_conda_kernels
-      - ipython
-      - matplotlib
-      - numpy
-      - pandas
+      - ipykernel ==6.29.5  # allows access to this env using nb_conda_kernels
+      - ipython ==9.4.0
+      - matplotlib ==3.10.3
+      - numpy ==2.3.1
+      - pandas ==2.3.0
       - python ==3.12.11
-      - pytorch
-      - pytorch_geometric
-      - rdkit
-      - scikit-learn
-      - scipy
-      - seaborn
-      - spyder-kernels  # allows access to this environment in spyder
-      - torchvision
-      - tqdm
+      - pytorch ==2.7.1
+      - pytorch_geometric ==2.6.1
+      - rdkit ==2025.03.4
+      - scikit-learn ==1.7.0
+      - scipy ==1.16.0
+      - seaborn ==0.13.3
+      - spyder-kernels ==0.2.6  # allows access to this environment in spyder
+      - torchvision ==0.22.0
+      - tqdm ==4.67.1
 build_outputs:
   - info.json
   - pkgs_list
