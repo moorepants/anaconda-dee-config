@@ -4,6 +4,7 @@
 - Updated packages:
 
   - control [base]: repa::0.10.1c -> conda-forge::0.10.2
+  - Bump statsmodels to 0.14.5 to be compatible with SciPy 1.16.0.
 
 - Added packages:
 
