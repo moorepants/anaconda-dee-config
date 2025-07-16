@@ -1,4 +1,4 @@
-name: windows
+name: win-64
 
 on: [push]
 
@@ -41,17 +41,17 @@ jobs:
       - name: Archive the base package list
         uses: actions/upload-artifact@v4
         with:
-          name: tudelft-conda-base-pkg-list
+          name: tudelft-conda-win-64-base-pkg-list
           path: pkg-list.base.txt
       - name: Archive the pytorch env package list
         uses: actions/upload-artifact@v4
         with:
-          name: tudelft-conda-pytorch-pkg-list
+          name: tudelft-conda-win-64-pytorch-pkg-list
           path: pkg-list.pytorch.txt
       - name: Archive the installer
         uses: actions/upload-artifact@v4
         with:
-          name: tudelft-conda-installer
+          name: tudelft-conda-win-64-installer
           path: tudelft-conda-v2025.03.dev-Windows-x86_64.exe
   install:
     name: Install and test
@@ -66,7 +66,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
-          name: tudelft-conda-installer
+          name: tudelft-conda-win-64-installer
       - run: dir
       - uses: conda-incubator/setup-miniconda@v3
         with:
@@ -77,6 +77,7 @@ jobs:
       - name: Test
         run: |
           conda info
+          conda config --show
           conda list
           conda config --show
           conda run -n base python tests/test_imports.py
