@@ -1,0 +1,85 @@
+name: osx-64
+
+on: [push]
+
+# cancels prior builds for this workflow when new commit is pushed
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name:
+    # maxos-13 is the last intel runner
+    runs-on: macos-13
+    defaults:
+      run:
+        shell: bash -el {0}
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          python-version: "3.12"
+          miniforge-version: latest
+      - name: Install constructor
+        run: |
+          conda info
+          conda install pip setuptools setuptools_scm conda conda-standalone "ruamel.yaml>=0.11.14,<0.19" "pillow >=3.1" jinja2 "jsonschema>=4"
+          # conda install constructor>=3.11.2
+          # Use development version to get this fix: https://github.com/conda/constructor/pull/991
+          git clone --depth 1 https://github.com/conda/constructor.git
+          python -m pip install --no-deps -e constructor/
+      - name: Build the installer
+        env:
+          CONDA_CHANNEL_PRIORITY: strict
+        run: |
+          constructor .
+          python pretty_pkg_list.py
+      - name: Archive the base package list
+        uses: actions/upload-artifact@v4
+        with:
+          name: tudelft-conda-osx-64-base-pkg-list
+          path: pkg-list.base.txt
+      - name: Archive the pytorch env package list
+        uses: actions/upload-artifact@v4
+        with:
+          name: tudelft-conda-osx-64-pytorch-pkg-list
+          path: pkg-list.pytorch.txt
+      - name: Archive the installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: tudelft-conda-osx-64-installer
+          path: tudelft-conda-v2025.03.dev-macOS-x86_64.pkg
+  install:
+    name: Install and test
+    runs-on: macos-13
+    needs: build
+    defaults:
+      run:
+        shell: bash -el {0}
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: tudelft-conda-osx-64-installer
+      - run: pwd
+      - run: ls -al
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          installer-url: file:///home/runner/work/anaconda-dee-config/anaconda-dee-config/tudelft-conda-v2025.03.dev-macOS-x86_64.pkg
+          auto-activate-base: true
+          activate-environment: ""
+      - name: Test
+        run: |
+          conda info
+          conda list
+          conda run -n base python tests/test_imports.py
+          conda run -n base python tests/test_slycot.py
+          conda run -n base python tests/test_biogeme.py
+          conda run -n pytorch python tests/test_pytorch.py
