@@ -78,8 +78,8 @@ jobs:
         run: |
           conda info
           conda config --show
+          conda config --show-sources
           conda list
-          conda config --show
           conda run -n base python tests/test_imports.py
           conda run -n base python tests/test_slycot.py
           conda run -n base python tests/test_biogeme.py
