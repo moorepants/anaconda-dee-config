@@ -1,9 +1,7 @@
 name: tudelft-conda
 version: v2025.03.dev
 company: Delft University of Technology
-installer_type: exe  # [win]
-installer_type: pkg  # [osx]
-installer_type: sh  # [linux]
+installer_type: all
 channels:
   - conda-forge
 specs:
