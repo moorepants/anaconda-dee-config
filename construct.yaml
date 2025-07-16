@@ -135,7 +135,7 @@ extra_envs:
       - conda-forge
     specs:
       - ipykernel ==6.29.5  # allows access to this env using nb_conda_kernels
-      - ipython ==9.4.0
+      - ipython ==8.37.0
       - matplotlib ==3.10.3
       - numpy ==2.3.1
       - pandas ==2.3.0
