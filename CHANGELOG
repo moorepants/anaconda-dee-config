@@ -12,10 +12,6 @@
   - [base] repa::0.10.1c -> conda-forge::0.10.2
   - [base] statsmodels 0.14.4 -> statsmodels to 0.14.5 (to be compatible with
     SciPy 1.16.0)
-  - [pytorch] numpy 2.3.0 -> numpy 2.3.1
-  - [pytorch] pytorch 2.5.1 -> pytorch 2.7.1
-  - [pytorch] rdkit 2025.03.3 -> rdkit 2025.03.4
-  - [pytorch] torchvision 0.20.1 -> torchvision 0.22.0
 
 - Added packages:
 
