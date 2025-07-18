@@ -2,6 +2,15 @@ name: tudelft-conda
 version: v2025.03.dev
 company: Delft University of Technology
 installer_type: all
+# NOTE : The following two settings write a condarc file to the installation
+# directory to ensure that the default channel for creating new environments or
+# installing extra packages is only Conda Forge.
+write_condarc: true
+conda_default_channels:
+  - conda-forge
+  - nodefaults
+# NOTE : During the installation build, packages will be retrieved from the
+# following channels:
 channels:
   - conda-forge
 specs:
