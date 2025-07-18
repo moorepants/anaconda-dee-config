@@ -1,6 +1,8 @@
 2025.03.dev
 ===========
 
+- Installers for Linux and Mac (Intel & Arm) are now built on Github CI, in
+  addition to the Windows build.
 - Removed the pytorch channel for building the pytorch environment to support
   linux and mac installers. The pytorch environment is now built solely from
   the Conda Forge packages. The cpuonly and torchaudio packages were removed
@@ -10,10 +12,6 @@
   - [base] repa::0.10.1c -> conda-forge::0.10.2
   - [base] statsmodels 0.14.4 -> statsmodels to 0.14.5 (to be compatible with
     SciPy 1.16.0)
-  - [pytorch] numpy 2.3.0 -> numpy 2.3.1
-  - [pytorch] pytorch 2.5.1 -> pytorch 2.7.1
-  - [pytorch] rdkit 2025.03.3 -> rdkit 2025.03.4
-  - [pytorch] torchvision 0.20.1 -> torchvision 0.22.0
 
 - Added packages:
 
@@ -23,7 +21,6 @@
 
   - [pytorch] cpuonly
   - [pytorch] torchaudio
-
 
 2025.02
 =======
@@ -36,14 +33,14 @@
 
 - First release for the 2025-2026 academic year for summer testing.
 - Renamed the installer to "tudelft-conda" instead of "tudelft-anaconda".
-- Add packages:
+- Added packages:
 
-  - biogeme [base] (Sander van Cranenburgh)
-  - biogeme-optimization [base] (Sander van Cranenburgh)
+  - [base] biogeme (Sander van Cranenburgh)
+  - [base] biogeme-optimization (Sander van Cranenburgh)
 
-- Remove packages:
+- Removed packages:
 
-  - pydstool [base] (?)
+  - [base] pydstool (?)
 
 - Updated software versions for 2025 based on Python 3.12 and NumPy 2.
 - Fixed incorrect permission when installing as a SYSTEM user on Windows.
@@ -52,28 +49,38 @@
 =======
 
 - Final release for the 2024-2025 school year.
-- Removed anaconda-navigator, console_shortcut, and powershell_shortcut (only
-  remaining packages from defaults).
-- Add miniforge console shortcut in place of console_shortcut.
 - Removed use of defaults channel(s).
+- Removed remaining packages from the defaults channel.
+- Removed packages:
+
+  - [base] anaconda-navigator
+  - [base] console_shortcut
+  - [base] powershell_shortcut
+
+- Added packages:
+
+  - [base] miniforge console shortcut
 
 2024.03
 =======
 
 - Pre-final release for the 2024-2025 school year.
-- Adds packages (base):
+- Added packages:
 
-  - cythonbiogeme (Sander van Cranenburgh)
-  - pymunk (Jordan Boyle)
-  - pygame (Jordon Boyle)
-  - ffmpeg (Omar Kammouh)
+  - [base] cythonbiogeme (Sander van Cranenburgh)
+  - [base] pymunk (Jordan Boyle)
+  - [base] pygame (Jordon Boyle)
+  - [base] ffmpeg (Omar Kammouh)
 
 2024.02
 =======
 
 - Second testing release for the 2024-2025 academic year.
-- Adds the spyder-kernels package to access the pytorch environment in Spyder.
-- Ensured strict channel priority on Window
+- Added packages:
+
+  - [pytorch] spyder-kernels (to access the pytorch environment in Spyder)
+
+- Ensured strict channel priority on Windows.
 
 2024.01
 =======
