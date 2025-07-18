@@ -29,7 +29,10 @@ jobs:
           conda install pip setuptools setuptools_scm conda conda-standalone "ruamel.yaml>=0.11.14,<0.19" "pillow >=3.1" jinja2 "jsonschema>=4" nsis
           # conda install constructor>=3.11.2
           # Use development version to get this fix: https://github.com/conda/constructor/pull/991
-          git clone --depth 1 https://github.com/conda/constructor.git@db1ea11ef7d2114e083993ad4235ab939fc69b20
+          git clone --depth 1 https://github.com/conda/constructor.git
+          cd constructor
+          git checkout db1ea11ef7d2114e083993ad4235ab939fc69b20
+          cd ..
           python -m pip install --no-deps -e constructor/
       - name: Build the installer
         env:
