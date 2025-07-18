@@ -1,6 +1,11 @@
 2025.03.dev
 ===========
 
+- Installation now includes a default condarc file at the installation root
+  which sets the channels to: conda-forge and nodefaults. This ensures that any
+  `conda install` commands issued by the user will only install packages from
+  conda-forge. The user can override this by creating a condarc file in their
+  home directory or with flags to the conda command.
 - Installers for Linux and Mac (Intel & Arm) are now built on Github CI, in
   addition to the Windows build.
 - Removed the pytorch channel for building the pytorch environment to support
