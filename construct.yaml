@@ -9,6 +9,10 @@ write_condarc: true
 conda_default_channels:
   - conda-forge
   - nodefaults
+# Ensure that the path lengths are checked on Windows because pytorch can
+# create paths longer than 256 characters (see:
+# https://github.com/conda/constructor/issues/1022):
+check_path_length: true
 # NOTE : During the installation build, packages will be retrieved from the
 # following channels:
 channels:
