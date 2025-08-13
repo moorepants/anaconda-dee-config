@@ -1,6 +1,10 @@
 2025.03.dev
 ===========
 
+- Installer is now built with constructor >=3.12.2.
+- Due to long paths from pytorch directories, the `check_path_length` flag is
+  set to true and Windows users will get a warning that they must install with
+  administrator privileges to enable Windows support for long paths.
 - Installation now includes a default condarc file at the installation root
   which sets the channels to: conda-forge and nodefaults. This ensures that any
   `conda install` commands issued by the user will only install packages from

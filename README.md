@@ -310,7 +310,7 @@ used to build the official Anaconda installer. Create an environment with only
 constructor and activate it.
 
 ```bash
-conda create -n constructor constructor
+conda create -n constructor "constructor>=3.12.2"
 conda activate constructor
 ```
 
@@ -348,7 +348,7 @@ Anaconda on other computers.
 Download `tudelft-conda-<version>-Windows-x86_64.exe` to the Windows
 computer you want to install it on.
 
-We build Windows installers in this Github CI action:
+We build Windows, Linux, and Mac installers in this Github CI action:
 
 https://github.com/moorepants/anaconda-dee-config/actions
 
