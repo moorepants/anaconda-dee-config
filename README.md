@@ -84,18 +84,19 @@ DigitalExam environment.
 
 The (annual) process flow is roughly as follows:
 
-| Date  | Action                                                                       |
-|:-----:|:----------------------------------------------------------------------------:|
-| Mar   | review the issues brought up in the running academic year                    |
-| Apr   | set out a master plan with ICT Werkplekbeheer                                |
-| May   | send around communication to users community to express new needs and wishes |
-| Jun   | draft an installation specification and work plan and send to ICT            |
-| Jul 1 | package version number freeze                                                |
-| Jul   | alpha testing new installation and repair apparent errors                    |
-| Jul   | tweak package version pins and create any necessary conda environments       |
-| Aug   | do beta (field) testing in faculties                                         |
-| Sep 1 | new environment packaged, in DEE, and published on software.tudelft.nl       |
-| Sep+  | new issues opened on Gitlab                                                  |
+| Date   | Action                                                                       |
+|:------:|:----------------------------------------------------------------------------:|
+| Mar    | review the issues brought up in the running academic year                    |
+| Apr    | set out a master plan with ICT Werkplekbeheer                                |
+| May    | send around communication to users community to express new needs and wishes |
+| Jun    | draft an installation specification and work plan and send to ICT            |
+| Jul 1  | package version number freeze                                                |
+| Jul    | alpha testing new installation and repair apparent errors                    |
+| Jul    | tweak package version pins and create any necessary conda environments       |
+| Aug    | do beta (field) testing in faculties                                         |
+| Aug 15 | deadline for beta testing issue reports                                      |
+| Sep 1  | new environment packaged, in DEE, and published on software.tudelft.nl       |
+| Sep+   | new issues opened on Gitlab for next year's installer                        |
 
 # Adding new packages to the installer
 
@@ -136,8 +137,8 @@ environment?
 
 > We can add new environments using Conda Constructor and make them selectable
 by end users, but the current limitation is the 2GB maximum for our exe
-installer on Windows. It is difficult to keep the installer under 2GB with even
-one additional environment.
+installer on Windows. It may be difficult to keep the installer under 2GB with
+even one additional environment.
 
 Why can't my package be installed with PyPi/Cargo/NPM/CRAN?
 
@@ -154,28 +155,28 @@ solution that does not require excessive amounts of time and complexity for
 this team is to rely on Conda Forge for solving these problems. The binaries
 available on Conda Forge are guaranteed to provide a compatible set by the
 nature of its design. Even though it may seem simple to install your package on
-your computer, it may not be so in a offline installer (for Windows). Every
-special case we add, costs us more time. So we default to Conda Forge packages
-with rare exceptions that depend on available volunteer time. This provides a
-minimal headache way to deliver a working software environments to our
-students.
+your computer, it may not be so in a offline installer. Every special case we
+add, costs us more time. So we default to Conda Forge packages with rare
+exceptions that depend on available volunteer time. This provides a minimal
+headache way to deliver a working software environments to our students.
 
-Why can't students `pip install` or `conda install` packages while on the
+Why can't students `pip install` or `conda install` packages while on the lab
 computers?
 
-> The computers are not connected to the internet so these commands will not
-work in general. It may be possible to host our own copies of Conda Forge or
-PyPi behind our firewall in the future, but this is a large undertaking. We
-also do not give students write access to the locations that either of these
-tools install packages to, so the default install will not work. You can
-provide packages to the students via the shared drive and they can install them
-in their personal drive as a workaround.
+> The computers are disconnected to the internet during most exams so these
+commands will not work in general. It may be possible to host our own copies of
+Conda Forge or PyPi behind our firewall in the future, but this is a large
+undertaking. We also do not give students write access to the locations that
+either of these tools install packages to, so the default install will not
+work. You can provide packages to the students via the shared drive and they
+can install them in their personal drive as a workaround.
 
 Why are there no version specifications in the `construct.yaml` file? How do we
 know what version will be installed?
 
 > We install the latest Conda Forge version of all packages up to the
-July 1 version freeze date. Build the installer to see what versions are
+July 1 version freeze date. After the July 1 freeze date the versions are added
+to the `construct.yaml` file. Build the installer to see what versions are
 installed or check the latest Github Actions output (see below).
 
 Will you install may favorite IDE (e.g. PyCharm, VS Code, etc.)?
@@ -247,7 +248,7 @@ can install the latest of the mentioned three installers from:
 - Miniconda: https://docs.anaconda.com/free/miniconda/miniconda-install/
 - Miniforge: https://conda-forge.org/miniforge/
 
-The latest Miniconda Windows installer is at:
+For example, the latest Miniconda Windows installer is at:
 
 https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 
@@ -273,14 +274,14 @@ https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/releases
 If you want to work with the development version, then use one of the following
 methods to obtain the files:
 
-If you have SSH setup for the EWI Gitlab use:
+If you have SSH set up for the EWI Gitlab use:
 
 ```bash
 git clone git@gitlab.ewi.tudelft.nl:bhmgerritsen/anaconda-dee-config.git
 cd anaconda-dee-config
 ```
 
-else use:
+else use if you do not have SSH set up:
 
 ```bash
 git clone https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config.git
@@ -310,7 +311,7 @@ used to build the official Anaconda installer. Create an environment with only
 constructor and activate it.
 
 ```bash
-conda create -n constructor "constructor>=3.12.2"
+conda create -c conda-forge -n constructor "constructor>=3.12.2"
 conda activate constructor
 ```
 
@@ -334,19 +335,19 @@ CONDA_CHANNEL_PRIORITY=strict constructor .
 
 in the directory with the `construct.yaml` file. This can take 10-30 minutes
 depending on your computer's speed and download speeds. After it finishes there
-will be `tudelft-conda-<version>-Windows-x86_64.exe` in the directory. This
-installer can be executed on any computer that does not have Anaconda
-installed.
+will be an executable file, for example
+`tudelft-conda-<version>-Windows-x86_64.exe`, in the directory. This installer
+can be executed on any computer to install the DEE.
 
 # Installing
 
-Once you have built the installer `exe`, you can use it to install the TU Delft
-Anaconda on other computers.
+Once you have built the installer `exe`, `sh`, `pkg`, you can use it to install
+the TU Delft Anaconda on other computers.
 
 ## Step 1: Download the installer
 
-Download `tudelft-conda-<version>-Windows-x86_64.exe` to the Windows
-computer you want to install it on.
+For example on Windows, download `tudelft-conda-<version>-Windows-x86_64.exe`
+to the Windows computer you want to install it on.
 
 We build Windows, Linux, and Mac installers in this Github CI action:
 
@@ -358,9 +359,14 @@ can likely only see these if you are logged into Github.
 
 ## Step 2: Run the installer
 
-Double click on the tudelft-conda installer and follow the prompts. By default
-this will install the TU Delft Conda distribution in `C:\Program
-Files\tudelft-conda`.
+Double click on the tudelft-conda installer (exe, pkg) or execute the shell
+script and follow the prompts. By default this will install the TU Delft Conda
+distribution in `C:\Program Files\tudelft-conda` on Windows and
+`/home/user/tudelft-conda` on Linux and Mac.
+
+On Windows, you will get a warning about long path names. Either select an
+install location with a shorter base path, e.g. `C:\`, or install as an
+administrator to bypass the path length restrictions.
 
 ## Step 3: Check versions
 
