@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tudelft-conda-linux-64-installer
-          path: tudelft-conda-v2025.03-Linux-x86_64.sh
+          path: tudelft-conda-v2025.04.dev-Linux-x86_64.sh
   install:
     name: Install and test
     runs-on: ubuntu-latest
@@ -67,7 +67,7 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
-          installer-url: file:///home/runner/work/anaconda-dee-config/anaconda-dee-config/tudelft-conda-v2025.03-Linux-x86_64.sh
+          installer-url: file:///home/runner/work/anaconda-dee-config/anaconda-dee-config/tudelft-conda-v2025.04.dev-Linux-x86_64.sh
           auto-activate-base: true
           activate-environment: ""
       - name: Test

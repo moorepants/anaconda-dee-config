@@ -49,12 +49,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tudelft-conda-osx-64-installer
-          path: tudelft-conda-v2025.03-MacOSX-x86_64.sh
+          path: tudelft-conda-v2025.04.dev-MacOSX-x86_64.sh
       - name: Archive the installer
         uses: actions/upload-artifact@v4
         with:
           name: tudelft-conda-osx-64-pkg-installer
-          path: tudelft-conda-v2025.03-MacOSX-x86_64.pkg
+          path: tudelft-conda-v2025.04.dev-MacOSX-x86_64.pkg
   install:
     name: Install and test
     runs-on: macos-13
@@ -74,7 +74,7 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
-          installer-url: file:///Users/runner/work/anaconda-dee-config/anaconda-dee-config/tudelft-conda-v2025.03-MacOSX-x86_64.sh
+          installer-url: file:///Users/runner/work/anaconda-dee-config/anaconda-dee-config/tudelft-conda-v2025.04.dev-MacOSX-x86_64.sh
           auto-activate-base: true
           activate-environment: ""
       - name: Test
