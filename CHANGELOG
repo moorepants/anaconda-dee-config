@@ -1,5 +1,5 @@
-2025.03.dev
-===========
+2025.03
+=======
 
 - Installer is now built with constructor >=3.12.2.
 - Due to long paths from pytorch directories, the `check_path_length` flag is
