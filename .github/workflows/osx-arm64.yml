@@ -37,12 +37,12 @@ jobs:
       - name: Archive the base package list
         uses: actions/upload-artifact@v4
         with:
-          name: tudelft-conda-osx-64-base-pkg-list
+          name: tudelft-conda-osx-arm64-base-pkg-list
           path: pkg-list.base.txt
       - name: Archive the pytorch env package list
         uses: actions/upload-artifact@v4
         with:
-          name: tudelft-conda-osx-64-pytorch-pkg-list
+          name: tudelft-conda-osx-arm64-pytorch-pkg-list
           path: pkg-list.pytorch.txt
       - name: Archive the installer
         uses: actions/upload-artifact@v4
