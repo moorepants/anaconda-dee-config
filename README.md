@@ -6,6 +6,52 @@ includes annually requested software packages. This is suitable for installing
 on TU Delft's lab computers including those used for digital examinations as
 well as for staff and student use on personal or university owned computers.
 
+# Table of Contents
+
+- [User installation instructions](#user-installation-instructions)
+- [Maintainers](#maintainers)
+- [Contributing](#contributing)
+- [Revision history](#revision-history)
+- [Requirements](#requirements)
+- [Solution](#solution)
+- [Process to agree on installation](#process-to-agree-on-installation)
+- [Adding new packages to the installer](#adding-new-packages-to-the-installer)
+- [FAQ](#faq)
+- [Contact and request list](#contact-and-request-list)
+- [Steps to build the installer](#steps-to-build-the-installer)
+- [Development installation](#development-installation)
+- [Testing the installations](#testing-the-installations)
+
+# User installation instructions
+
+Download the installer for your operating system and computer architecture from
+the
+[releases](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/releases)
+page. For example, the 2025.03 version offers these installers:
+
+| File name | Operating System | Architecture | Type |
+|:----------|:----------------:|:------------:|:----:|
+| `tudelft-conda-v2025.03-Linux-x86_64.sh` | Linux | 64 bit x86 Intel/AMD | bash script |
+| `tudelft-conda-v2025.03-MacOSX-arm64.pkg` | macOS | 64 bit arm | graphical |
+| `tudelft-conda-v2025.03-MacOSX-arm64.sh` | macOS | 64 bit arm | bash script |
+| `tudelft-conda-v2025.03-MacOSX-x86_64.pkg` | macOS | 64 bit x86 Intel | graphical |
+| `tudelft-conda-v2025.03-MacOSX-x86_64.sh` | macOS | 64 bit x86 Intel | bash script |
+| `tudelft-conda-v2025.03-Windows-x86_64.exe` | Windows | 64 bit x86 Intel/AMD | graphical |
+
+For graphical installers, execute the installer and follow the on screen
+instructions.
+
+For the Bash scripts, open a terminal and run the script, following the on
+screen instructions. For example:
+
+```
+bash tudelft-conda-v2025.03-Linux-x86_64.sh
+```
+
+For Windows installations, you may hit a limit on file path lengths. Either 1)
+install as an adminstrator to override this limit or 2) install in a base path
+that is as short as possible, e.g. `C:\`.
+
 # Maintainers
 
 Current:
@@ -238,36 +284,6 @@ interest in doing so.
 | Wouter van der Wal | w.vanderwal@tudelft.nl | | |
 | Requested by Artur Schweidtmann | director-ce@tudelft.nl | | |
 
-# Manual installation instructions
-
-Download the installer for your operating system and computer architecture from
-the
-[releases](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/releases)
-page. For example, the 2025.03 version offers these installers:
-
-| File name | Operating System | Architecture | Type |
-|:----------|:----------------:|:------------:|:----:|
-| `tudelft-conda-v2025.03-Linux-x86_64.sh` | Linux | 64 bit x86 Intel/AMD | bash script |
-| `tudelft-conda-v2025.03-MacOSX-arm64.pkg` | macOS | 64 bit arm | graphical |
-| `tudelft-conda-v2025.03-MacOSX-arm64.sh` | macOS | 64 bit arm | bash script |
-| `tudelft-conda-v2025.03-MacOSX-x86_64.pkg` | macOS | 64 bit x86 Intel | graphical |
-| `tudelft-conda-v2025.03-MacOSX-x86_64.sh` | macOS | 64 bit x86 Intel | bash script |
-| `tudelft-conda-v2025.03-Windows-x86_64.exe` | Windows | 64 bit x86 Intel/AMD | graphical |
-
-For graphical installers, execute the installer and follow the on screen
-instructions.
-
-For the Bash scripts, open a terminal and run the script, following the on
-screen instructions. For example:
-
-```
-bash tudelft-conda-v2025.03-Linux-x86_64.sh
-```
-
-For Windows installations, you may hit a limit on file path lengths. Either 1)
-install as an adminstrator to override this limit or 2) install in a base path
-that is as short as possible, e.g. `C:\`.
-
 # Steps to build the installer
 
 ## Step 1: Install Anaconda/Miniconda/Miniforge and Git
@@ -371,10 +387,10 @@ will be an executable file, for example
 `tudelft-conda-<version>-Windows-x86_64.exe`, in the directory. This installer
 can be executed on any computer to install the DEE.
 
-# Installing
+# Development installation
 
 Once you have built the installer `exe`, `sh`, `pkg`, you can use it to install
-the TU Delft Anaconda on other computers.
+the TU Delft conda on other computers.
 
 ## Step 1: Download the installer
 
