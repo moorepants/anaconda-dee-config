@@ -209,7 +209,7 @@ interest in doing so.
 | Jason K. Moore | j.k.moore@tudelft.nl | ME | sckits.odes |
 | Jeroen Kalkman | J.Kalkman@tudelft.nl| | |
 | Joost Ellerbroek | j.ellerbroek@tudelft.nl | | |
-| Jordan Boyle | J.H.Boyle@tudelft.nl | IDE | pygame, pymunk |
+| Jordan Boyle | J.H.Boyle@tudelft.nl | IDE | pygame, pymunk, spyder |
 | Ludolf Meester | L.E.Meester@tudelft.nl | | |
 | Marcel Sluiter | M.H.F.Sluiter@tudelft.nl | | |
 | Marcel van den Broek | Marcel.vandenBroek@tudelft.nl | | |
