@@ -252,9 +252,10 @@ interest in doing so.
 | Heike Vallery | h.vallery@tudelft.nl | | |
 | Helma Torkamaan | H.Torkamaan@tudelft.nl | | |
 | Iulia lefter | i.lefter@tudelft.nl | | |
-| Jacco Hoekstra | J.M.Hoekstra@tudelft.nl| | |
+| Jacco Hoekstra | J.M.Hoekstra@tudelft.nl | | |
 | Jason K. Moore | j.k.moore@tudelft.nl | ME | sckits.odes |
-| Jeroen Kalkman | J.Kalkman@tudelft.nl| | |
+| Jeroen Kalkman | J.Kalkman@tudelft.nl | | |
+| Joffrey Wallaart | J.Wallaart@tudelft.nl | EEMCS | |
 | Joost Ellerbroek | j.ellerbroek@tudelft.nl | | |
 | Jordan Boyle | J.H.Boyle@tudelft.nl | IDE | pygame, pymunk, spyder |
 | Ludolf Meester | L.E.Meester@tudelft.nl | | |
