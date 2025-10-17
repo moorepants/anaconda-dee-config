@@ -10,8 +10,7 @@ concurrency:
 jobs:
   build:
     name:
-    # maxos-13 is the last intel runner
-    runs-on: macos-13
+    runs-on: macos-15-intel
     defaults:
       run:
         shell: bash -el {0}
