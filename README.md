@@ -244,6 +244,7 @@ interest in doing so.
 | Artur Schweidtmann | A.Schweidtmann@tudelft.nl      |         |          |
 | Coen de Visser | C.C.deVisser@tudelft.nl | AE | control |
 | Cornel Thill | C.H.Thill@tudelft.nl | | |
+| Djordje Bajic | D.Bajic@tudelft.nl | AS | xlrd, openpyxl |
 | Erik Ulijn (ME) | E.H.M.Ulijn@tudelft.nl | | |
 | Ferdinand Grozema | F.C.Grozema@tudelft.nl| | |
 | Ferdinand Postema (LR) | F.N.Postema@tudelft.nl | | |
