@@ -56,7 +56,7 @@ jobs:
           path: tudelft-conda-v2025.04.dev-MacOSX-x86_64.pkg
   install:
     name: Install and test
-    runs-on: macos-13
+    runs-on: macos-15-intel
     needs: build
     defaults:
       run:
