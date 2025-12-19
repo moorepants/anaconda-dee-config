@@ -254,7 +254,7 @@ interest in doing so.
 | Helma Torkamaan | H.Torkamaan@tudelft.nl | | |
 | Iulia lefter | i.lefter@tudelft.nl | | |
 | Jacco Hoekstra | J.M.Hoekstra@tudelft.nl | | |
-| Jason K. Moore | j.k.moore@tudelft.nl | ME | sckits.odes |
+| Jason K. Moore | j.k.moore@tudelft.nl | ME | jupyter, matplotlib, numpy, pythreejs, sckits.odes, scipy, sympy |
 | Jeroen Kalkman | J.Kalkman@tudelft.nl | | |
 | Joffrey Wallaart | J.Wallaart@tudelft.nl | EEMCS | |
 | Joost Ellerbroek | j.ellerbroek@tudelft.nl | | |
