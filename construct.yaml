@@ -105,7 +105,7 @@ specs:
   - pyqt
   - pytables
   - pytest
-  - python
+  - python =3.13.*
   - python-igraph
   - python-tsp
   - pythreejs
