@@ -92,7 +92,7 @@ specs:
   - pip
   - plotly
   - pulp
-  - pyarrow
+  # - pyarrow
   - pydantic
   - pydot
   - pydotplus
