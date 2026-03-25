@@ -115,7 +115,7 @@ specs:
   - qtconsole ==5.7.1
   - requests ==2.32.5
   - rope ==1.14.0
-  - ruamel_yaml
+  - ruamel.yaml
   - salabim ==26.0.3
   - scikit-image
   - scikit-learn ==1.8.0
