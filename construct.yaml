@@ -63,8 +63,8 @@ specs:
   - mccabe ==0.7.0
   - menuinst ==2.4.2
   - mesa ==3.3.1
-  - miniforge_console_shortcut  # [win]
-  - mkl-service  # [win]
+  - miniforge_console_shortcut ==3.0 # [win]
+  - mkl-service ==2.6.1 # [win]
   - more-itertools ==10.8.0
   - mpmath ==1.4.1
   - mypy ==1.19.1
@@ -105,7 +105,7 @@ specs:
   - pyqt ==5.15.11
   - pytables ==3.11.1
   - pytest ==9.0.2
-  - python =3.13
+  - python ==3.13.12
   - python-igraph ==1.0.0
   - python-tsp ==0.5.0
   - pythreejs ==2.4.2
@@ -147,21 +147,21 @@ extra_envs:
     channels:
       - conda-forge
     specs:
-      - ipykernel  # allows access to this env using nb_conda_kernels
-      - ipython
-      - matplotlib
-      - numpy
-      - pandas
-      - python
-      - pytorch
-      - pytorch_geometric
-      - rdkit
-      - scikit-learn
-      - scipy
-      - seaborn
+      - ipykernel ==6.31.0  # allows access to this env using nb_conda_kernels
+      - ipython ==9.11.0
+      - matplotlib ==3.10.8
+      - numpy ==2.4.3
+      - pandas ==3.0.1
+      - python ==3.13.12
+      - pytorch ==2.10.0
+      - pytorch_geometric ==2.7.0
+      - rdkit ==2025.09.6
+      - scikit-learn ==1.8.0
+      - scipy ==1.17.1
+      - seaborn ==0.13.2
       - spyder-kernels  # allows access to this environment in spyder
-      - torchvision
-      - tqdm
+      - torchvision ==0.25.0
+      - tqdm ==4.67.3
 build_outputs:
   - info.json
   - pkgs_list
