@@ -109,10 +109,13 @@ specs:
   - python-igraph ==1.0.0
   - python-tsp ==0.5.0
   - pythreejs ==2.4.2
+  - pytorch ==2.10.0
+  - pytorch_geometric ==2.7.0
   - pyvisa ==1.16.2
   - pyvisgraph ==0.2.1
   - pyyaml ==6.0.3
   - qtconsole ==5.7.1
+  - rdkit ==2025.09.6
   - requests ==2.32.5
   - rope ==1.14.0
   - ruamel.yaml ==0.18.17
@@ -136,34 +139,14 @@ specs:
   - stopit ==1.1.2
   - sympy ==1.14.0
   - toolz ==1.1.0
+  - torchvision ==0.25.0
+  - tqdm ==4.67.3
   - traitlets ==5.14.3
   - tzdata ==2025c
   - urllib3 ==2.6.3
   - wheel ==0.46.3
   - xarray ==2026.2.0
   - xlrd ==2.0.2
-extra_envs:
-  pytorch:
-    channels:
-      - conda-forge
-    specs:
-      - ipykernel ==6.31.0  # allows access to this env using nb_conda_kernels
-      - ipython ==9.11.0
-      - matplotlib ==3.10.8
-      - numpy ==2.4.3
-      - pandas ==3.0.1
-      - python ==3.13.12
-      - pytorch ==2.10.0
-      - pytorch_geometric ==2.7.0
-      - rdkit ==2025.09.6
-      - scikit-learn ==1.8.0
-      - scipy ==1.17.1
-      - seaborn ==0.13.2
-      - spyder-kernels  # allows access to this environment in spyder
-      - torchvision ==0.25.0
-      - tqdm ==4.67.3
 build_outputs:
   - info.json
   - pkgs_list
-  - pkgs_list:
-      env: pytorch

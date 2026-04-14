@@ -435,7 +435,7 @@ are working properly:
 conda run -n base python tests/test_imports.py
 conda run -n base python tests/test_slycot.py
 conda run -n base python tests/test_biogeme.py
-conda run -n pytorch python tests/test_pytorch.py
+conda run -n base python tests/test_pytorch.py
 ```
 
 You can also ask WPS to provide access to a TU Delft computer for testing. Two
