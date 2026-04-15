@@ -36,7 +36,7 @@ specs:
   - control ==0.10.2
   - coolprop ==6.7.0
   - curl ==8.19.0
-  - cvxpy
+  - cvxpy ==1.8.2
   - cython ==3.2.4
   - cythonbiogeme ==1.0.4
   - dash ==4.1.0
@@ -109,8 +109,8 @@ specs:
   - pyqt ==5.15.11
   - pytables ==3.11.1
   - pytest ==9.0.2
-  - pytest-mock
-  - pytest-timeout
+  - pytest-mock ==3.15.1
+  - pytest-timeout ==2.4.0
   - python ==3.13.12
   - python-igraph ==1.0.0
   - python-tsp ==0.5.0
@@ -139,7 +139,7 @@ specs:
   - spyder ==6.1.3
   - spyder-kernels ==3.1.3
   - spyder-notebook ==0.6.1
-  - spyder-unittest
+  - spyder-unittest ==0.7.1
   - sqlalchemy ==2.0.48
   - sqlite ==3.52.0
   - statsmodels ==0.14.6
