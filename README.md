@@ -361,7 +361,7 @@ used to build the official Anaconda installer. Create an environment with only
 constructor and activate it.
 
 ```bash
-conda create -c conda-forge -n constructor "constructor>=3.12.2"
+conda create -c conda-forge -n constructor "constructor>=3.15.2"
 conda activate constructor
 ```
 
