@@ -284,7 +284,7 @@ interest in doing so.
 | Sander van Cranenburgh | s.vancranenburgh@tudelft.nl | | biogeme, biogeme-optimization, cython-biogeme |
 | Tom Viering | T.J.Viering@tudelft.nl | | |
 | Tom van Woudenberg | T.R.vanWoudenberg@tudelft.nl | CEG | highspy, pymoo, pyomo, testbook |
-| Valeri Markine | v.l.markine@tudelft.nl | | |
+| Valeri Markine | v.l.markine@tudelft.nl | | openpyxl |
 | Wouter van der Wal | w.vanderwal@tudelft.nl | | |
 | Requested by Artur Schweidtmann | director-ce@tudelft.nl | | |
 
