@@ -258,7 +258,7 @@ interest in doing so.
 | Jacco Hoekstra | J.M.Hoekstra@tudelft.nl | | |
 | Jason K. Moore | j.k.moore@tudelft.nl | ME | ipympl, jupyter, matplotlib, numpy, pythreejs, sckits.odes, scipy, sympy |
 | Jeroen Kalkman | J.Kalkman@tudelft.nl | | |
-| Joffrey Wallaart | J.Wallaart@tudelft.nl | EEMCS | |
+| Joffrey Wallaart | J.Wallaart@tudelft.nl | EEMCS | cvxpy, pytest-mock, pytest-timeout, spyder-unittest |
 | Joost Ellerbroek | j.ellerbroek@tudelft.nl | | |
 | Jordan Boyle | J.H.Boyle@tudelft.nl | IDE | pygame, pymunk, spyder |
 | Ludolf Meester | L.E.Meester@tudelft.nl | | |
