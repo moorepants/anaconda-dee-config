@@ -58,6 +58,8 @@ Current:
 
 - Jason K. Moore, ME, j.k.moore@tudelft.nl
 - Jan-Maarten Brockhoff, ICT, J.J.M.Brockhoff@tudelft.nl
+- Maarten Mulder, ICT, Maarten.Mulder@tudelft.nl
+- Rayan Morgenstond, ICT,  R.R.A.Morgenstond@tudelft.nl
 - Kevin Geboers, Workplace Support Education, k.f.geboers@tudelft.nl
 
 Past:
