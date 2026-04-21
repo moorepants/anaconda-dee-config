@@ -251,6 +251,7 @@ interest in doing so.
 | Ferdinand Grozema | F.C.Grozema@tudelft.nl| | |
 | Ferdinand Postema (LR) | F.N.Postema@tudelft.nl | | |
 | Frank Mulder | f.mulder@tudelft.nl | | |
+| Freek Pols | C.F.J.Pols@tudelft.nl | AS | jupyterlab, jupyterlab-myst |
 | Gary Steele | G.A.Steele@tudelft.nl | | |
 | Heike Vallery | h.vallery@tudelft.nl | | |
 | Helma Torkamaan | H.Torkamaan@tudelft.nl | | |
