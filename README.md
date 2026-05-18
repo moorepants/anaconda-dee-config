@@ -158,10 +158,11 @@ may differ from PyPi, CRAN, etc.). If your package is not present in Conda
 Forge, then you should initiate a new package build following [the instructions
 to add a recipe](https://conda-forge.org/docs/maintainer/adding_pkgs).
 
-Once the package is available on Conda Forge for Windows 64 bit systems, open a
-merge request on this repository adding your package name to the
-`construct.yaml` file. Test building the installer locally on Windows and
-report your success (or failures) in the pull request.
+Once the package is available on Conda Forge for Windows 64 Intel/AMD, MacOS
+Intel/AMD & ARM, and Linux Intel/AMD systems, open a merge request on this
+repository adding your package name to the `construct.yaml` file. Test building
+the installer locally on Windows and report your success (or failures) in the
+pull request.
 
 # FAQ
 
