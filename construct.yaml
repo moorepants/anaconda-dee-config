@@ -34,6 +34,7 @@ specs:
   - colorful ==0.5.8
   - conda ==26.1.1
   - configparser ==7.2.0
+  - contextily ==1.7.0
   - control ==0.10.2
   - coolprop ==6.7.0
   - curl ==8.19.0
