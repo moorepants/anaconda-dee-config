@@ -283,7 +283,7 @@ interest in doing so.
 | Rene van Paassen (LR) | M.M.vanPaassen@tudelft.nl | AE | control, slycot |
 | Ronald Ligteringen | R.Ligteringen@tudelft.nl| | |
 | Ruud van der Ent | R.J.vanderEnt@tudelft.nl | | |
-| Sander van Cranenburgh | s.vancranenburgh@tudelft.nl | | biogeme, biogeme-optimization, cython-biogeme, geopandas |
+| Sander van Cranenburgh | s.vancranenburgh@tudelft.nl | | biogeme, biogeme-optimization, branca, contextily, cython-biogeme, folium, interpret, geopandas, mapclassify, opencv, shap, transformers, ultralytics, xgboost |
 | Tom Viering | T.J.Viering@tudelft.nl | | |
 | Tom van Woudenberg | T.R.vanWoudenberg@tudelft.nl | CEG | highspy, pymoo, pyomo, testbook |
 | Valeri Markine | v.l.markine@tudelft.nl | | openpyxl |
