@@ -141,7 +141,7 @@ specs:
   - scrapy ==2.14.2
   - seaborn ==0.13.2
   - setuptools ==81.0.0
-  - shap ==<0.51.0
+  - shap ==0.50.0
   - shapely ==2.1.2
   - slycot ==0.6.1
   - sphinx ==9.1.0
