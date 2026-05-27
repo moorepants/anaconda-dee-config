@@ -71,7 +71,7 @@ specs:
   - matplotlib ==3.10.8
   - mccabe ==0.7.0
   - menuinst ==2.4.2
-  - mesa ==3.3.1
+  - mesa ==3.5.1
   - miniforge_console_shortcut ==3.0 # [win]
   - mkl-service ==2.6.1 # [win]
   - more-itertools ==10.8.0
