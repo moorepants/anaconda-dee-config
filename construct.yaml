@@ -73,8 +73,8 @@ specs:
   - mccabe
   - menuinst
   - mesa
-  - miniforge_console_shortcut
-  - mkl-service
+  - miniforge_console_shortcut  # [win]
+  - mkl-service  # [win]
   - more-itertools
   - mpmath
   - mypy
