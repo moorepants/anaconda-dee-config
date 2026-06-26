@@ -258,7 +258,7 @@ interest in doing so.
 | Helma Torkamaan | H.Torkamaan@tudelft.nl | | |
 | Iulia lefter | i.lefter@tudelft.nl | | |
 | Jacco Hoekstra | J.M.Hoekstra@tudelft.nl | | |
-| Jason K. Moore | j.k.moore@tudelft.nl | ME | ipympl, jupyter, matplotlib, numpy, pythreejs, sckits.odes, scipy, sympy |
+| Jason K. Moore | j.k.moore@tudelft.nl | ME | ipympl, jupyter, mathjax, matplotlib, numpy, pythreejs, sckits.odes, scipy, sympy |
 | Jeroen Kalkman | J.Kalkman@tudelft.nl | | |
 | Joffrey Wallaart | J.Wallaart@tudelft.nl | EEMCS | cvxpy, pytest-mock, pytest-timeout, spyder-unittest |
 | Joost Ellerbroek | j.ellerbroek@tudelft.nl | | |

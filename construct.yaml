@@ -68,6 +68,7 @@ specs:
   - jupytext ==1.19.1
   - mapclassify ==2.10.0
   - markdown ==3.10.2
+  - mathjax ==4.1.2
   - matplotlib ==3.10.8
   - mccabe ==0.7.0
   - menuinst ==2.4.2
