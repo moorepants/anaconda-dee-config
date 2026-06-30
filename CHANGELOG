@@ -1,3 +1,42 @@
+2026.01
+=======
+
+- Installer is now built with constructor >=3.15.2.
+- The pytorch environment has been merged into the base environment and the
+  pytorch environment has been removed.
+- Updated software versions for 2026 based on Python 3.13.14.
+- Added packages:
+
+  - [base] branca
+  - [base] contextily
+  - [base] cvxpy
+  - [base] cython-biogeme
+  - [base] folium
+  - [base] geopandas
+  - [base] highspy
+  - [base] interpret
+  - [base] jupyterlab
+  - [base] jupyterlab-myst
+  - [base] mapclassify
+  - [base] mathjax
+  - [base] opencv
+  - [base] openpyxl
+  - [base] pymoo
+  - [base] pyomo
+  - [base] pytest-mock
+  - [base] pytest-timeout
+  - [base] pytorch
+  - [base] pytorch_geometric
+  - [base] rdkit
+  - [base] shap
+  - [base] spyder-unittest
+  - [base] testbook
+  - [base] torchvision-cpu
+  - [base] transformers
+  - [base] ultralytics
+  - [base] xgboost
+  - [base] xlrd
+
 2025.03
 =======
 
