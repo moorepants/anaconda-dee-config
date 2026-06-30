@@ -1,5 +1,5 @@
 name: tudelft-conda
-version: v2026.01.dev
+version: v2026.01
 company: Delft University of Technology
 installer_type: all
 # NOTE : The following two settings write a condarc file to the installation

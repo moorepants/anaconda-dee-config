@@ -82,6 +82,7 @@ Version numbering schema: `v<year>.<two digit integer>`.
 
 |Academic Year | Version  | Description  |
 |:--------:|:---------:|:-----------------|
+| 2026-2027 | [v2026.01](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/releases/v2026.01) | first testing release for 2026-2027 academic year |
 | 2025-2026 | [v2025.03](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/releases/v2025.03) | final release for 2025-2026 academic year |
 |           | [v2025.02](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/releases/v2025.02) | second testing release for 2025-2026 academic year |
 |           | [v2025.01](https://gitlab.ewi.tudelft.nl/bhmgerritsen/anaconda-dee-config/-/releases/v2025.01) | first testing release for 2025-2026 academic year |
