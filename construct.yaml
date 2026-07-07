@@ -33,6 +33,7 @@ specs:
   - colorama ==0.4.6
   - colorful ==0.5.8
   - conda ==26.5.3
+  - conda-tree
   - configparser ==7.2.0
   - contextily ==1.7.0
   - control ==0.10.2
