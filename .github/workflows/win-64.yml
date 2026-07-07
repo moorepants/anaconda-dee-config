@@ -75,3 +75,4 @@ jobs:
           conda run -n base python tests/test_biogeme.py
           conda run -n base python tests/test_pytorch.py
           conda tree -n base whoneeds khronos-opencl-icd-loader
+          conda tree -n base whoneeds libopenvino-intel-gpu-plugin
