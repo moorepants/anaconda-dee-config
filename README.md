@@ -200,17 +200,16 @@ mutually compatible set of hundreds or thousands of packages installed
 together. We manage a monolithic installation of packages that come from a
 variety of languages (Python, C++, C, R, Julia, CUDA, etc.). Firstly, many of
 the packages cannot be installed from a single languages' repository, e.g. PyPi
-only hosts Python packages. Secondly, it is quite difficult, if not
-impossible, to create a compatible set of packages if relying on PyPi (see
+only hosts Python packages. Secondly, it is quite difficult, if not impossible,
+to create a compatible set of packages if relying on PyPi (see
 https://pypackaging-native.github.io/ for detailed explanations). A tenable
 solution that does not require excessive amounts of time and complexity for
 this team is to rely on Conda Forge for solving these problems. The binaries
 available on Conda Forge are guaranteed to provide a compatible set by the
 nature of its design. Even though it may seem simple to install your package on
 your computer, it may not be so in a offline installer. Every special case we
-add, costs us more time. So we default to Conda Forge packages with rare
-exceptions that depend on available volunteer time. This provides a minimal
-headache way to deliver a working software environments to our students.
+add, costs us more time. This provides a minimal headache way to deliver a
+working software environments to our students.
 
 Why can't students `pip install` or `conda install` packages while on the lab
 computers?
