@@ -10,7 +10,6 @@
   - [base] branca
   - [base] contextily
   - [base] cvxpy
-  - [base] cython-biogeme
   - [base] folium
   - [base] geopandas
   - [base] highspy
