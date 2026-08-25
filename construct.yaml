@@ -156,6 +156,7 @@ specs:
   - stopit ==1.1.2
   - sympy ==1.14.0
   - testbook ==0.4.2
+  - tomlkit ==0.15.0
   - toolz ==1.1.0
   - torchvision ==0.27.1
   - tqdm ==4.68.3
